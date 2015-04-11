@@ -307,9 +307,9 @@
 		<set name="soulshots" val="2" />
 		<set name="spiritshots" val="1" />
 		<set name="mp_consume" val="10" />
+		<set name="mp_consume_reduce" val="38,2" />
 		<set name="reuse_delay" val="820" />
 		<set name="item_skill" val="3552-1" />
-		<set name="reduced_mp_consume" val="38,2" />
 		<for>
 			<set order="0x08" stat="pAtk" val="528" />
 			<set order="0x08" stat="mAtk" val="125" />
@@ -318,11 +318,6 @@
 			<set order="0x08" stat="pAtkSpd" val="227" />
 			<enchant val="0" order="0x0C" stat="pAtk" />
 			<enchant val="0" order="0x0C" stat="mAtk" />
-			<set order="0x08" stat="MpConsume" val="2">
-				<and>
-					<game skill="false" chance="38" />
-				</and>
-			</set>
 		</for>
 	</item>
 	<item id="5612" type="Weapon" name="Soul Bow - Quick Recovery">

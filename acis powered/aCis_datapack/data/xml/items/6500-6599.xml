@@ -1113,8 +1113,8 @@
 		<set name="soulshots" val="1" />
 		<set name="spiritshots" val="1" />
 		<set name="mp_consume" val="11" />
+		<set name="mp_consume_reduce" val="26,1" />
 		<set name="reuse_delay" val="1500" />
-		<set name="reduced_mp_consume" val="26,1" />
 		<for>
 			<set order="0x08" stat="pAtk" val="581" />
 			<set order="0x08" stat="mAtk" val="132" />
@@ -1123,11 +1123,6 @@
 			<set order="0x08" stat="pAtkSpd" val="293" />
 			<enchant val="0" order="0x0C" stat="pAtk" />
 			<enchant val="0" order="0x0C" stat="mAtk" />
-			<set order="0x08" stat="MpConsume" val="1">
-				<and>
-					<game skill="false" chance="26" />
-				</and>
-			</set>
 		</for>
 	</item>
 	<item id="6594" type="Weapon" name="Shining Bow - Focus">

@@ -168,6 +168,7 @@
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="2" />
 		<set name="price" val="5000" />
+		<set name="is_stackable" val="true" />
 		<cond msgId="113">
 			<player level="46" />
 		</cond>
@@ -176,6 +177,7 @@
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="2" />
 		<set name="price" val="6000" />
+		<set name="is_stackable" val="true" />
 		<cond msgId="113">
 			<player level="49" />
 		</cond>
@@ -184,6 +186,7 @@
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="2" />
 		<set name="price" val="7200" />
+		<set name="is_stackable" val="true" />
 		<cond msgId="113">
 			<player level="52" />
 		</cond>
@@ -192,6 +195,7 @@
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="2" />
 		<set name="price" val="8640" />
+		<set name="is_stackable" val="true" />
 		<cond msgId="113">
 			<player level="55" />
 		</cond>
@@ -200,6 +204,7 @@
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="2" />
 		<set name="price" val="10000" />
+		<set name="is_stackable" val="true" />
 		<cond msgId="113">
 			<player level="58" />
 		</cond>
@@ -208,6 +213,7 @@
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="2" />
 		<set name="price" val="12000" />
+		<set name="is_stackable" val="true" />
 		<cond msgId="113">
 			<player level="61" />
 		</cond>
@@ -216,6 +222,7 @@
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="2" />
 		<set name="price" val="15000" />
+		<set name="is_stackable" val="true" />
 		<cond msgId="113">
 			<player level="64" />
 		</cond>
@@ -224,6 +231,7 @@
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="2" />
 		<set name="price" val="18000" />
+		<set name="is_stackable" val="true" />
 		<cond msgId="113">
 			<player level="67" />
 		</cond>
@@ -232,6 +240,7 @@
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="2" />
 		<set name="price" val="21600" />
+		<set name="is_stackable" val="true" />
 		<cond msgId="113">
 			<player level="70" />
 		</cond>
@@ -240,6 +249,7 @@
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="2" />
 		<set name="price" val="24000" />
+		<set name="is_stackable" val="true" />
 		<cond msgId="113">
 			<player level="76" />
 		</cond>
@@ -248,6 +258,7 @@
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="2" />
 		<set name="price" val="20000" />
+		<set name="is_stackable" val="true" />
 		<cond msgId="113">
 			<player level="46" />
 		</cond>
@@ -256,6 +267,7 @@
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="2" />
 		<set name="price" val="24000" />
+		<set name="is_stackable" val="true" />
 		<cond msgId="113">
 			<player level="49" />
 		</cond>
@@ -264,6 +276,7 @@
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="2" />
 		<set name="price" val="28800" />
+		<set name="is_stackable" val="true" />
 		<cond msgId="113">
 			<player level="52" />
 		</cond>
@@ -272,6 +285,7 @@
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="2" />
 		<set name="price" val="34560" />
+		<set name="is_stackable" val="true" />
 		<cond msgId="113">
 			<player level="55" />
 		</cond>
@@ -280,6 +294,7 @@
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="2" />
 		<set name="price" val="40000" />
+		<set name="is_stackable" val="true" />
 		<cond msgId="113">
 			<player level="58" />
 		</cond>
@@ -288,6 +303,7 @@
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="2" />
 		<set name="price" val="48000" />
+		<set name="is_stackable" val="true" />
 		<cond msgId="113">
 			<player level="61" />
 		</cond>
@@ -296,6 +312,7 @@
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="2" />
 		<set name="price" val="60000" />
+		<set name="is_stackable" val="true" />
 		<cond msgId="113">
 			<player level="64" />
 		</cond>
@@ -304,6 +321,7 @@
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="2" />
 		<set name="price" val="72000" />
+		<set name="is_stackable" val="true" />
 		<cond msgId="113">
 			<player level="67" />
 		</cond>
@@ -312,6 +330,7 @@
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="2" />
 		<set name="price" val="86400" />
+		<set name="is_stackable" val="true" />
 		<cond msgId="113">
 			<player level="70" />
 		</cond>
@@ -320,6 +339,7 @@
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="2" />
 		<set name="price" val="96000" />
+		<set name="is_stackable" val="true" />
 		<cond msgId="113">
 			<player level="76" />
 		</cond>
@@ -328,6 +348,7 @@
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="2" />
 		<set name="price" val="200000" />
+		<set name="is_stackable" val="true" />
 		<cond msgId="113">
 			<player level="46" />
 		</cond>
@@ -336,6 +357,7 @@
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="2" />
 		<set name="price" val="240000" />
+		<set name="is_stackable" val="true" />
 		<cond msgId="113">
 			<player level="49" />
 		</cond>
@@ -344,6 +366,7 @@
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="2" />
 		<set name="price" val="288000" />
+		<set name="is_stackable" val="true" />
 		<cond msgId="113">
 			<player level="52" />
 		</cond>
@@ -352,6 +375,7 @@
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="2" />
 		<set name="price" val="345600" />
+		<set name="is_stackable" val="true" />
 		<cond msgId="113">
 			<player level="55" />
 		</cond>
@@ -360,6 +384,7 @@
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="2" />
 		<set name="price" val="400000" />
+		<set name="is_stackable" val="true" />
 		<cond msgId="113">
 			<player level="58" />
 		</cond>
@@ -368,6 +393,7 @@
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="2" />
 		<set name="price" val="480000" />
+		<set name="is_stackable" val="true" />
 		<cond msgId="113">
 			<player level="61" />
 		</cond>
@@ -376,6 +402,7 @@
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="2" />
 		<set name="price" val="600000" />
+		<set name="is_stackable" val="true" />
 		<cond msgId="113">
 			<player level="64" />
 		</cond>
@@ -384,6 +411,7 @@
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="2" />
 		<set name="price" val="720000" />
+		<set name="is_stackable" val="true" />
 		<cond msgId="113">
 			<player level="67" />
 		</cond>
@@ -392,6 +420,7 @@
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="2" />
 		<set name="price" val="864000" />
+		<set name="is_stackable" val="true" />
 		<cond msgId="113">
 			<player level="70" />
 		</cond>
@@ -400,6 +429,7 @@
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="2" />
 		<set name="price" val="960000" />
+		<set name="is_stackable" val="true" />
 		<cond msgId="113">
 			<player level="76" />
 		</cond>
@@ -408,6 +438,7 @@
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="2" />
 		<set name="price" val="1000000" />
+		<set name="is_stackable" val="true" />
 		<cond msgId="113">
 			<player level="46" />
 		</cond>
@@ -416,6 +447,7 @@
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="2" />
 		<set name="price" val="1200000" />
+		<set name="is_stackable" val="true" />
 		<cond msgId="113">
 			<player level="49" />
 		</cond>
@@ -424,6 +456,7 @@
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="2" />
 		<set name="price" val="1440000" />
+		<set name="is_stackable" val="true" />
 		<cond msgId="113">
 			<player level="52" />
 		</cond>
@@ -432,6 +465,7 @@
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="2" />
 		<set name="price" val="1728000" />
+		<set name="is_stackable" val="true" />
 		<cond msgId="113">
 			<player level="55" />
 		</cond>
@@ -448,6 +482,7 @@
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="2" />
 		<set name="price" val="2400000" />
+		<set name="is_stackable" val="true" />
 		<cond msgId="113">
 			<player level="61" />
 		</cond>
@@ -456,6 +491,7 @@
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="2" />
 		<set name="price" val="3000000" />
+		<set name="is_stackable" val="true" />
 		<cond msgId="113">
 			<player level="64" />
 		</cond>
@@ -464,6 +500,7 @@
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="2" />
 		<set name="price" val="3600000" />
+		<set name="is_stackable" val="true" />
 		<cond msgId="113">
 			<player level="67" />
 		</cond>
@@ -472,6 +509,7 @@
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="2" />
 		<set name="price" val="4320000" />
+		<set name="is_stackable" val="true" />
 		<cond msgId="113">
 			<player level="70" />
 		</cond>
@@ -480,6 +518,7 @@
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="2" />
 		<set name="price" val="4800000" />
+		<set name="is_stackable" val="true" />
 		<cond msgId="113">
 			<player level="76" />
 		</cond>
@@ -642,6 +681,7 @@
 		<set name="crystal_type" val="A" />
 		<set name="material" val="FINE_STEEL" />
 		<set name="weight" val="1300" />
+		<set name="price" val="35300000" />
 		<set name="soulshots" val="1" />
 		<set name="spiritshots" val="1" />
 		<set name="item_skill" val="3068-3" />
@@ -665,6 +705,7 @@
 		<set name="crystal_type" val="A" />
 		<set name="material" val="FINE_STEEL" />
 		<set name="weight" val="1300" />
+		<set name="price" val="35300000" />
 		<set name="soulshots" val="1" />
 		<set name="spiritshots" val="1" />
 		<set name="item_skill" val="3013-5" />
@@ -688,6 +729,7 @@
 		<set name="crystal_type" val="A" />
 		<set name="material" val="FINE_STEEL" />
 		<set name="weight" val="1300" />
+		<set name="price" val="35300000" />
 		<set name="soulshots" val="1" />
 		<set name="spiritshots" val="1" />
 		<set name="oncrit_chance" val="10" />
@@ -713,6 +755,7 @@
 		<set name="crystal_type" val="A" />
 		<set name="material" val="BONE" />
 		<set name="weight" val="1820" />
+		<set name="price" val="35300000" />
 		<set name="soulshots" val="1" />
 		<set name="spiritshots" val="1" />
 		<set name="item_skill" val="3050-2" />
@@ -736,6 +779,7 @@
 		<set name="crystal_type" val="A" />
 		<set name="material" val="BONE" />
 		<set name="weight" val="1820" />
+		<set name="price" val="35300000" />
 		<set name="soulshots" val="1" />
 		<set name="spiritshots" val="1" />
 		<set name="item_skill" val="3068-3" />
@@ -759,6 +803,7 @@
 		<set name="crystal_type" val="A" />
 		<set name="material" val="BONE" />
 		<set name="weight" val="1820" />
+		<set name="price" val="35300000" />
 		<set name="soulshots" val="1" />
 		<set name="spiritshots" val="1" />
 		<set name="item_skill" val="3013-5" />
@@ -782,6 +827,7 @@
 		<set name="crystal_type" val="A" />
 		<set name="material" val="ORIHARUKON" />
 		<set name="weight" val="1550" />
+		<set name="price" val="35300000" />
 		<set name="soulshots" val="1" />
 		<set name="spiritshots" val="1" />
 		<set name="item_skill" val="3013-5" />
@@ -806,6 +852,7 @@
 		<set name="crystal_type" val="A" />
 		<set name="material" val="ORIHARUKON" />
 		<set name="weight" val="1550" />
+		<set name="price" val="35300000" />
 		<set name="soulshots" val="1" />
 		<set name="spiritshots" val="1" />
 		<set name="item_skill" val="3068-3" />
@@ -830,6 +877,7 @@
 		<set name="crystal_type" val="A" />
 		<set name="material" val="ORIHARUKON" />
 		<set name="weight" val="1550" />
+		<set name="price" val="35300000" />
 		<set name="soulshots" val="1" />
 		<set name="spiritshots" val="1" />
 		<set name="item_skill" val="3050-2" />
@@ -854,6 +902,7 @@
 		<set name="crystal_type" val="A" />
 		<set name="material" val="FINE_STEEL" />
 		<set name="weight" val="1890" />
+		<set name="price" val="35300000" />
 		<set name="soulshots" val="1" />
 		<set name="spiritshots" val="1" />
 		<set name="item_skill" val="3050-2" />
@@ -878,6 +927,7 @@
 		<set name="crystal_type" val="A" />
 		<set name="material" val="FINE_STEEL" />
 		<set name="weight" val="1890" />
+		<set name="price" val="35300000" />
 		<set name="soulshots" val="1" />
 		<set name="spiritshots" val="1" />
 		<set name="item_skill" val="3013-5" />
@@ -902,6 +952,7 @@
 		<set name="crystal_type" val="A" />
 		<set name="material" val="FINE_STEEL" />
 		<set name="weight" val="1890" />
+		<set name="price" val="35300000" />
 		<set name="soulshots" val="1" />
 		<set name="spiritshots" val="1" />
 		<set name="item_skill" val="3057-3" />

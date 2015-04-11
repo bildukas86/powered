@@ -434,6 +434,7 @@
 		<set name="crystal_type" val="A" />
 		<set name="material" val="FINE_STEEL" />
 		<set name="weight" val="1890" />
+		<set name="price" val="35300000" />
 		<set name="soulshots" val="1" />
 		<set name="spiritshots" val="1" />
 		<set name="enchant4_skill" val="3045-17" />

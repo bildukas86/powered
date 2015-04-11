@@ -483,8 +483,8 @@
 		<set name="soulshots" val="8" />
 		<set name="spiritshots" val="2" />
 		<set name="mp_consume" val="7" />
+		<set name="mp_consume_reduce" val="46,2" />
 		<set name="reuse_delay" val="1500" />
-		<set name="reduced_mp_consume" val="46,2" />
 		<for>
 			<set order="0x08" stat="pAtk" val="252" />
 			<set order="0x08" stat="mAtk" val="68" />
@@ -493,11 +493,6 @@
 			<set order="0x08" stat="pAtkSpd" val="293" />
 			<enchant val="0" order="0x0C" stat="pAtk" />
 			<enchant val="0" order="0x0C" stat="mAtk" />
-			<set order="0x08" stat="MpConsume" val="2">
-				<and>
-					<game skill="false" chance="46" />
-				</and>
-			</set>
 		</for>
 	</item>
 	<item id="4819" type="Weapon" name="Akat Long Bow - Guidance">
@@ -650,8 +645,8 @@
 		<set name="soulshots" val="10" />
 		<set name="spiritshots" val="3" />
 		<set name="mp_consume" val="8" />
+		<set name="mp_consume_reduce" val="34,1" />
 		<set name="reuse_delay" val="1500" />
-		<set name="reduced_mp_consume" val="34,1" />
 		<for>
 			<set order="0x08" stat="pAtk" val="323" />
 			<set order="0x08" stat="mAtk" val="83" />
@@ -660,11 +655,6 @@
 			<set order="0x08" stat="pAtkSpd" val="293" />
 			<enchant val="0" order="0x0C" stat="pAtk" />
 			<enchant val="0" order="0x0C" stat="mAtk" />
-			<set order="0x08" stat="MpConsume" val="1">
-				<and>
-					<game skill="false" chance="34" />
-				</and>
-			</set>
 		</for>
 	</item>
 	<item id="4825" type="Weapon" name="Dark Elven Long Bow - Evasion">
@@ -817,8 +807,8 @@
 		<set name="soulshots" val="3" />
 		<set name="spiritshots" val="1" />
 		<set name="mp_consume" val="9" />
+		<set name="mp_consume_reduce" val="42,2" />
 		<set name="reuse_delay" val="1500" />
-		<set name="reduced_mp_consume" val="42,2" />
 		<for>
 			<set order="0x08" stat="pAtk" val="400" />
 			<set order="0x08" stat="mAtk" val="99" />
@@ -827,11 +817,6 @@
 			<set order="0x08" stat="pAtkSpd" val="293" />
 			<enchant val="0" order="0x0C" stat="pAtk" />
 			<enchant val="0" order="0x0C" stat="mAtk" />
-			<set order="0x08" stat="MpConsume" val="2">
-				<and>
-					<game skill="false" chance="42" />
-				</and>
-			</set>
 		</for>
 	</item>
 	<item id="4831" type="Weapon" name="Carnage Bow - Critical Bleed">

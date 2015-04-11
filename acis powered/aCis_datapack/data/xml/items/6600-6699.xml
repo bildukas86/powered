@@ -557,6 +557,7 @@
 		<set name="soulshots" val="1" />
 		<set name="spiritshots" val="1" />
 		<set name="mp_consume" val="11" />
+		<set name="mp_consume_reduce" val="26,1" />
 		<set name="reuse_delay" val="1398" />
 		<set name="is_oly_restricted" val="true" />
 		<set name="is_tradable" val="false" />
@@ -575,11 +576,6 @@
 			<set order="0x08" stat="rCrit" val="12" />
 			<sub order="0x10" stat="accCombat" val="3" />
 			<set order="0x08" stat="pAtkSpd" val="293" />
-			<set val="1" order="0x08" stat="MpConsume">
-				<and>
-					<game skill="false" chance="26" />
-				</and>
-			</set>
 		</for>
 	</item>
 	<item id="6620" type="Weapon" name="Infinity Wing">
