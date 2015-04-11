@@ -1,0 +1,177 @@
+Index: aCis_gameserver/java/net/sf/l2j/gameserver/model/entity/Siege.java
+===================================================================
+--- aCis_gameserver/java/net/sf/l2j/gameserver/model/entity/Siege.java	(revision 193)
++++ aCis_gameserver/java/net/sf/l2j/gameserver/model/entity/Siege.java	(working copy)
+@@ -1106,23 +1106,44 @@
+ 		
+ 		switch (getCastle().getCastleId())
+ 		{
+-			case 3:
+-			case 4:
+-			case 6:
+-			case 7:
+-				siegeDate.set(Calendar.DAY_OF_WEEK, Calendar.SUNDAY);
++			case 1: // Gludio
++				siegeDate.set(Calendar.DAY_OF_WEEK, Config.SIEGEDAYCASTLEGludio);
+ 				break;
+-			
++			case 2: // Dion
++				siegeDate.set(Calendar.DAY_OF_WEEK, Config.SIEGEDAYCASTLEDion);
++				break;
++			case 3: // Giran
++				siegeDate.set(Calendar.DAY_OF_WEEK, Config.SIEGEDAYCASTLEGiran);
++				break;
++			case 4: // Oren
++				siegeDate.set(Calendar.DAY_OF_WEEK, Config.SIEGEDAYCASTLEOren);
++				break;
++			case 5: // Aden
++				siegeDate.set(Calendar.DAY_OF_WEEK, Config.SIEGEDAYCASTLEAden);
++				break;
++			case 6: // Innadril/Heine
++				siegeDate.set(Calendar.DAY_OF_WEEK, Config.SIEGEDAYCASTLEInnadril);
++				break;
++			case 7: // Goddard
++				siegeDate.set(Calendar.DAY_OF_WEEK, Config.SIEGEDAYCASTLEGoddard);
++				break;
++			case 8: // Rune
++				siegeDate.set(Calendar.DAY_OF_WEEK, Config.SIEGEDAYCASTLERune);
++				break;
++			case 9: // Schuttgart
++				siegeDate.set(Calendar.DAY_OF_WEEK, Config.SIEGEDAYCASTLESchuttgart);
++				break;
++					
+ 			default:
+ 				siegeDate.set(Calendar.DAY_OF_WEEK, Calendar.SATURDAY);
+ 				break;
+ 		}
+ 		
+ 		// Set next siege date if siege has passed ; add 14 days (2 weeks).
+-		siegeDate.add(Calendar.WEEK_OF_YEAR, 2);
++		siegeDate.add(Calendar.WEEK_OF_YEAR, Config.NEXT_SIEGE_TIME);
+ 		
+ 		// Set default hour to 18:00. This can be changed - only once - by the castle leader via the chamberlain.
+-		siegeDate.set(Calendar.HOUR_OF_DAY, 18);
++		siegeDate.set(Calendar.HOUR_OF_DAY, Config.HOUR_OF_SIEGE);
+ 		siegeDate.set(Calendar.MINUTE, 0);
+ 		siegeDate.set(Calendar.SECOND, 0);
+ 		
+Index: aCis_gameserver/config/CustomSiege.properties
+===================================================================
+--- aCis_gameserver/config/CustomSiege.properties	(revision 0)
++++ aCis_gameserver/config/CustomSiege.properties	(working copy)
+@@ -0,0 +1,33 @@
++# ================================================================
++# Configuration for Each catle siege.
++# if you need put your siege of the Giran castle on Monday (example) put SiegeGiran = 2
++# SUNDAY = 1
++# MONDAY = 2
++# TUESDAY = 3
++# WEDNESDAY = 4
++# THURSDAY = 5
++# FRIDAY = 6
++# SATURDAY = 7
++SiegeGludio = 7
++SiegeDion = 7
++SiegeGiran = 7
++SiegeOren = 7
++SiegeAden = 7
++SiegeInnadril = 1
++SiegeGoddard = 1
++SiegeRune = 1
++SiegeSchuttgart = 1
++
++# ================================================================
++# Configuration for next siege time.
++# if you put 1, will have siege all week.
++# Default: 2 (2 in 2 week)
++NextSiegeTime = 2
++
++# ================================================================
++# Hour of the siege will start.
++# if put 16 the siege will start 16:00 hour.
++# Default: 18
++HourOfSiege = 18
++
++# ================================================================
+\ No newline at end of file
+Index: aCis_gameserver/java/net/sf/l2j/Config.java
+===================================================================
+--- aCis_gameserver/java/net/sf/l2j/Config.java	(revision 193)
++++ aCis_gameserver/java/net/sf/l2j/Config.java	(working copy)
+@@ -52,6 +52,7 @@
+ 	public static final String PLAYERS_FILE = "./config/players.properties";
+ 	public static final String SERVER_FILE = "./config/server.properties";
+ 	public static final String SIEGE_FILE = "./config/siege.properties";
++	public static final String CUSTOM_SIEGE_FILE = "./config/CustomSiege.properties";
+ 	
+ 	// --------------------------------------------------
+ 	// Clans settings
+@@ -492,6 +493,33 @@
+ 	public static int BUFFS_MAX_AMOUNT;
+ 	
+ 	// --------------------------------------------------
++	// Custom Siege Config
++	// --------------------------------------------------
++	/** Siege day of each castle */
++	// Gludio
++	public static int SIEGEDAYCASTLEGludio;
++	// Dion
++	public static int SIEGEDAYCASTLEDion;
++	// Giran
++	public static int SIEGEDAYCASTLEGiran;
++	// Oren
++	public static int SIEGEDAYCASTLEOren;
++	// Aden
++	public static int SIEGEDAYCASTLEAden;
++	// Innadril/Heine
++	public static int SIEGEDAYCASTLEInnadril;
++	// Goddard
++	public static int SIEGEDAYCASTLEGoddard;
++	// Rune
++	public static int SIEGEDAYCASTLERune;
++	// Schuttgart
++	public static int SIEGEDAYCASTLESchuttgart;
++	/** Next siege time config (Retail 2)*/
++	public static int NEXT_SIEGE_TIME;
++	/** Hour of the siege will start*/
++	public static int HOUR_OF_SIEGE;
++	
++	// --------------------------------------------------
+ 	// Server
+ 	// --------------------------------------------------
+ 	
+@@ -1109,6 +1137,34 @@
+ 			BUFFS_MAX_AMOUNT = players.getProperty("MaxBuffsAmount", 20);
+ 			STORE_SKILL_COOLTIME = players.getProperty("StoreSkillCooltime", true);
+ 			
++			
++			// Custom Config Siege
++			ExProperties CustomSiegeConfig = load(CUSTOM_SIEGE_FILE);
++			/** Siege day of each castle */
++			// Gludio
++			SIEGEDAYCASTLEGludio = Integer.parseInt(CustomSiegeConfig.getProperty("SiegeGludio", "7"));
++			// Dion			
++			SIEGEDAYCASTLEDion = Integer.parseInt(CustomSiegeConfig.getProperty("SiegeDion", "7"));
++			// Giran
++			SIEGEDAYCASTLEGiran = Integer.parseInt(CustomSiegeConfig.getProperty("SiegeGiran", "7"));
++			// Oren
++			SIEGEDAYCASTLEOren = Integer.parseInt(CustomSiegeConfig.getProperty("SiegeOren", "7"));
++			// Aden
++			SIEGEDAYCASTLEAden = Integer.parseInt(CustomSiegeConfig.getProperty("SiegeAden", "1"));
++			// Innadril/Heine
++			SIEGEDAYCASTLEInnadril = Integer.parseInt(CustomSiegeConfig.getProperty("SiegeInnadril", "1"));
++			// Goddard
++			SIEGEDAYCASTLEGoddard = Integer.parseInt(CustomSiegeConfig.getProperty("SiegeGoddard", "1"));
++			// Rune
++			SIEGEDAYCASTLERune = Integer.parseInt(CustomSiegeConfig.getProperty("SiegeRune", "1"));
++			// Schuttgart
++			SIEGEDAYCASTLESchuttgart = Integer.parseInt(CustomSiegeConfig.getProperty("SiegeSchuttgart", "1"));
++			/** Next siege time config (Retail 2)*/
++			NEXT_SIEGE_TIME = Integer.parseInt(CustomSiegeConfig.getProperty("NextSiegeTime", "2"));
++			/** Hour of the siege will start*/
++			HOUR_OF_SIEGE = Integer.parseInt(CustomSiegeConfig.getProperty("HourOfSiege", "18"));
++			
++			
+ 			// server
+ 			ExProperties server = load(SERVER_FILE);
+ 			

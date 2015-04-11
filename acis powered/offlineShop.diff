@@ -1,0 +1,629 @@
+Index: config/server.properties
+===================================================================
+--- config/server.properties	(revision 339)
++++ config/server.properties	(working copy)
+@@ -286,4 +286,44 @@
+ ShowServerNews = False
+ 
+ # Disable tutorial on new player game entrance. Default: False.
+-DisableTutorial = False
+\ No newline at end of file
++DisableTutorial = False
++
++# ================================================================
++#                       Offline trade & craft
++# ================================================================
++
++# Option to enable or disable offline trade feature.
++# Default: False
++OfflineTradeEnable = True
++
++# Option to enable or disable offline craft feature.
++# Default: False
++OfflineCraftEnable = True
++
++# If set to True, offline shops will be possible only peace zones.
++# Default: False
++OfflineModeInPeaceZone = True
++
++# If set to True, players in offline shop mode won't take any damage, thus they can't be killed.
++# Default: False
++OfflineModeNoDamage = True
++
++# If set to True, name color will be changed then entering offline mode
++OfflineSetNameColor = True
++
++# Color of the name in offline mode (if OfflineSetNameColor = True)
++OfflineNameColor = 808080
++
++#Restore offline traders/crafters after restart/shutdown.
++# Default: false.
++RestoreOffliners = True
++
++#Do not restore offline characters, after OfflineMaxDays days spent from first restore.
++#Require server restart to disconnect expired shops.
++#0 = disabled (always restore).
++#Default: 10
++OfflineMaxDays = 10
++
++#Disconnect shop after finished selling, buying.
++#Default: True
++OfflineDisconnectFinished = True
+\ No newline at end of file
+Index: java/net/sf/l2j/Config.java
+===================================================================
+--- java/net/sf/l2j/Config.java	(revision 339)
++++ java/net/sf/l2j/Config.java	(working copy)
+@@ -646,6 +646,17 @@
+ 	public static int ZONE_TOWN;
+ 	public static boolean DISABLE_TUTORIAL;
+ 	
++	/** Offline stores */
++	public static boolean OFFLINE_TRADE_ENABLE;
++	public static boolean OFFLINE_CRAFT_ENABLE;
++	public static boolean OFFLINE_MODE_IN_PEACE_ZONE;
++	public static boolean OFFLINE_MODE_NO_DAMAGE;
++	public static boolean RESTORE_OFFLINERS;
++	public static int OFFLINE_MAX_DAYS;
++	public static boolean OFFLINE_DISCONNECT_FINISHED;
++	public static boolean OFFLINE_SET_NAME_COLOR;
++	public static int OFFLINE_NAME_COLOR;
++	
+ 	// --------------------------------------------------
+ 	// Those "hidden" settings haven't configs to avoid admins to fuck their server
+ 	// You still can experiment changing values here. But don't say I didn't warn you.
+@@ -1240,6 +1251,16 @@
+ 			ZONE_TOWN = server.getProperty("ZoneTown", 0);
+ 			SERVER_NEWS = server.getProperty("ShowServerNews", false);
+ 			DISABLE_TUTORIAL = server.getProperty("DisableTutorial", false);
++			
++			OFFLINE_TRADE_ENABLE = server.getProperty("OfflineTradeEnable", false);
++			OFFLINE_CRAFT_ENABLE = server.getProperty("OfflineCraftEnable", false);
++			OFFLINE_MODE_IN_PEACE_ZONE = server.getProperty("OfflineModeInPeaceZone", false);
++			OFFLINE_MODE_NO_DAMAGE = server.getProperty("OfflineModeNoDamage", false);
++			OFFLINE_SET_NAME_COLOR = server.getProperty("OfflineSetNameColor", false);
++			OFFLINE_NAME_COLOR = Integer.decode("0x" + server.getProperty("OfflineNameColor", "808080"));
++			RESTORE_OFFLINERS = server.getProperty("RestoreOffliners", false);
++			OFFLINE_MAX_DAYS = server.getProperty("OfflineMaxDays", 10);
++			OFFLINE_DISCONNECT_FINISHED = server.getProperty("OfflineDisconnectFinished", true);
+ 		}
+ 		else if (Server.serverMode == Server.MODE_LOGINSERVER)
+ 		{
+Index: java/net/sf/l2j/gameserver/GameServer.java
+===================================================================
+--- java/net/sf/l2j/gameserver/GameServer.java	(revision 339)
++++ java/net/sf/l2j/gameserver/GameServer.java	(working copy)
+@@ -54,6 +54,7 @@
+ import net.sf.l2j.gameserver.datatables.MultisellData;
+ import net.sf.l2j.gameserver.datatables.NpcTable;
+ import net.sf.l2j.gameserver.datatables.NpcWalkerRoutesTable;
++import net.sf.l2j.gameserver.datatables.OfflineTradersTable;
+ import net.sf.l2j.gameserver.datatables.PetDataTable;
+ import net.sf.l2j.gameserver.datatables.RecipeTable;
+ import net.sf.l2j.gameserver.datatables.SkillTable;
+@@ -309,6 +310,9 @@
+ 		
+ 		MovieMakerManager.getInstance();
+ 		
++		if ((Config.OFFLINE_TRADE_ENABLE || Config.OFFLINE_CRAFT_ENABLE) && Config.RESTORE_OFFLINERS)
++			OfflineTradersTable.getInstance().restoreOfflineTraders();
++		
+ 		if (Config.DEADLOCK_DETECTOR)
+ 		{
+ 			_log.info("Deadlock detector is enabled. Timer: " + Config.DEADLOCK_CHECK_INTERVAL + "s.");
+Index: java/net/sf/l2j/gameserver/Shutdown.java
+===================================================================
+--- java/net/sf/l2j/gameserver/Shutdown.java	(revision 339)
++++ java/net/sf/l2j/gameserver/Shutdown.java	(working copy)
+@@ -21,6 +21,7 @@
+ import net.sf.l2j.Config;
+ import net.sf.l2j.L2DatabaseFactory;
+ import net.sf.l2j.gameserver.datatables.BufferTable;
++import net.sf.l2j.gameserver.datatables.OfflineTradersTable;
+ import net.sf.l2j.gameserver.instancemanager.CastleManorManager;
+ import net.sf.l2j.gameserver.instancemanager.FishingChampionshipManager;
+ import net.sf.l2j.gameserver.instancemanager.FourSepulchersManager;
+@@ -119,6 +120,16 @@
+ 		{
+ 			Util.printSection("Under " + MODE_TEXT[_shutdownMode] + " process");
+ 			
++			try
++			{
++				if ((Config.OFFLINE_TRADE_ENABLE || Config.OFFLINE_CRAFT_ENABLE) && Config.RESTORE_OFFLINERS)
++					OfflineTradersTable.getInstance().storeOffliners();
++			}
++			catch (Throwable t)
++			{
++				_log.log(Level.WARNING, "Error saving offline shops.", t);
++			}
++			
+ 			// disconnect players
+ 			try
+ 			{
+Index: java/net/sf/l2j/gameserver/datatables/OfflineTradersTable.java
+===================================================================
+--- java/net/sf/l2j/gameserver/datatables/OfflineTradersTable.java	(revision 0)
++++ java/net/sf/l2j/gameserver/datatables/OfflineTradersTable.java	(revision 0)
+@@ -0,0 +1,266 @@
++/*
++ * Copyright (C) 2004-2015 L2J Server
++ * 
++ * This file is part of L2J Server.
++ * 
++ * L2J Server is free software: you can redistribute it and/or modify
++ * it under the terms of the GNU General Public License as published by
++ * the Free Software Foundation, either version 3 of the License, or
++ * (at your option) any later version.
++ * 
++ * L2J Server is distributed in the hope that it will be useful,
++ * but WITHOUT ANY WARRANTY; without even the implied warranty of
++ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
++ * General Public License for more details.
++ * 
++ * You should have received a copy of the GNU General Public License
++ * along with this program. If not, see <http://www.gnu.org/licenses/>.
++ */
++package net.sf.l2j.gameserver.datatables;
++
++import java.sql.Connection;
++import java.sql.PreparedStatement;
++import java.sql.ResultSet;
++import java.sql.Statement;
++import java.util.Calendar;
++import java.util.logging.Level;
++import java.util.logging.Logger;
++
++import net.sf.l2j.Config;
++import net.sf.l2j.L2DatabaseFactory;
++import net.sf.l2j.gameserver.LoginServerThread;
++import net.sf.l2j.gameserver.model.L2ManufactureItem;
++import net.sf.l2j.gameserver.model.L2ManufactureList;
++import net.sf.l2j.gameserver.model.L2World;
++import net.sf.l2j.gameserver.model.TradeList.TradeItem;
++import net.sf.l2j.gameserver.model.actor.instance.L2PcInstance;
++import net.sf.l2j.gameserver.network.L2GameClient;
++import net.sf.l2j.gameserver.network.L2GameClient.GameClientState;
++
++public class OfflineTradersTable
++{
++	private static Logger LOGGER = Logger.getLogger(OfflineTradersTable.class.getName());
++	
++	// SQL DEFINITIONS
++	private static final String SAVE_OFFLINE_STATUS = "INSERT INTO character_offline_trade (`charId`,`time`,`type`,`title`) VALUES (?,?,?,?)";
++	private static final String SAVE_ITEMS = "INSERT INTO character_offline_trade_items (`charId`,`item`,`count`,`price`) VALUES (?,?,?,?)";
++	private static final String CLEAR_OFFLINE_TABLE = "DELETE FROM character_offline_trade";
++	private static final String CLEAR_OFFLINE_TABLE_ITEMS = "DELETE FROM character_offline_trade_items";
++	private static final String LOAD_OFFLINE_STATUS = "SELECT * FROM character_offline_trade";
++	private static final String LOAD_OFFLINE_ITEMS = "SELECT * FROM character_offline_trade_items WHERE charId = ?";
++	
++	public void storeOffliners()
++	{
++		try (Connection con = L2DatabaseFactory.getInstance().getConnection();
++			PreparedStatement stm1 = con.prepareStatement(CLEAR_OFFLINE_TABLE);
++			PreparedStatement stm2 = con.prepareStatement(CLEAR_OFFLINE_TABLE_ITEMS);
++			PreparedStatement stm3 = con.prepareStatement(SAVE_OFFLINE_STATUS);
++			PreparedStatement stm_items = con.prepareStatement(SAVE_ITEMS))
++		{
++			stm1.execute();
++			stm2.execute();
++			con.setAutoCommit(false); // avoid halfway done
++			
++			for (L2PcInstance pc : L2World.getInstance().getAllPlayers().values())
++			{
++				try
++				{
++					if ((pc.getPrivateStoreType() != L2PcInstance.STORE_PRIVATE_NONE) && ((pc.getClient() == null) || pc.getClient().isDetached()))
++					{
++						stm3.setInt(1, pc.getObjectId()); // Char Id
++						stm3.setLong(2, pc.getOfflineStartTime());
++						stm3.setInt(3, pc.getPrivateStoreType()); // store type
++						String title = null;
++						
++						switch (pc.getPrivateStoreType())
++						{
++							case L2PcInstance.STORE_PRIVATE_BUY:
++								if (!Config.OFFLINE_TRADE_ENABLE)
++									continue;
++								
++								title = pc.getBuyList().getTitle();
++								for (TradeItem i : pc.getBuyList().getItems())
++								{
++									stm_items.setInt(1, pc.getObjectId());
++									stm_items.setInt(2, i.getItem().getItemId());
++									stm_items.setLong(3, i.getCount());
++									stm_items.setLong(4, i.getPrice());
++									stm_items.executeUpdate();
++									stm_items.clearParameters();
++								}
++								break;
++								
++							case L2PcInstance.STORE_PRIVATE_SELL:
++							case L2PcInstance.STORE_PRIVATE_PACKAGE_SELL:
++								if (!Config.OFFLINE_TRADE_ENABLE)
++									continue;
++								
++								title = pc.getSellList().getTitle();
++								for (TradeItem i : pc.getSellList().getItems())
++								{
++									stm_items.setInt(1, pc.getObjectId());
++									stm_items.setInt(2, i.getObjectId());
++									stm_items.setLong(3, i.getCount());
++									stm_items.setLong(4, i.getPrice());
++									stm_items.executeUpdate();
++									stm_items.clearParameters();
++								}
++								break;
++								
++							case L2PcInstance.STORE_PRIVATE_MANUFACTURE:
++								if (!Config.OFFLINE_CRAFT_ENABLE)
++									continue;
++								
++								title = pc.getCreateList().getStoreName();
++								for (L2ManufactureItem i : pc.getCreateList().getList())
++								{
++									stm_items.setInt(1, pc.getObjectId());
++									stm_items.setInt(2, i.getRecipeId());
++									stm_items.setLong(3, 0);
++									stm_items.setLong(4, i.getCost());
++									stm_items.executeUpdate();
++									stm_items.clearParameters();
++								}
++						}
++						stm3.setString(4, title);
++						stm3.executeUpdate();
++						stm3.clearParameters();
++						con.commit(); // flush
++					}
++				}
++				catch (Exception e)
++				{
++					LOGGER.log(Level.WARNING, getClass().getSimpleName() + ": Error while saving offline trader: " + pc.getObjectId() + " " + e, e);
++				}
++			}
++			LOGGER.info(getClass().getSimpleName() + ": Offline traders stored.");
++		}
++		catch (Exception e)
++		{
++			LOGGER.log(Level.WARNING, getClass().getSimpleName() + ": Error while saving offline traders: " + e, e);
++		}
++	}
++	
++	public void restoreOfflineTraders()
++	{
++		LOGGER.info(getClass().getSimpleName() + ": Loading offline traders...");
++		int nTraders = 0;
++		try (Connection con = L2DatabaseFactory.getInstance().getConnection();
++			Statement stm = con.createStatement();
++			ResultSet rs = stm.executeQuery(LOAD_OFFLINE_STATUS))
++		{
++			while (rs.next())
++			{
++				long time = rs.getLong("time");
++				if (Config.OFFLINE_MAX_DAYS > 0)
++				{
++					Calendar cal = Calendar.getInstance();
++					cal.setTimeInMillis(time);
++					cal.add(Calendar.DAY_OF_YEAR, Config.OFFLINE_MAX_DAYS);
++					if (cal.getTimeInMillis() <= System.currentTimeMillis())
++						continue;
++				}
++				
++				int type = rs.getInt("type");
++				if (type == L2PcInstance.STORE_PRIVATE_NONE)
++					continue;
++				
++				L2PcInstance player = null;
++				
++				try
++				{
++					L2GameClient client = new L2GameClient(null);
++					client.setDetached(true);
++					player = L2PcInstance.restore(rs.getInt("charId"));
++					client.setActiveChar(player);
++					player.setOnlineStatus(true, false);
++					client.setAccountName(player.getAccountNamePlayer());
++					client.setState(GameClientState.IN_GAME);
++					player.setClient(client);
++					player.setOfflineStartTime(time);
++					player.spawnMe(player.getX(), player.getY(), player.getZ());
++					LoginServerThread.getInstance().addGameServerLogin(player.getAccountName(), client);
++					try (PreparedStatement stm_items = con.prepareStatement(LOAD_OFFLINE_ITEMS))
++					{
++						stm_items.setInt(1, player.getObjectId());
++						try (ResultSet items = stm_items.executeQuery())
++						{
++							switch (type)
++							{
++								case L2PcInstance.STORE_PRIVATE_BUY:
++									while (items.next())
++									{
++										if (player.getBuyList().addItemByItemId(items.getInt(2), items.getInt(3), items.getInt(4)) == null)
++											throw new NullPointerException();
++									}
++									player.getBuyList().setTitle(rs.getString("title"));
++									break;
++									
++								case L2PcInstance.STORE_PRIVATE_SELL:
++								case L2PcInstance.STORE_PRIVATE_PACKAGE_SELL:
++									while (items.next())
++									{
++										if (player.getSellList().addItem(items.getInt(2), items.getInt(3), items.getInt(4)) == null)
++											throw new NullPointerException();
++									}
++									player.getSellList().setTitle(rs.getString("title"));
++									player.getSellList().setPackaged(type == L2PcInstance.STORE_PRIVATE_PACKAGE_SELL);
++									break;
++									
++								case L2PcInstance.STORE_PRIVATE_MANUFACTURE:
++									L2ManufactureList createList = new L2ManufactureList();
++									while (items.next())
++									{
++										createList.add(new L2ManufactureItem(items.getInt(2), items.getInt(4)));
++									}
++									player.getCreateList().setStoreName(rs.getString("title"));
++									break;
++							}
++						}
++					}
++					
++					player.sitDown();
++					if (Config.OFFLINE_SET_NAME_COLOR)
++						player.getAppearance().setNameColor(Config.OFFLINE_NAME_COLOR);
++					player.setPrivateStoreType(type);
++					player.setOnlineStatus(true, true);
++					player.restoreEffects();
++					player.broadcastUserInfo();
++					nTraders++;
++				}
++				catch (Exception e)
++				{
++					LOGGER.log(Level.WARNING, getClass().getSimpleName() + ": Error loading trader: " + player, e);
++					if (player != null)
++						player.deleteMe();
++				}
++			}
++			
++			LOGGER.info(getClass().getSimpleName() + ": Loaded: " + nTraders + " offline trader(s)");
++			
++			try (Statement stm1 = con.createStatement())
++			{
++				stm1.execute(CLEAR_OFFLINE_TABLE);
++				stm1.execute(CLEAR_OFFLINE_TABLE_ITEMS);
++			}
++		}
++		catch (Exception e)
++		{
++			LOGGER.log(Level.WARNING, getClass().getSimpleName() + ": Error while loading offline traders: ", e);
++		}
++	}
++	
++	/**
++	 * Gets the single instance of OfflineTradersTable.
++	 * @return single instance of OfflineTradersTable
++	 */
++	public static OfflineTradersTable getInstance()
++	{
++		return SingletonHolder._instance;
++	}
++	
++	private static class SingletonHolder
++	{
++		protected static final OfflineTradersTable _instance = new OfflineTradersTable();
++	}
++}
+Index: java/net/sf/l2j/gameserver/model/actor/instance/L2PcInstance.java
+===================================================================
+--- java/net/sf/l2j/gameserver/model/actor/instance/L2PcInstance.java	(revision 339)
++++ java/net/sf/l2j/gameserver/model/actor/instance/L2PcInstance.java	(working copy)
+@@ -451,6 +451,7 @@
+ 	public int _telemode = 0;
+ 	private boolean _inCrystallize;
+ 	private boolean _inCraftMode;
++	private long _offlineShopStart = 0;
+ 	
+ 	private final Map<Integer, RecipeList> _dwarvenRecipeBook = new HashMap<>();
+ 	private final Map<Integer, RecipeList> _commonRecipeBook = new HashMap<>();
+@@ -740,9 +741,17 @@
+ 	
+ 	public String getAccountName()
+ 	{
++		if (getClient() == null)
++			return getAccountNamePlayer();
++		
+ 		return getClient().getAccountName();
+ 	}
+ 	
++	public String getAccountNamePlayer()
++	{
++		return _accountName;
++	}
++	
+ 	public Map<Integer, String> getAccountChars()
+ 	{
+ 		return _chars;
+@@ -4623,6 +4632,9 @@
+ 	public void setPrivateStoreType(int type)
+ 	{
+ 		_privateStore = type;
++		
++		if (Config.OFFLINE_DISCONNECT_FINISHED && (_privateStore == STORE_PRIVATE_NONE) && ((getClient() == null) || getClient().isDetached()))
++			deleteMe();
+ 	}
+ 	
+ 	/**
+@@ -10574,6 +10586,16 @@
+ 		return _selectedBlocksList;
+ 	}
+ 	
++	public long getOfflineStartTime()
++	{
++		return _offlineShopStart;
++	}
++	
++	public void setOfflineStartTime(long time)
++	{
++		_offlineShopStart = time;
++	}
++	
+ 	/**
+ 	 * Test if player inventory is under 80% capaity
+ 	 * @param includeQuestInv check also quest inventory
+Index: java/net/sf/l2j/gameserver/model/actor/status/PcStatus.java
+===================================================================
+--- java/net/sf/l2j/gameserver/model/actor/status/PcStatus.java	(revision 339)
++++ java/net/sf/l2j/gameserver/model/actor/status/PcStatus.java	(working copy)
+@@ -68,6 +68,10 @@
+ 		if (getActiveChar().isDead())
+ 			return;
+ 		
++		// If OFFLINE_MODE_NO_DAMAGE is enabled and player is offline and he is in store/craft mode, no damage is taken.
++		if (Config.OFFLINE_MODE_NO_DAMAGE && (getActiveChar().getClient() != null) && getActiveChar().getClient().isDetached() && ((Config.OFFLINE_TRADE_ENABLE && ((getActiveChar().getPrivateStoreType() == L2PcInstance.STORE_PRIVATE_SELL) || (getActiveChar().getPrivateStoreType() == L2PcInstance.STORE_PRIVATE_BUY))) || (Config.OFFLINE_CRAFT_ENABLE && (getActiveChar().isInCraftMode() || (getActiveChar().getPrivateStoreType() == L2PcInstance.STORE_PRIVATE_MANUFACTURE)))))
++			return;
++		
+ 		// invul handling
+ 		if (getActiveChar().isInvul())
+ 		{
+Index: java/net/sf/l2j/gameserver/network/L2GameClient.java
+===================================================================
+--- java/net/sf/l2j/gameserver/network/L2GameClient.java	(revision 339)
++++ java/net/sf/l2j/gameserver/network/L2GameClient.java	(working copy)
+@@ -25,6 +25,7 @@
+ import java.util.concurrent.ScheduledFuture;
+ import java.util.concurrent.locks.ReentrantLock;
+ import java.util.logging.Level;
++import java.util.logging.LogRecord;
+ import java.util.logging.Logger;
+ 
+ import net.sf.l2j.Config;
+@@ -41,6 +42,8 @@
+ import net.sf.l2j.gameserver.model.L2Clan;
+ import net.sf.l2j.gameserver.model.L2World;
+ import net.sf.l2j.gameserver.model.actor.instance.L2PcInstance;
++import net.sf.l2j.gameserver.model.olympiad.OlympiadManager;
++import net.sf.l2j.gameserver.model.zone.ZoneId;
+ import net.sf.l2j.gameserver.network.serverpackets.ActionFailed;
+ import net.sf.l2j.gameserver.network.serverpackets.L2GameServerPacket;
+ import net.sf.l2j.gameserver.network.serverpackets.ServerClose;
+@@ -445,9 +448,20 @@
+ 	
+ 	public void close(L2GameServerPacket gsp)
+ 	{
++		if (getConnection() == null)
++			return;
++		
+ 		getConnection().close(gsp);
+ 	}
+ 	
++	public void close(L2GameServerPacket[] gspArray)
++	{
++		if (getConnection() == null)
++			return;
++		
++		getConnection().close(gspArray);
++	}
++	
+ 	/**
+ 	 * @param charslot
+ 	 * @return
+@@ -541,6 +555,39 @@
+ 				if (getActiveChar() != null && !isDetached())
+ 				{
+ 					setDetached(true);
++					if (offlineMode(getActiveChar()))
++					{
++						getActiveChar().leaveParty();
++						OlympiadManager.getInstance().unRegisterNoble(getActiveChar());
++						
++						// If the L2PcInstance has Pet, unsummon it
++						if (getActiveChar().hasPet())
++						{
++							getActiveChar().getPet().unSummon(getActiveChar());
++							
++							// Dead pet wasn't unsummoned, broadcast npcinfo changes (pet will be without owner name - means owner offline)
++							if (getActiveChar().getPet() != null)
++								getActiveChar().getPet().broadcastNpcInfo(0);
++							
++						}
++						
++						if (Config.OFFLINE_SET_NAME_COLOR)
++						{
++							getActiveChar().getAppearance().setNameColor(Config.OFFLINE_NAME_COLOR);
++							getActiveChar().broadcastUserInfo();
++						}
++						
++						if (getActiveChar().getOfflineStartTime() == 0)
++							getActiveChar().setOfflineStartTime(System.currentTimeMillis());
++						
++						final LogRecord record = new LogRecord(Level.INFO, "Entering offline mode");
++						record.setParameters(new Object[]
++						{
++							L2GameClient.this
++						});
++						_log.log(record);
++						return;
++					}
+ 					fast = !getActiveChar().isInCombat() && !getActiveChar().isLocked();
+ 				}
+ 				cleanMe(fast);
+@@ -552,6 +599,43 @@
+ 		}
+ 	}
+ 	
++	/**
++	 * @param player the player to be check.
++	 * @return {@code true} if the player is allowed to remain as offline shop.
++	 */
++	protected static boolean offlineMode(L2PcInstance player)
++	{
++		if (player.isInOlympiadMode() || player.isFestivalParticipant() || player.isInJail() || (player.getVehicle() != null))
++			return false;
++		
++		boolean canSetShop = false;
++		switch (player.getPrivateStoreType())
++		{
++			case L2PcInstance.STORE_PRIVATE_SELL:
++			case L2PcInstance.STORE_PRIVATE_PACKAGE_SELL:
++			case L2PcInstance.STORE_PRIVATE_BUY:
++			{
++				canSetShop = Config.OFFLINE_TRADE_ENABLE;
++				break;
++			}
++			case L2PcInstance.STORE_PRIVATE_MANUFACTURE:
++			{
++				canSetShop = Config.OFFLINE_TRADE_ENABLE;
++				break;
++			}
++			default:
++			{
++				canSetShop = Config.OFFLINE_CRAFT_ENABLE && player.isInCraftMode();
++				break;
++			}
++		}
++		
++		if (Config.OFFLINE_MODE_IN_PEACE_ZONE && !player.isInsideZone(ZoneId.PEACE))
++			canSetShop = false;
++		
++		return canSetShop;
++	}
++	
+ 	public void cleanMe(boolean fast)
+ 	{
+ 		try
+Index: java/net/sf/l2j/gameserver/handler/admincommandhandlers/AdminEditChar.java
+===================================================================
+--- java/net/sf/l2j/gameserver/handler/admincommandhandlers/AdminEditChar.java	(revision 339)
++++ java/net/sf/l2j/gameserver/handler/admincommandhandlers/AdminEditChar.java	(working copy)
+@@ -661,6 +661,13 @@
+ 	 */
+ 	private static void gatherCharacterInfo(L2PcInstance activeChar, L2PcInstance player, String filename)
+ 	{
++		final L2GameClient client = player.getClient();
++		
++		if (client == null)
++			activeChar.sendMessage("Client is null.");
++		else if (client.isDetached())
++			activeChar.sendMessage("Client is detached.");
++		
+ 		final String clientInfo = player.getClient().toString();
+ 		final String account = clientInfo.substring(clientInfo.indexOf("Account: ") + 9, clientInfo.indexOf(" - IP: "));
+ 		final String ip = clientInfo.substring(clientInfo.indexOf(" - IP: ") + 7, clientInfo.lastIndexOf("]"));

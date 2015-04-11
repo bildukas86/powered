@@ -1098,11 +1098,32 @@ public class Siege implements Siegable
 		
 		switch (getCastle().getCastleId())
 		{
-			case 3:
-			case 4:
-			case 6:
-			case 7:
-				siegeDate.set(Calendar.DAY_OF_WEEK, Calendar.SUNDAY);
+			case 1: // Gludio
+				siegeDate.set(Calendar.DAY_OF_WEEK, Config.SIEGEDAYCASTLEGludio);
+				break;
+			case 2: // Dion
+				siegeDate.set(Calendar.DAY_OF_WEEK, Config.SIEGEDAYCASTLEDion);
+				break;
+			case 3: // Giran
+				siegeDate.set(Calendar.DAY_OF_WEEK, Config.SIEGEDAYCASTLEGiran);
+				break;
+			case 4: // Oren
+				siegeDate.set(Calendar.DAY_OF_WEEK, Config.SIEGEDAYCASTLEOren);
+				break;
+			case 5: // Aden
+				siegeDate.set(Calendar.DAY_OF_WEEK, Config.SIEGEDAYCASTLEAden);
+				break;
+			case 6: // Innadril/Heine
+				siegeDate.set(Calendar.DAY_OF_WEEK, Config.SIEGEDAYCASTLEInnadril);
+				break;
+			case 7: // Goddard
+				siegeDate.set(Calendar.DAY_OF_WEEK, Config.SIEGEDAYCASTLEGoddard);
+				break;
+			case 8: // Rune
+				siegeDate.set(Calendar.DAY_OF_WEEK, Config.SIEGEDAYCASTLERune);
+				break;
+			case 9: // Schuttgart
+				siegeDate.set(Calendar.DAY_OF_WEEK, Config.SIEGEDAYCASTLESchuttgart);
 				break;
 			
 			default:
@@ -1111,10 +1132,40 @@ public class Siege implements Siegable
 		}
 		
 		// Set next siege date if siege has passed ; add 14 days (2 weeks).
-		siegeDate.add(Calendar.WEEK_OF_YEAR, 2);
+		siegeDate.add(Calendar.WEEK_OF_YEAR, Config.NEXT_SIEGE_TIME);
 		
 		// Set default hour to 18:00. This can be changed - only once - by the castle leader via the chamberlain.
-		siegeDate.set(Calendar.HOUR_OF_DAY, 18);
+		switch (getCastle().getCastleId())
+        {
+            case 1: // Gludio
+                siegeDate.set(Calendar.HOUR_OF_DAY, Config.SIEGEHOURCASTLEGludio);
+                break;
+            case 2: // Dion
+                siegeDate.set(Calendar.HOUR_OF_DAY, Config.SIEGEHOURCASTLEDion);
+                break;
+            case 3: // Giran
+                siegeDate.set(Calendar.HOUR_OF_DAY, Config.SIEGEHOURCASTLEGiran);
+                break;
+            case 4: // Oren
+                siegeDate.set(Calendar.HOUR_OF_DAY, Config.SIEGEHOURCASTLEOren);
+                break;
+            case 5: // Aden
+                siegeDate.set(Calendar.HOUR_OF_DAY, Config.SIEGEHOURCASTLEAden);
+                break;
+            case 6: // Innadril/Heine
+                siegeDate.set(Calendar.HOUR_OF_DAY, Config.SIEGEHOURCASTLEInnadril);
+                break;
+            case 7: // Goddard
+                siegeDate.set(Calendar.HOUR_OF_DAY, Config.SIEGEHOURCASTLEGoddard);
+                break;
+            case 8: // Rune
+                siegeDate.set(Calendar.HOUR_OF_DAY, Config.SIEGEHOURCASTLERune);
+                break;
+            case 9: // Schuttgart
+                siegeDate.set(Calendar.HOUR_OF_DAY, Config.SIEGEHOURCASTLESchuttgart);
+                break;
+        
+        }
 		siegeDate.set(Calendar.MINUTE, 0);
 		siegeDate.set(Calendar.SECOND, 0);
 		

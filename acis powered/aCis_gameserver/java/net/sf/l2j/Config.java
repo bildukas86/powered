@@ -52,6 +52,7 @@ public final class Config
 	public static final String NPCS_FILE = "./config/Main/npcs.properties";
 	public static final String PLAYERS_FILE = "./config/Main/players.properties";
 	public static final String SIEGE_FILE = "./config/Main/siege.properties";
+	public static final String CUSTOM_SIEGE_FILE = "./config/CustomSiege.properties";
 	public static final String RATES_FILE = "./config/Main/Rates.properties";
 	public static final String GEOENGINE_FILE = "./config/Main/Geodata.properties";
 	/** Mods */
@@ -779,6 +780,55 @@ public final class Config
 	public static long SKILLS_BALANCER_UPDATE_DELAY;
 	public static boolean SKILLS_BALANCER_AFFECTS_SECOND_PROFFESION;
 	public static boolean SKILLS_BALANCER_AFFECTS_MONSTERS;
+	
+ 	// --------------------------------------------------
+	// Custom Siege Config
+	// --------------------------------------------------
+	/** Siege day of each castle */
+	// Gludio
+	public static int SIEGEDAYCASTLEGludio;
+	// Dion
+	public static int SIEGEDAYCASTLEDion;
+	// Giran
+	public static int SIEGEDAYCASTLEGiran;
+	// Oren
+	public static int SIEGEDAYCASTLEOren;
+	// Aden
+	public static int SIEGEDAYCASTLEAden;
+	// Innadril/Heine
+	public static int SIEGEDAYCASTLEInnadril;
+	// Goddard
+	public static int SIEGEDAYCASTLEGoddard;
+	// Rune
+	public static int SIEGEDAYCASTLERune;
+	// Schuttgart
+	public static int SIEGEDAYCASTLESchuttgart;
+	/** Next siege time config (Retail 2)*/
+	public static int NEXT_SIEGE_TIME;
+
+	//--------------------------------------------------
+	// Castles Siege Time
+	//-------------------------------------------------
+	
+	// Gludio
+	public static int SIEGEHOURCASTLEGludio;
+	// Dion
+	public static int SIEGEHOURCASTLEDion;
+	// Giran
+	public static int SIEGEHOURCASTLEGiran;
+	// Oren
+	public static int SIEGEHOURCASTLEOren;
+	// Aden
+	public static int SIEGEHOURCASTLEAden;
+	// Innadril/Heine
+	public static int SIEGEHOURCASTLEInnadril;
+	// Goddard
+	public static int SIEGEHOURCASTLEGoddard;
+	// Rune
+	public static int SIEGEHOURCASTLERune;
+	// Schuttgart
+	public static int SIEGEHOURCASTLESchuttgart;
+
 	
 	// --------------------------------------------------
 	// Server
@@ -2936,6 +2986,51 @@ public final class Config
 			SKILLS_BALANCER_UPDATE_DELAY = players.getProperty("SkillsBalancerUpdateDelay", 300) * 1000;
 			SKILLS_BALANCER_AFFECTS_SECOND_PROFFESION = players.getProperty("SkillsBalancerAffectSecondProffesion", false);
 			SKILLS_BALANCER_AFFECTS_MONSTERS = players.getProperty("SkillsBalancerAffectMonsters", false);
+			
+			
+			// Custom Config Siege
+			ExProperties CustomSiegeConfig = load(CUSTOM_SIEGE_FILE);
+			/** Siege day of each castle */
+			// Gludio
+			SIEGEDAYCASTLEGludio = Integer.parseInt(CustomSiegeConfig.getProperty("SiegeGludio", "7"));
+			// Dion			
+			SIEGEDAYCASTLEDion = Integer.parseInt(CustomSiegeConfig.getProperty("SiegeDion", "7"));
+			// Giran
+			SIEGEDAYCASTLEGiran = Integer.parseInt(CustomSiegeConfig.getProperty("SiegeGiran", "7"));
+			// Oren
+			SIEGEDAYCASTLEOren = Integer.parseInt(CustomSiegeConfig.getProperty("SiegeOren", "7"));
+			// Aden
+			SIEGEDAYCASTLEAden = Integer.parseInt(CustomSiegeConfig.getProperty("SiegeAden", "1"));
+			// Innadril/Heine
+			SIEGEDAYCASTLEInnadril = Integer.parseInt(CustomSiegeConfig.getProperty("SiegeInnadril", "1"));
+			// Goddard
+			SIEGEDAYCASTLEGoddard = Integer.parseInt(CustomSiegeConfig.getProperty("SiegeGoddard", "1"));
+			// Rune
+			SIEGEDAYCASTLERune = Integer.parseInt(CustomSiegeConfig.getProperty("SiegeRune", "1"));
+			// Schuttgart
+			SIEGEDAYCASTLESchuttgart = Integer.parseInt(CustomSiegeConfig.getProperty("SiegeSchuttgart", "1"));
+			/** Next siege time config (Retail 2)*/
+			NEXT_SIEGE_TIME = Integer.parseInt(CustomSiegeConfig.getProperty("NextSiegeTime", "2"));
+			/** Hour of the siege will start*/
+			/** Siege time of each castle */
+			// Gludio
+			SIEGEHOURCASTLEGludio = Integer.parseInt(CustomSiegeConfig.getProperty("HourGludio", "18"));
+			// Dion			
+			SIEGEHOURCASTLEDion = Integer.parseInt(CustomSiegeConfig.getProperty("HourDion", "18"));
+			// Giran
+			SIEGEHOURCASTLEGiran = Integer.parseInt(CustomSiegeConfig.getProperty("HourGiran", "18"));
+			// Oren
+			SIEGEHOURCASTLEOren = Integer.parseInt(CustomSiegeConfig.getProperty("HourOren", "18"));
+			// Aden
+			SIEGEHOURCASTLEAden = Integer.parseInt(CustomSiegeConfig.getProperty("HourAden", "18"));
+			// Innadril/Heine
+			SIEGEHOURCASTLEInnadril = Integer.parseInt(CustomSiegeConfig.getProperty("HourInnadril", "18"));
+			// Goddard
+			SIEGEHOURCASTLEGoddard = Integer.parseInt(CustomSiegeConfig.getProperty("HourGoddard", "18"));
+			// Rune
+			SIEGEHOURCASTLERune = Integer.parseInt(CustomSiegeConfig.getProperty("HourRune", "18"));
+			// Schuttgart
+			SIEGEHOURCASTLESchuttgart = Integer.parseInt(CustomSiegeConfig.getProperty("HourSchuttgart", "18"));
 			
 			// server
 			ExProperties server = load(SERVER_FILE);
