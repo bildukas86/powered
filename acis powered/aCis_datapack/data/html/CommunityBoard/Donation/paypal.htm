@@ -1,0 +1,77 @@
+<html>
+	<body>
+		<br>
+		<center>
+			<img src="L2UI_CH3.herotower_deco" width=256 height=32>
+			<br>
+			<font color="AAAAAA">Donation via PayPal.</font>
+			<br>
+			<table width=500>
+				<tr>
+					<td>Donation Guide:</td>
+				</tr>
+				<tr>
+					<td>1. Firstly visit the paypal website link. (Button Bellow)</td>
+				</tr>
+				<tr>
+					<td>2. Fill the fields in your browser and complete the donation payment.</td>
+				</tr>
+				<tr>
+					<td>3. After everything is completed fill the fields bellow with the information from your donation.</td>
+				</tr>
+				<tr><td></td></tr>
+				<tr>
+					<td>The fields with <font color=LEVEL>*</font> are required!</td>
+				</tr>
+				<tr>
+					<td>Please enter only information about your paypal account!</td>
+				</tr>
+			</table>
+			<br>
+			<button value="Open PayPal Donation Link" action="bypass _bbsdonation;visitPayPal" width=140 height=21 back="L2UI_ch3.msnbutton_down" fore="L2UI_ch3.msnbutton">
+			<br>
+			<img src="l2ui.squaregray" width="500" height="1"><br>
+			<font color="AAAAAA">Donation Form</font>
+			<br>
+			<table width=500>
+				<tr>
+					<td width="100" align=left>Account:</td>
+					<td width="400" align=left>%charAcc%</td>
+				</tr>
+				<tr><td></td></tr>
+				<tr>
+					<td width="100" align=left>Character:</td>
+					<td width="400" align=left>%charName%</td>
+				</tr>
+				<tr><td></td></tr>
+				<tr><td></td></tr>
+				<tr>
+					<td width="75">Amount: <font color=LEVEL>*</font></td>
+					<td width="425"><edit var="amount" width=50 height=12></td>
+				</tr>
+				<tr><td></td></tr>
+				<tr>
+					<td width="75">Email: <font color=LEVEL>*</font></td>
+					<td width="425"><edit var="email" width=150 height=12></td>
+				</tr>
+				<tr><td></td></tr>
+				<tr>
+					<td width="75">Transaction Id: <font color=LEVEL>*</font></td>
+					<td width="425"><edit var="transId" width=150 height=12></td>
+				</tr>
+				<tr><td></td></tr>
+				<tr>
+					<td width="75">Message: <font color=LEVEL>*</font></td>
+					<td width="425"><edit var="message" width=300 height=12></td>
+				</tr>
+			</table>
+			<br>
+			<img src="l2ui.squaregray" width="500" height="1">
+			<br>
+			<button value="Submit Donation" action="bypass _bbsdonation;submitPayPal $amount $email $transId $message" width=140 height=21 back="L2UI_ch3.msnbutton_down" fore="L2UI_ch3.msnbutton">
+			<br>
+			<img src="l2ui.squaregray" width="610" height="1"><br>
+			<br>
+		</center>
+	</body>
+</html>

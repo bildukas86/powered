@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="java"/>
+	<classpathentry kind="src" path="config"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="src" path="/aCis_gameserver"/>
+	<classpathentry exported="true" kind="lib" path="lib/mmocore.jar"/>
+	<classpathentry kind="lib" path="lib/l2jxtreme.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

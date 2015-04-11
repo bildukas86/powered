@@ -1,0 +1,76 @@
+package net.sf.l2j.gameserver.network.clientpackets;
+
+import net.sf.l2j.gameserver.instancemanager.DuelManager;
+import net.sf.l2j.gameserver.model.actor.instance.L2PcInstance;
+import net.sf.l2j.gameserver.network.SystemMessageId;
+import net.sf.l2j.gameserver.network.serverpackets.SystemMessage;
+
+/**
+ * Format:(ch) ddd
+ * @author -Wooden-
+ */
+public final class RequestDuelAnswerStart extends L2GameClientPacket
+{
+	private int _partyDuel;
+	@SuppressWarnings("unused")
+	private int _unk1;
+	private int _response;
+	
+	@Override
+	protected void readImpl()
+	{
+		_partyDuel = readD();
+		_unk1 = readD();
+		_response = readD();
+	}
+	
+	@Override
+	protected void runImpl()
+	{
+		final L2PcInstance player = getClient().getActiveChar();
+		if (player == null)
+			return;
+		
+		final L2PcInstance requestor = player.getActiveRequester();
+		if (requestor == null)
+			return;
+		
+		if (_response == 1)
+		{
+			if (requestor.isInDuel())
+			{
+				player.sendPacket(SystemMessage.getSystemMessage(SystemMessageId.S1_CANNOT_DUEL_BECAUSE_S1_IS_ALREADY_ENGAGED_IN_A_DUEL).addPcName(requestor));
+				return;
+			}
+			
+			if (player.isInDuel())
+			{
+				player.sendPacket(SystemMessageId.YOU_ARE_UNABLE_TO_REQUEST_A_DUEL_AT_THIS_TIME);
+				return;
+			}
+			
+			if (_partyDuel == 1)
+			{
+				player.sendPacket(SystemMessage.getSystemMessage(SystemMessageId.YOU_HAVE_ACCEPTED_S1_CHALLENGE_TO_A_PARTY_DUEL_THE_DUEL_WILL_BEGIN_IN_A_FEW_MOMENTS).addPcName(requestor));
+				requestor.sendPacket(SystemMessage.getSystemMessage(SystemMessageId.S1_HAS_ACCEPTED_YOUR_CHALLENGE_TO_DUEL_AGAINST_THEIR_PARTY_THE_DUEL_WILL_BEGIN_IN_A_FEW_MOMENTS).addPcName(player));
+			}
+			else
+			{
+				player.sendPacket(SystemMessage.getSystemMessage(SystemMessageId.YOU_HAVE_ACCEPTED_S1_CHALLENGE_TO_A_DUEL_THE_DUEL_WILL_BEGIN_IN_A_FEW_MOMENTS).addPcName(requestor));
+				requestor.sendPacket(SystemMessage.getSystemMessage(SystemMessageId.S1_HAS_ACCEPTED_YOUR_CHALLENGE_TO_A_DUEL_THE_DUEL_WILL_BEGIN_IN_A_FEW_MOMENTS).addPcName(player));
+			}
+			
+			DuelManager.getInstance().addDuel(requestor, player, _partyDuel);
+		}
+		else
+		{
+			if (_partyDuel == 1)
+				requestor.sendPacket(SystemMessageId.THE_OPPOSING_PARTY_HAS_DECLINED_YOUR_CHALLENGE_TO_A_DUEL);
+			else
+				requestor.sendPacket(SystemMessage.getSystemMessage(SystemMessageId.S1_HAS_DECLINED_YOUR_CHALLENGE_TO_A_DUEL).addPcName(player));
+		}
+		
+		player.setActiveRequester(null);
+		requestor.onTransactionResponse();
+	}
+}

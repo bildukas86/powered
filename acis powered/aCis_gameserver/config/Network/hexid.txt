@@ -1,0 +1,4 @@
+#the hexID to auth into login
+#Thu Jul 03 16:32:38 EEST 2014
+HexID=1
+ServerID=1

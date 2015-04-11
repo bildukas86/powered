@@ -1,0 +1,58 @@
+<html>
+	<body>
+		<br>
+		<br><br><br>
+		<center>
+			<img src="L2UI_CH3.herotower_deco" width=256 height=32>
+			<br>
+			<font color="AAAAAA">Problem Reporting</font>
+			<br>
+			<br>
+			<table width=500>
+				<tr>
+					<td>1. Rule ruleee rule</td>
+				</tr>
+				<tr>
+					<td>2. Damn... I don't have anything in mind about this rules.</td>
+				</tr>
+				<tr>
+					<td>3. Feel free to edit my shit :D from:</td>
+				</tr>
+				<tr>
+					<td><font color="00ff00">data/html/CommunityBoard/reporting/main.htm</font></td>
+				</tr>
+			</table>
+			<br>
+			<img src="l2ui.squaregray" width="500" height="1"><br>
+			<font color="AAAAAA">Report Form</font>
+			<br>
+			<table width=500>
+				<tr>
+					<td width="100" align=left>Character:</td>
+					<td width="400" align=left>%charName%</td>
+				</tr>
+				<tr><td></td></tr>
+				<tr>
+					<td width="100" align=left>Majority:</td>
+					<td width="400" align=left><combobox width=80 height=12 var="mojority" list=Low;Normal;Critical;></td>
+				</tr>
+				<tr><td></td></tr>
+				<tr>
+					<td width="100" align=left>Type:</td>
+					<td width="400" align=left><combobox width=120 height=12 var="type" list=Bug-Report;Quest-Report;Skill-Report;Character-Report;Bot-Report;Other;></td>
+				</tr>
+				<tr><td></td></tr>
+				<tr>
+					<td width="100">Title:</td>
+					<td align=left><edit var="title" width=150 height=12></td>
+				</tr>
+			</table>
+			<br>
+			<img src="l2ui.squaregray" width="500" height="1"><br>
+			<button value="Continue to Description" action="bypass _bbsProblemReport;toDescription $mojority $type $title" width=140 height=21 back="L2UI_ch3.msnbutton_down" fore="L2UI_ch3.msnbutton">
+		</center>
+		<br>
+		<img src="l2ui.squaregray" width="610" height="1">
+		<br>
+	</body>
+</html>

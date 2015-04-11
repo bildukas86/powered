@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<list>
+	<skill id="194" levels="1" name="Anti-Buff">
+	<!-- Blocks unwanted buffs. -->
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="CONT"/>
+		<set name="operateType" val="OP_TOGGLE"/>
+		<for>
+			<effect count="0x7fffffff" name="DeflectBuff" time="3" val="0"/>
+		</for>
+	</skill>
+	
+	<skill id="1050" levels="2" name="Return">
+		<table name="#mpInitialConsume"> 21 31 </table>
+		<table name="#mpConsume"> 84 122 </table>
+		<table name="#hitTime"> 20000 1500 </table>
+		<set name="mpInitialConsume" val="#mpInitialConsume"/>
+		<set name="mpConsume" val="#mpConsume"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="reuseDelay" val="300000"/>
+		<set name="hitTime" val="#hitTime"/>
+		<set name="staticHitTime" val="true" />
+		<set name="skillType" val="RECALL"/>
+		<set name="isMagic" val="true"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+</list>

@@ -1,0 +1,35 @@
+package net.sf.l2j.gameserver.network.serverpackets;
+
+/**
+ * format dh (objectid, color)<br>
+ * color legend : usually the color equals the level difference to the selected target<br>
+ * -xx -> -9 red<br>
+ * -8 -> -6 light red<br>
+ * -5 -> -3 yellow<br>
+ * 2 -> 2 white<br>
+ * 3 -> 5 green<br>
+ * 6 -> 8 light blue<br>
+ * 9 -> xx dark blue
+ */
+public class MyTargetSelected extends L2GameServerPacket
+{
+	private final int _objectId, _color;
+	
+	/**
+	 * @param objectId int objectId of the target
+	 * @param color level difference, the color is calculated from that.
+	 */
+	public MyTargetSelected(int objectId, int color)
+	{
+		_objectId = objectId;
+		_color = color;
+	}
+	
+	@Override
+	protected final void writeImpl()
+	{
+		writeC(0xa6);
+		writeD(_objectId);
+		writeH(_color);
+	}
+}

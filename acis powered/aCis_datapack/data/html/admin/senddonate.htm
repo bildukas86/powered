@@ -1,0 +1,23 @@
+<html><title>Donate</title><body>
+       <center>
+               <img src="Sek.cbui371" width=275 height=1>
+               <table width=275 bgcolor=000000>
+                       <tr>
+                               <td width=45><button value="Main" action="bypass -h admin_admin" width=45 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+                               <td width=180 align="center"><font color="LEVEL">Send Donate Menu</font></td>
+                               <td width=45><button value="Back" action="bypass -h admin_admin" width=45 height=15 back="sek.cbui94" fore="sek.cbui92"></td>
+                       </tr>
+               </table>
+               <img src="Sek.cbui371" width=275 height=1><br>
+               <table width=280><tr><td>First fill the player's name. Then, fill in the ID number of the Item ID to create the item you want. Then fill in the quantity of the item you want to create in item count. Finally, choose where to create the item: in the warehouse or in the inventory.</td></tr></table><br>
+               <table width=240>
+                       <tr><td>Player Name:</td><td><edit var="playername" width=100></td></tr>
+                       <tr><td>Item ID:</td><td><edit var="itemid" width=100 type=number></td></tr>
+                       <tr><td>Item Count:</td><td><edit var="itemnum" width=100 type=number></td></tr>
+                       <tr><td>Location:</td><td><combobox width=100 height=17 var=location list=Warehouse;Inventory;></td></tr>
+               </table>
+               <br><br>
+               <button value="Send Donate" action="bypass -h admin_givedonate $playername $itemid $itemnum $location" width=95 height=21 back="bigbutton_over" fore="bigbutton"><br>
+               <table width=280><tr><td align="center"><font color="FF0000">Non-stackable items can't have amount superior to 10.</font></font></td></tr></table>
+       </center>
+</body></html>

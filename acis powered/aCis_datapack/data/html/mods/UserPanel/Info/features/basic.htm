@@ -1,0 +1,59 @@
+<html>
+	<title>User Panel - Game Info - Server - Basic</title>
+<body>
+<center>
+<table width="270" border="1" cellspacing="1" align="center" valign="bottom" bgcolor=666666>
+	<tr>
+		<td>
+			<font color=000000>Server Date:</font> %serverdateinfo%<br1>
+			<font color=000000>Last restart:</font> %server_restarted%
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<font color=FF00FF>Hardware/Software Info:</font>
+			<table>
+				<tr>
+					<td>
+						The server has %proccessors% Cores with id <br1> %proccessor_id% and with installed OS <font color=0000FF>%osname% %architecture%</font> v. %osbuild%.<br1>
+						Ram: <font color=00FF00>%server_free_mem%MB</font>/<font color=FF0000>%server_total_mem%MB</font>.
+					</td>
+				</tr>
+			</table>
+			<br>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<font color=FF00FF>Java Platform Information:</font>
+			<table width=280>
+				<tr><td><font color=000000>Runtime Name:</font>  </td><td>%javaruntime%</td></tr>
+				<tr><td><font color=000000>Version:</font> </td><td>%javaversion%</td></tr>
+				<tr><td><font color=000000>Class Version:</font> </td><td>%javaclassversion%</td></tr>
+			</table>
+			<br>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<font color=FF00FF>Virtual Machine Information (JVM):</font>
+			<table width=280>
+				<tr><td><font color=000000>JVM Name:</font>  </td><td>%javavmname%</td></tr>
+				<tr><td><font color=000000>JVM version:</font> </td><td>%javavmversion%</td></tr>
+				<tr><td><font color=000000>JVM Vendor:</font> </td><td>%javavmvedor%</td></tr>
+				<tr><td><font color=000000>JVM Info:</font> </td><td>%javavminfo%</td></tr>
+			</table>
+			<br>
+		</td>
+	</tr>
+</table>
+<table>
+	<tr>
+		<td align="center" valign="middle">
+			<button value="Back" action="bypass server" width=100 height=25 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df">
+		</td>
+	</tr>
+</table>
+</center>
+</body>
+</html>

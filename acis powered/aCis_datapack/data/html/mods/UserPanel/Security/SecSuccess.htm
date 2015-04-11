@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title>Success!</title>
+	</head>
+<body>
+<center>
+<table width="250" cellpadding="5" bgcolor="000000">
+<tr>
+	<td width="45" valign="top" align="center">
+		<img src="L2ui_ch3.menubutton4" width="38" height="38">
+	</td>
+	<td valign="top">
+		<font color="FF6600">Sending Email.</font>  
+		<br1><font color="00FF00">%name%</font>, we succeed in sending you the code.<br1>
+	</td>
+</tr>
+</table>
+<br>
+<table width="250" cellpadding="5" bgcolor="000000">
+<tr>
+	<td valign="top">
+		<center><font color="3399ff">Status:</font> Loaded.</center><br1>
+	</td>
+</tr>
+</table>
+<br>
+<table width="250" cellpadding="5" bgcolor="000000">
+<tr>
+	<td width="45" valign="top" align="center">
+		<img src="Icon.etc_old_key_i02" width="32" height="32">
+	</td>
+	<td valign="top">
+		Please enter your code:<edit var="code" width=80 height=15>
+		<br1>Enter the code we sent at your email address.
+	</td>
+</tr>
+</table>
+<center>
+<br>
+<button value="Submit" action="bypass submitseccode $code" width=80 height=21 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df">
+</center>
+</body></html>

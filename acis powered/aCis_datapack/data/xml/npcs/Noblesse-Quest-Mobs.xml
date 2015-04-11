@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+
+    <!-- L2JxTreme edited retail mob, used for Noblesse Quest -->
+	<npc id="25035" name="Shilen's Messenger Cabrio" title="Raid Boss">
+		<set name="level" val="70"/>
+		<set name="radius" val="18"/>
+		<set name="height" val="63"/>
+		<set name="rHand" val="189"/>
+		<set name="lHand" val="0"/>
+		<set name="type" val="L2RaidBoss"/>
+		<set name="exp" val="1915900"/>
+		<set name="sp" val="918808"/>
+		<set name="hp" val="373386.071242416"/>
+		<set name="mp" val="1345.8"/>
+		<set name="hpRegen" val="117.68436242886"/>
+		<set name="mpRegen" val="2.7"/>
+		<set name="pAtk" val="2154.88111713047"/>
+		<set name="pDef" val="887.74791"/>
+		<set name="mAtk" val="717.403871261232"/>
+		<set name="mDef" val="433.08"/>
+		<set name="crit" val="1"/>
+		<set name="atkSpd" val="253"/>
+		<set name="str" val="60"/>
+		<set name="int" val="76"/>
+		<set name="dex" val="73"/>
+		<set name="wit" val="70"/>
+		<set name="con" val="57"/>
+		<set name="men" val="80"/>
+		<set name="corpseTime" val="7"/>
+		<set name="walkSpd" val="70"/>
+		<set name="runSpd" val="170"/>
+		<set name="dropHerbGroup" val="0"/>
+		<set name="attackRange" val="40"/>
+		<ai type="default" ssCount="0" ssRate="0" spsCount="0" spsRate="0" aggro="0" canMove="true" seedable="false"/>
+		<skills>
+			<skill id="4045" level="1"/>
+			<skill id="4180" level="7"/>
+			<skill id="4278" level="1"/>
+			<skill id="4333" level="5"/>
+			<skill id="4416" level="9"/>
+			<skill id="4494" level="1"/>
+			<skill id="4802" level="1"/>
+		</skills>
+		<drops>
+			<category id="1">
+				<drop itemid="5313" min="1" max="1" chance="119662"/>
+				<drop itemid="5314" min="1" max="1" chance="119662"/>
+				<drop itemid="5318" min="1" max="1" chance="119662"/>
+				<drop itemid="5319" min="1" max="1" chance="119662"/>
+			</category>
+			<category id="2">
+				<drop itemid="959" min="1" max="1" chance="43681"/>
+				<drop itemid="960" min="1" max="1" chance="436810"/>
+				<drop itemid="5502" min="116" max="346" chance="76990"/>
+				<drop itemid="5503" min="293" max="877" chance="30402"/>
+				<drop itemid="5514" min="60" max="180" chance="148205"/>
+				<drop itemid="5515" min="192" max="576" chance="46315"/>
+				<drop itemid="6577" min="1" max="1" chance="7281"/>
+			</category>
+			<category id="3">
+				<drop itemid="8160" min="1" max="3" chance="250000"/>
+				<drop itemid="8176" min="3" max="9" chance="250000"/>
+				<drop itemid="8619" min="1" max="1" chance="250000"/>
+			</category>
+			<category id="4">
+				<drop itemid="8619" min="1" max="1" chance="750000"/>
+			</category>
+			<category id="5">
+				<drop itemid="9213" min="1" max="2" chance="1000000"/>
+			</category>
+		</drops>
+		<minions>
+			<minion id="25036" min="3" max="3"/>
+			<minion id="25037" min="2" max="2"/>
+		</minions>
+	</npc>
+	
+	<!-- L2JxTreme edited retail mob, used for Noblesse Quest -->
+	<npc id="25126" name="Longhorn Golkonda" title="Raid Boss">
+		<set name="level" val="79"/>
+		<set name="radius" val="42"/>
+		<set name="height" val="94"/>
+		<set name="rHand" val="91"/>
+		<set name="lHand" val="0"/>
+		<set name="type" val="L2RaidBoss"/>
+		<set name="exp" val="2346616"/>
+		<set name="sp" val="1166150"/>
+		<set name="hp" val="829806.78327062"/>
+		<set name="mp" val="1641"/>
+		<set name="hpRegen" val="319.229319897932"/>
+		<set name="mpRegen" val="3"/>
+		<set name="pAtk" val="5267.04651101713"/>
+		<set name="pDef" val="1011.21024"/>
+		<set name="mAtk" val="3790.2949006429"/>
+		<set name="mDef" val="493.3"/>
+		<set name="crit" val="4"/>
+		<set name="atkSpd" val="253"/>
+		<set name="str" val="60"/>
+		<set name="int" val="76"/>
+		<set name="dex" val="73"/>
+		<set name="wit" val="70"/>
+		<set name="con" val="57"/>
+		<set name="men" val="80"/>
+		<set name="corpseTime" val="7"/>
+		<set name="walkSpd" val="40"/>
+		<set name="runSpd" val="170"/>
+		<set name="dropHerbGroup" val="0"/>
+		<set name="attackRange" val="40"/>
+		<ai type="default" ssCount="0" ssRate="0" spsCount="0" spsRate="0" aggro="0" canMove="true" seedable="false"/>
+		<skills>
+			<skill id="4045" level="1"/>
+			<skill id="4169" level="7"/>
+			<skill id="4172" level="7"/>
+			<skill id="4173" level="7"/>
+			<skill id="4177" level="7"/>
+			<skill id="4416" level="11"/>
+			<skill id="4494" level="1"/>
+			<skill id="4837" level="1"/>
+		</skills>
+		<drops>
+			<category id="1">
+				<drop itemid="6365" min="1" max="1" chance="3008"/>
+				<drop itemid="6366" min="1" max="1" chance="3008"/>
+				<drop itemid="6369" min="1" max="1" chance="3008"/>
+				<drop itemid="6579" min="1" max="1" chance="3008"/>
+			</category>
+			<category id="2">
+				<drop itemid="6678" min="1" max="1" chance="26022"/>
+				<drop itemid="6679" min="1" max="1" chance="18221"/>
+				<drop itemid="6683" min="1" max="1" chance="18221"/>
+				<drop itemid="6687" min="1" max="1" chance="18221"/>
+			</category>
+			<category id="3">
+				<drop itemid="6693" min="6" max="18" chance="134573"/>
+				<drop itemid="6697" min="3" max="7" chance="311250"/>
+				<drop itemid="6705" min="23" max="67" chance="151612"/>
+				<drop itemid="6706" min="60" max="180" chance="66133"/>
+				<drop itemid="6710" min="116" max="346" chance="34355"/>
+				<drop itemid="6714" min="16" max="48" chance="247998"/>
+			</category>
+			<category id="4">
+				<drop itemid="3936" min="1" max="3" chance="475623"/>
+				<drop itemid="6578" min="1" max="1" chance="84555"/>
+				<drop itemid="6689" min="16" max="48" chance="48634"/>
+				<drop itemid="6690" min="11" max="31" chance="75675"/>
+			</category>
+			<category id="5">
+				<drop itemid="9212" min="1" max="2" chance="1000000"/>
+			</category>
+		</drops>
+	</npc>	
+	
+	<!-- L2JxTreme edited retail mob, used for Noblesse Quest -->
+	<npc id="25054" name="Kernon" title="Raid Boss">
+		<set name="level" val="75"/>
+		<set name="radius" val="24"/>
+		<set name="height" val="40"/>
+		<set name="rHand" val="0"/>
+		<set name="lHand" val="0"/>
+		<set name="type" val="L2RaidBoss"/>
+		<set name="exp" val="2238750"/>
+		<set name="sp" val="1054472"/>
+		<set name="hp" val="397437.25144009"/>
+		<set name="mp" val="1507.8"/>
+		<set name="hpRegen" val="123.216289543832"/>
+		<set name="mpRegen" val="3"/>
+		<set name="pAtk" val="2451.2234804188"/>
+		<set name="pDef" val="957.73869"/>
+		<set name="mAtk" val="868.876026814078"/>
+		<set name="mDef" val="467.22"/>
+		<set name="crit" val="4"/>
+		<set name="atkSpd" val="253"/>
+		<set name="str" val="60"/>
+		<set name="int" val="76"/>
+		<set name="dex" val="73"/>
+		<set name="wit" val="70"/>
+		<set name="con" val="57"/>
+		<set name="men" val="80"/>
+		<set name="corpseTime" val="7"/>
+		<set name="walkSpd" val="37"/>
+		<set name="runSpd" val="170"/>
+		<set name="dropHerbGroup" val="0"/>
+		<set name="attackRange" val="40"/>
+		<ai type="default" ssCount="0" ssRate="0" spsCount="0" spsRate="0" aggro="0" canMove="true" seedable="false"/>
+		<skills>
+			<skill id="4045" level="1"/>
+			<skill id="4182" level="8"/>
+			<skill id="4190" level="8"/>
+			<skill id="4195" level="8"/>
+			<skill id="4278" level="1"/>
+			<skill id="4333" level="5"/>
+			<skill id="4416" level="9"/>
+			<skill id="4494" level="1"/>
+			<skill id="4809" level="1"/>
+		</skills>
+		<drops>
+			<category id="1">
+				<drop itemid="6371" min="1" max="1" chance="11317"/>
+			</category>
+			<category id="2">
+				<drop itemid="6676" min="1" max="1" chance="17141"/>
+				<drop itemid="6677" min="1" max="1" chance="17141"/>
+				<drop itemid="6681" min="1" max="1" chance="17141"/>
+				<drop itemid="6682" min="1" max="1" chance="17141"/>
+				<drop itemid="6685" min="1" max="1" chance="17141"/>
+				<drop itemid="6686" min="1" max="1" chance="17141"/>
+			</category>
+			<category id="3">
+				<drop itemid="6577" min="1" max="1" chance="7955"/>
+				<drop itemid="6695" min="12" max="36" chance="244008"/>
+				<drop itemid="6703" min="112" max="336" chance="19502"/>
+				<drop itemid="6704" min="14" max="40" chance="161793"/>
+				<drop itemid="6708" min="20" max="60" chance="109211"/>
+				<drop itemid="6709" min="28" max="82" chance="79426"/>
+				<drop itemid="6712" min="36" max="108" chance="60673"/>
+				<drop itemid="6713" min="46" max="136" chance="48004"/>
+			</category>
+			<category id="4">
+				<drop itemid="959" min="1" max="1" chance="47727"/>
+				<drop itemid="960" min="1" max="1" chance="477271"/>
+			</category>
+			<category id="5">
+				<drop itemid="9211" min="1" max="2" chance="1000000"/>
+			</category>
+		</drops>
+		<minions>
+			<minion id="25055" min="1" max="1"/>
+			<minion id="25056" min="4" max="4"/>
+		</minions>
+	</npc>	
+	
+	<!-- L2JxTreme edited retail mob, used for Noblesse Quest -->
+	<npc id="25220" name="Death Lord Hallate" title="Raid Boss">
+		<set name="level" val="73"/>
+		<set name="radius" val="21"/>
+		<set name="height" val="40"/>
+		<set name="rHand" val="78"/>
+		<set name="lHand" val="0"/>
+		<set name="type" val="L2RaidBoss"/>
+		<set name="exp" val="2190219"/>
+		<set name="sp" val="1002134"/>
+		<set name="hp" val="388244.931683888"/>
+		<set name="mp" val="1442.4"/>
+		<set name="hpRegen" val="121.063992487928"/>
+		<set name="mpRegen" val="3"/>
+		<set name="pAtk" val="2340.04970058459"/>
+		<set name="pDef" val="930.08877"/>
+		<set name="mAtk" val="834.541246336935"/>
+		<set name="mDef" val="453.74"/>
+		<set name="crit" val="4"/>
+		<set name="atkSpd" val="253"/>
+		<set name="str" val="60"/>
+		<set name="int" val="76"/>
+		<set name="dex" val="73"/>
+		<set name="wit" val="70"/>
+		<set name="con" val="57"/>
+		<set name="men" val="80"/>
+		<set name="corpseTime" val="7"/>
+		<set name="walkSpd" val="40"/>
+		<set name="runSpd" val="170"/>
+		<set name="dropHerbGroup" val="0"/>
+		<set name="attackRange" val="40"/>
+		<ai type="default" ssCount="0" ssRate="0" spsCount="0" spsRate="0" aggro="0" canMove="true" seedable="false"/>
+		<skills>
+			<skill id="4045" level="1"/>
+			<skill id="4197" level="7"/>
+			<skill id="4278" level="1"/>
+			<skill id="4333" level="5"/>
+			<skill id="4416" level="1"/>
+			<skill id="4494" level="1"/>
+			<skill id="4868" level="1"/>
+		</skills>
+		<drops>
+			<category id="1">
+				<drop itemid="5320" min="1" max="1" chance="57708"/>
+				<drop itemid="5323" min="1" max="1" chance="57708"/>
+			</category>
+			<category id="2">
+				<drop itemid="959" min="1" max="1" chance="46261"/>
+				<drop itemid="960" min="1" max="1" chance="462604"/>
+				<drop itemid="5480" min="24" max="72" chance="208506"/>
+				<drop itemid="5481" min="53" max="157" chance="95317"/>
+				<drop itemid="6577" min="1" max="1" chance="7711"/>
+			</category>
+			<category id="3">
+				<drop itemid="8160" min="1" max="3" chance="250000"/>
+				<drop itemid="8176" min="3" max="9" chance="250000"/>
+				<drop itemid="8619" min="1" max="1" chance="250000"/>
+			</category>
+			<category id="4">
+				<drop itemid="8619" min="1" max="1" chance="750000"/>
+			</category>
+			<category id="5">
+				<drop itemid="9210" min="1" max="2" chance="1000000"/>
+			</category>
+		</drops>
+		<minions>
+			<minion id="25221" min="3" max="3"/>
+			<minion id="25222" min="1" max="1"/>
+		</minions>
+	</npc>	
+	
+</list>

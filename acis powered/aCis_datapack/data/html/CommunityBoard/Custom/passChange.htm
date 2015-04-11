@@ -1,0 +1,43 @@
+<html>
+	<body>
+		<br>
+		<br><br><br>
+		<center>
+			<img src="L2UI_CH3.herotower_deco" width=256 height=32>
+			<br>
+			<font color="AAAAAA">Password Change Function</font><br>
+			<img src="l2ui.squaregray" width="500" height="1"><br>
+			<br>
+			<table width="400" cellpadding="5">
+				<tr>
+					<td width="45" valign="top" align="center"><img src="icon.action006" width="32" height="32"></td>
+					<td valign="top">
+						Changing your password often is not recommended, because<br1>
+						more passwords means more confusion and you might forget it.
+					</td>
+				</tr>
+			</table>
+			<br>
+			<img src="l2ui.SquareGray" width="400" height="1">
+			<br>
+			Please fill all the fields bellow.<br>
+			<table width="210" cellpadding="5">
+				<tr>
+					<td width=100 valign="top">Current Password:</td>
+					<td width=100 valign="top"><edit var="cur" width=100 height=12></td>
+				</tr>
+				<tr>
+					<td width=100 valign="top">New Password:</td>
+					<td width=100 valign="top"><edit var="new" width=100 height=12></td>
+				</tr>
+				<tr>
+					<td width=100 valign="top">Repeat Password:</td>
+					<td width=100 valign="top"><edit var="repeatnew" width=100 height=12></td>
+				</tr>
+			</table>
+			<img src="l2ui.SquareGray" width="400" height="1"><br>
+			<button value="Change my password" action="bypass _bbsChangePass $cur $new $repeatnew" width=140 height=21 back="L2UI_ch3.msnbutton_down" fore="L2UI_ch3.msnbutton"/>
+		</center>
+		<img src="l2ui.squaregray" width="610" height="1"><br>
+	</body>
+</html>

@@ -1,0 +1,179 @@
+Last update 22-7-14
+
+All the mods have enable / disable option
+
+--------
+Balance:
+--------
+Custom Balancer With 31 Editors
+Full Armor And Weapon Restrictions
+
+-------
+Bosses:
+-------
+Antharas
+AntQueen
+Baium
+Core
+Frintezza (Need Fix)
+Orfen
+Sailren
+Valakas
+Zaken (Need Fix)
+
+-------
+Events:
+-------
+Achievements Engine (x24 Small Events)
+High Rate Dark Omen
+Strider Race
+Olympiad Full Working
+All Official Interlude Retail Events
+Phoenix Event Engine (x18 Events)
+DeathMatch
+Domination
+Double Domination
+Last Man Standing
+Lucky Chests
+Simon Says
+Team vs Team
+VIP Team vs Team
+Zombie
+Capture the Flag
+Russian Roulette
+Bomb Fight
+Mutant
+Battlefield
+Hunting Grounds
+Raid in the Middle
+Korean TvT
+Treasure Hunt
+
+----------
+Protection
+----------
+Full Flood Protector
+rGuard + Source + Client
+Character Name Restriction
+PvP Protection (IP Clan Ally Party LVL PDef PAtk etc)
+LastIp System Protection
+Block Augment Skills In Oly
+Enchant Protection (x17 Enchant Protections)
+Logs (Chat Items GM)
+L2WalkerProtection
+GameGuardEnforce
+
+----------
+Admin Mods
+----------
+Deport
+Set Team
+Watch Clan
+Olympiad Points
+Olympiad Stat
+Mass Hero
+Phoenix Event Engine
+HWID BAN
+Send / Give Donate
+Admin Quiet
+Npc Chat Feature
+Custom Admin Chat On Screen
+Survey System
+
+------------
+Automatation
+------------
+GameServer AutoRestart
+Last Visit Information
+Show The Server Name At Login
+Newbies Welcome Message On Screen
+Entering PMs
+Custom Spawn For Mages And Fighters
+Custom Starting Title For New Char
+Announce Name On Login (Admin Clan Leader Hero Noble Aio Lords Newbies)
+Server Time On Login
+Olympiad End on Login
+Online Players On Login
+Auto Rewarder Every X Time
+Automatic Announce
+
+Full Champion Mobs System
+Custom Community Board
+SkillDurationList
+AIO System
+VIP System
+Smart StartUp System
+Keyboard Movement
+Random Reward Box
+Lucky Blessed Scrolls
+Emotions On Talk
+All / Trade Chat System
+PvPs / PKs To Use Store
+OnlyRegistered Clan Ally Can Fight In Sieges
+PvP & Pk Name / Title Color System
+PvP & Pk Reward System
+
+---------
+Commands
+---------
+.res
+.mailsend .mailread
+.online
+.info
+.version
+.rates
+.pincode
+.gearscore
+.details
+.menu
+.withdraw .deposit
+.getreward
+.farm1
+.farm2
+.farm3
+.pvp1
+.pvp2
+.pvp3
+.giran
+.dion
+.aden
+.gludio
+.rune
+.heine
+.goddard
+.schuttgart
+.oren
+
+----------
+CustomNpcs
+----------
+Donate Manager
+Requester Npc
+Wyvern Manager
+Wedding System
+Protector
+Scheme Buffer
+Effect Buffer
+Change & Add Subclass At Any Village Master
+Account Manager
+Rebirth Manager
+Vortex Vote Reward Npc 
+Custom Enchant Npc
+Services Npc
+Achievements
+Boss Info
+Bug Report
+Siege Manager
+Casino
+Class Changer
+Vip Manager
+Normal GateKeeper
+Deleveler
+Noblesse Manager
+Smart Shop (Sell Enchanted Items)
+
+------------
+Vote Systems
+------------
+Auto Vote Reward For HopZone
+Auto Vote Reward For TopZone

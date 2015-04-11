@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<item id="9210" type="EtcItem" name="Black Crown">
+		<!-- Noblesse Manager -->
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="true" />
+		<set name="is_stackable" val="false" />
+	</item>
+	<item id="9211" type="EtcItem" name="Gold Crown">
+		<!-- Noblesse Manager -->
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="true" />
+		<set name="is_stackable" val="false" />
+	</item>
+	<item id="9212" type="EtcItem" name="Red Crown">
+		<!-- Noblesse Manager -->
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="true" />
+		<set name="is_stackable" val="false" />
+	</item>
+	<item id="9213" type="EtcItem" name="Silver Crown">
+		<!-- Noblesse Manager -->
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="true" />
+		<set name="is_stackable" val="false" />
+	</item>
+</list>

@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<list>
+	<skill id="549" lvl="1" sp="100" itemId="2822"/> <!-- Rebirth Guidance -->
+	<skill id="549" lvl="2" sp="100" itemId="2822"/> <!-- Rebirth Guidance -->
+	<skill id="549" lvl="3" sp="100" itemId="2822"/> <!-- Rebirth Guidance -->
+	<skill id="550" lvl="1" sp="100" itemId="2822"/> <!-- Rebirth Haste -->
+	<skill id="550" lvl="2" sp="100" itemId="2822"/> <!-- Rebirth Haste -->
+	<skill id="550" lvl="3" sp="100" itemId="2822"/> <!-- Rebirth Haste -->
+	<skill id="551" lvl="1" sp="100" itemId="2822"/> <!-- Rebirth Health -->
+	<skill id="551" lvl="2" sp="100" itemId="2822"/> <!-- Rebirth Health -->
+	<skill id="551" lvl="3" sp="100" itemId="2822"/> <!-- Rebirth Health -->
+	<skill id="552" lvl="1" sp="100" itemId="2822"/> <!-- Rebirth Mana -->
+	<skill id="552" lvl="2" sp="100" itemId="2822"/> <!-- Rebirth Mana -->
+	<skill id="552" lvl="3" sp="100" itemId="2822"/> <!-- Rebirth Mana -->
+	<skill id="553" lvl="1" sp="100" itemId="2822"/> <!-- Rebirth Wind Walk -->
+	<skill id="553" lvl="2" sp="100" itemId="2822"/> <!-- Rebirth Wind Walk -->
+	<skill id="553" lvl="3" sp="100" itemId="2822"/> <!-- Rebirth Wind Walk -->
+	<skill id="554" lvl="1" sp="100" itemId="2822"/> <!-- Rebirth Focus -->
+	<skill id="554" lvl="2" sp="100" itemId="2822"/> <!-- Rebirth Focus -->
+	<skill id="554" lvl="3" sp="100" itemId="2822"/> <!-- Rebirth Focus -->
+	<skill id="555" lvl="1" sp="100" itemId="2822"/> <!-- Rebirth Might -->
+	<skill id="555" lvl="2" sp="100" itemId="2822"/> <!-- Rebirth Might -->
+	<skill id="555" lvl="3" sp="100" itemId="2822"/> <!-- Rebirth Might -->
+	<skill id="556" lvl="1" sp="100" itemId="2822"/> <!-- Rebirth Empower -->
+	<skill id="556" lvl="2" sp="100" itemId="2822"/> <!-- Rebirth Empower -->
+	<skill id="556" lvl="3" sp="100" itemId="2822"/> <!-- Rebirth Empower -->
+	<skill id="557" lvl="1" sp="100" itemId="2822"/> <!-- Rebirth Shield -->
+	<skill id="557" lvl="2" sp="100" itemId="2822"/> <!-- Rebirth Shield -->
+	<skill id="557" lvl="3" sp="100" itemId="2822"/> <!-- Rebirth Shield -->
+	<skill id="558" lvl="1" sp="100" itemId="2822"/> <!-- Rebirth Magic Barrier -->
+	<skill id="558" lvl="2" sp="100" itemId="2822"/> <!-- Rebirth Magic Barrier -->
+	<skill id="558" lvl="3" sp="100" itemId="2822"/> <!-- Rebirth Magic Barrier -->
+	<skill id="559" lvl="1" sp="100" itemId="2822"/> <!-- Rebirth Agility -->
+	<skill id="559" lvl="2" sp="100" itemId="2822"/> <!-- Rebirth Agility -->
+	<skill id="559" lvl="3" sp="100" itemId="2822"/> <!-- Rebirth Agility -->
+	<skill id="560" lvl="1" sp="100" itemId="2822"/> <!-- Rebirth Acumen -->
+	<skill id="560" lvl="2" sp="100" itemId="2822"/> <!-- Rebirth Acumen -->
+	<skill id="560" lvl="3" sp="100" itemId="2822"/> <!-- Rebirth Acumen -->
+</list>

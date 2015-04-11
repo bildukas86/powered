@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<project name="aCis_datapack" default="build" basedir=".">
+
+	<property name="build" location="../build/Data" />
+	<property name="build.game" location="${build}/gameserver" />
+	<property name="build.login" location="${build}/login" />
+	<property name="build.sql" location="${build}/sql" />
+	<property name="build.sql.custom" location="${build}/sql/custom" />
+	<property name="build.tools" location="${build}/tools" />
+	<property name="build.tools.accountmanager" location="${build}/tools/Account Manager" />
+	<property name="build.tools.accountmanager.config" location="${build}/tools/Account Manager/config" />
+	<property name="build.tools.accountmanager.lib" location="${build}/tools/Account Manager/lib" />
+
+	<target name="init" description="Create the output directories. Do nothing if dirs were already created">
+		<mkdir dir="${build}" />
+		<mkdir dir="${build.game}" />
+		<mkdir dir="${build.login}" />
+	</target>
+
+	<target name="export" depends="clean" description="Synchronizes build space contents with project.">
+		<sync todir="${build.game}/data">
+			<fileset dir="${basedir}/data">
+				<exclude name=".project" />
+				<exclude name="log/**" />
+				<exclude name="cachedir/**" />
+				<exclude name="clans/**" />
+				<exclude name="crests/**" />
+				<exclude name="**.svn**" />
+				<exclude name="**/*.class" />
+				<exclude name="**/*.jar" />
+				<include name="**/*.*" />
+			</fileset>
+		</sync>
+		<sync todir="${build.sql}">
+			<fileset dir="${basedir}/sql">
+				<include name="*.*" />
+			</fileset>
+		</sync>
+		<sync todir="${build.sql.custom}">
+			<fileset dir="${basedir}/sql/custom">
+				<include name="*.*" />
+			</fileset>
+		</sync>
+		<sync todir="${build.tools}">
+			<fileset dir="${basedir}/tools">
+				<include name="*.*" />
+			</fileset>
+		</sync>
+		<sync todir="${build.tools.accountmanager}">
+			<fileset dir="${basedir}/tools/Account Manager">
+				<include name="*.*" />
+			</fileset>
+		</sync>
+		<sync todir="${build.tools.accountmanager.config}">
+			<fileset dir="${basedir}/tools/Account Manager/config">
+				<include name="*.*" />
+			</fileset>
+		</sync>
+		<sync todir="${build.tools.accountmanager.lib}">
+			<fileset dir="${basedir}/tools/Account Manager/lib">
+				<include name="*.*" />
+			</fileset>
+		</sync>
+		<sync todir="${build.login}">
+			<fileset dir="${build.game}/data">
+				<include name="servername.xml" />
+			</fileset>
+		</sync>
+		<zip destfile="${build}/aCis_Data.zip" basedir="${build}" level="9" update="true"/>
+		<mkdir dir="C:/Server" />
+		<unzip src="${build}/aCis_Data.zip" dest="C:/Server" />
+		<delete dir="${build}" />
+	</target>
+
+	<target name="build" depends="export" />
+
+	<target name="clean" description="Deletes the whole build space and existing packages.">
+		<delete dir="${build}" />
+	</target>
+
+</project>

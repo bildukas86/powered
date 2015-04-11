@@ -1,0 +1,66 @@
+<html>
+	<body>
+		<br>
+		<br><br><br>
+		<center>
+			<img src="L2UI_CH3.herotower_deco" width=256 height=32>
+			<br>
+			<font color="AAAAAA">Donation via PaySafe Card.</font>
+			<br>
+			<br>
+			<table width=500>
+				<tr>
+					<td>The fields with <font color=LEVEL>*</font> are required!</td>
+				</tr>
+				<tr>
+					<td>Once submitted you cannot edit the details you've put bellow.</td>
+				</tr>
+			</table>
+			<br>
+			<img src="l2ui.squaregray" width="500" height="1"><br>
+			<font color="AAAAAA">Donation Form</font>
+			<br>
+			<table width=500>
+				<tr>
+					<td width="75">Account:</td>
+					<td width="425">%charAcc%</td>
+				</tr>
+				<tr><td></td></tr>
+				<tr>
+					<td width="75">Character:</td>
+					<td width="425">%charName%</td>
+				</tr>
+				<tr><td></td></tr>
+				<tr><td></td></tr>
+				<tr>
+					<td width="75">Card Amount: <font color=LEVEL>*</font></td>
+					<td width="425"><combobox width=80 height=12 var="amount" list=10-Euro;25-Euro;50-Euro;100-Euro;></td>
+				</tr>
+			</table>
+			<table width=500>
+				<tr>
+					<td width="75">Card Pin: <font color=LEVEL>*</font></td>
+					<td width="50"><edit var="pin1" width=50 height=12 type=number></td>
+					<td width="50"><edit var="pin2" width=50 height=12 type=number></td>
+					<td width="50"><edit var="pin3" width=50 height=12 type=number></td>
+					<td width="50"><edit var="pin4" width=50 height=12 type=number></td>
+					<td width="190"></td>
+				</tr>
+			</table>
+			<br><br>
+			<table width=500>
+				<tr>
+					<td width="75">Message: <font color=LEVEL>*</font></td>
+					<td width="425"><edit var="message" width=240 height=12></td>
+				</tr>
+			</table>
+			<br>
+			<img src="l2ui.squaregray" width="500" height="1">
+			<br>
+			<button value="Submit Donation" action="bypass _bbsdonation;submitPaySafe $amount $pin1 $pin2 $pin3 $pin4 $message" width=140 height=21 back="L2UI_ch3.msnbutton_down" fore="L2UI_ch3.msnbutton">
+			<br>
+			<img src="l2ui.squaregray" width="610" height="1"><br>
+			<br>
+		</center>
+	</body>
+</html>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="data/scripts"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/aCis_gameserver"/>
+	<classpathentry exported="true" kind="lib" path="/aCis_gameserver/libs/c3p0-0.9.5-pre5.jar"/>
+	<classpathentry exported="true" kind="lib" path="/aCis_gameserver/libs/mchange-commons-java-0.2.6.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="/aCis_gameserver/libs/mmocore.jar"/>
+	<classpathentry exported="true" kind="lib" path="/aCis_gameserver/libs/mysql-connector-java-5.1.33-bin.jar"/>
+	<classpathentry exported="true" kind="lib" path="/aCis_gameserver/libs/java-engine-1.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="/aCis_gameserver/libs/ecj-4.4.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

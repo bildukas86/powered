@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="**/.svn/*|.svn" kind="src" path="java"/>
+	<classpathentry kind="src" path="config"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="lib" path="libs/c3p0-0.9.5-pre5.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/Guard.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/javolution-5.5.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/mail.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/mchange-commons-java-0.2.6.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/mmocore.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/yguard.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/mysql-connector-java-5.1.33-bin.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/java-engine-1.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/ecj-4.4.jar"/>
+	<classpathentry kind="lib" path="libs/ClassBalancer.jar"/>
+	<classpathentry kind="lib" path="libs/SkillsBalancer.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

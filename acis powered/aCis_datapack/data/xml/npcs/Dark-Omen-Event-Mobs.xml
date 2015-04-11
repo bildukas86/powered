@@ -1,0 +1,1041 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+
+	<npc id="25283" name="Lilith" title="Raid Boss">
+		<set name="level" val="80"/>
+		<set name="radius" val="42.5"/>
+		<set name="height" val="55"/>
+		<set name="rHand" val="0"/>
+		<set name="lHand" val="0"/>
+		<set name="type" val="L2RaidBoss"/>
+		<set name="exp" val="2374400"/>
+		<set name="sp" val="1196456"/>
+		<set name="hp" val="688716.902670109"/>
+		<set name="mp" val="1674.8"/>
+		<set name="hpRegen" val="211.789458580091"/>
+		<set name="mpRegen" val="3"/>
+		<set name="pAtk" val="3893.46388223624"/>
+		<set name="pDef" val="1024.125"/>
+		<set name="mAtk" val="630.998398930805"/>
+		<set name="mDef" val="499.6"/>
+		<set name="crit" val="4"/>
+		<set name="atkSpd" val="253"/>
+		<set name="str" val="60"/>
+		<set name="int" val="76"/>
+		<set name="dex" val="73"/>
+		<set name="wit" val="70"/>
+		<set name="con" val="57"/>
+		<set name="men" val="80"/>
+		<set name="corpseTime" val="7"/>
+		<set name="walkSpd" val="45"/>
+		<set name="runSpd" val="200"/>
+		<set name="dropHerbGroup" val="0"/>
+		<set name="attackRange" val="40"/>
+		<ai type="default" ssCount="0" ssRate="0" spsCount="0" spsRate="0" aggro="0" canMove="true" seedable="false"/>
+		<skills>
+			<skill id="4045" level="1"/>
+			<skill id="4197" level="9"/>
+			<skill id="4278" level="1"/>
+			<skill id="4333" level="5"/>
+			<skill id="4416" level="9"/>
+			<skill id="4494" level="1"/>
+			<skill id="4897" level="1"/>
+		</skills>
+		<drops>
+			<category id="1">
+				<drop itemid="6364" min="1" max="1" chance="4072"/>
+				<drop itemid="6372" min="1" max="1" chance="4072"/>
+				<drop itemid="7575" min="1" max="1" chance="12214"/>
+			</category>
+			<category id="2">
+				<drop itemid="6688" min="8" max="22" chance="143145"/>
+				<drop itemid="6696" min="4" max="12" chance="272661"/>
+				<drop itemid="7579" min="12" max="36" chance="271498"/>
+			</category>
+			<category id="3">
+				<drop itemid="3936" min="1" max="3" chance="482887"/>
+				<drop itemid="6578" min="1" max="1" chance="85847"/>
+			</category>
+		</drops>
+		<minions>
+			<minion id="25284" min="4" max="4"/>
+			<minion id="25285" min="2" max="2"/>
+		</minions>
+	</npc>
+	
+	<npc id="25286" name="Anakim" title="Raid Boss">
+		<set name="level" val="80"/>
+		<set name="radius" val="15.5"/>
+		<set name="height" val="29"/>
+		<set name="rHand" val="0"/>
+		<set name="lHand" val="0"/>
+		<set name="type" val="L2RaidBoss"/>
+		<set name="exp" val="2374400"/>
+		<set name="sp" val="1196456"/>
+		<set name="hp" val="688716.902670109"/>
+		<set name="mp" val="1674.8"/>
+		<set name="hpRegen" val="211.789458580091"/>
+		<set name="mpRegen" val="3"/>
+		<set name="pAtk" val="3893.46388223624"/>
+		<set name="pDef" val="1024.125"/>
+		<set name="mAtk" val="630.998398930805"/>
+		<set name="mDef" val="499.6"/>
+		<set name="crit" val="4"/>
+		<set name="atkSpd" val="253"/>
+		<set name="str" val="60"/>
+		<set name="int" val="76"/>
+		<set name="dex" val="73"/>
+		<set name="wit" val="70"/>
+		<set name="con" val="57"/>
+		<set name="men" val="80"/>
+		<set name="corpseTime" val="7"/>
+		<set name="walkSpd" val="45"/>
+		<set name="runSpd" val="200"/>
+		<set name="dropHerbGroup" val="0"/>
+		<set name="attackRange" val="40"/>
+		<ai type="default" ssCount="0" ssRate="0" spsCount="0" spsRate="0" aggro="0" canMove="true" seedable="false"/>
+		<skills>
+			<skill id="4045" level="1"/>
+			<skill id="4314" level="9"/>
+			<skill id="4416" level="8"/>
+			<skill id="4494" level="1"/>
+			<skill id="4898" level="1"/>
+		</skills>
+		<drops>
+			<category id="1">
+				<drop itemid="6365" min="1" max="1" chance="2036"/>
+				<drop itemid="6366" min="1" max="1" chance="2036"/>
+				<drop itemid="6367" min="1" max="1" chance="12214"/>
+				<drop itemid="6369" min="1" max="1" chance="2036"/>
+				<drop itemid="6579" min="1" max="1" chance="2036"/>
+			</category>
+			<category id="2">
+				<drop itemid="959" min="1" max="1" chance="51508"/>
+				<drop itemid="6577" min="1" max="1" chance="8586"/>
+				<drop itemid="6689" min="2" max="6" chance="263319"/>
+				<drop itemid="6690" min="11" max="31" chance="51217"/>
+				<drop itemid="6691" min="12" max="36" chance="268396"/>
+				<drop itemid="6693" min="6" max="18" chance="91080"/>
+				<drop itemid="6697" min="3" max="7" chance="210655"/>
+			</category>
+			<category id="3">
+				<drop itemid="960" min="1" max="1" chance="515079"/>
+			</category>
+		</drops>
+		<minions>
+			<minion id="25287" min="3" max="3"/>
+			<minion id="25288" min="2" max="2"/>
+			<minion id="25289" min="2" max="2"/>
+		</minions>
+	</npc>
+	
+	<npc id="21162" name="Lesser Ancient Scout" title="">
+		<set name="level" val="74"/>
+		<set name="radius" val="15"/>
+		<set name="height" val="39"/>
+		<set name="rHand" val="135"/>
+		<set name="lHand" val="0"/>
+		<set name="type" val="L2Monster"/>
+		<set name="exp" val="23759"/>
+		<set name="sp" val="2476"/>
+		<set name="hp" val="2632.19636"/>
+		<set name="mp" val="1475"/>
+		<set name="hpRegen" val="8.5"/>
+		<set name="mpRegen" val="3"/>
+		<set name="pAtk" val="773.81598"/>
+		<set name="pDef" val="314.65987"/>
+		<set name="mAtk" val="528.41601"/>
+		<set name="mDef" val="209.50409325236"/>
+		<set name="crit" val="4"/>
+		<set name="atkSpd" val="253"/>
+		<set name="str" val="40"/>
+		<set name="int" val="21"/>
+		<set name="dex" val="30"/>
+		<set name="wit" val="20"/>
+		<set name="con" val="43"/>
+		<set name="men" val="20"/>
+		<set name="corpseTime" val="7"/>
+		<set name="walkSpd" val="25"/>
+		<set name="runSpd" val="160"/>
+		<set name="dropHerbGroup" val="0"/>
+		<set name="attackRange" val="40"/>
+		<ai type="default" ssCount="100" ssRate="10" spsCount="100" spsRate="5" aggro="500" clan="c_dungeon_clan" clanRange="300" canMove="true" seedable="true"/>
+		<skills>
+			<skill id="4069" level="7"/>
+			<skill id="4285" level="3"/>
+			<skill id="4287" level="3"/>
+			<skill id="4408" level="12"/>
+			<skill id="4416" level="6"/>
+		</skills>
+		<drops>
+			<category id="1">
+				<drop itemid="5297" min="1" max="1" chance="24"/>
+				<drop itemid="5298" min="1" max="1" chance="38"/>
+				<drop itemid="5301" min="1" max="1" chance="16"/>
+			</category>
+			<category id="2">
+				<drop itemid="1807" min="1" max="1" chance="462"/>
+				<drop itemid="1868" min="1" max="3" chance="250000"/>
+				<drop itemid="1873" min="1" max="1" chance="90909"/>
+				<drop itemid="1876" min="1" max="1" chance="43478"/>
+				<drop itemid="1895" min="1" max="1" chance="62500"/>
+				<drop itemid="4042" min="1" max="1" chance="3067"/>
+				<drop itemid="5478" min="1" max="1" chance="3398"/>
+				<drop itemid="5479" min="1" max="1" chance="2391"/>
+				<drop itemid="5482" min="1" max="1" chance="5333"/>
+				<drop itemid="6036" min="1" max="1" chance="7407"/>
+				<drop itemid="8731" min="1" max="1" chance="1838"/>
+				<drop itemid="8741" min="1" max="1" chance="322"/>
+				<drop itemid="8751" min="1" max="1" chance="36"/>
+			</category>
+			<category id="0">
+				<drop itemid="57" min="3305" max="6737" chance="700000"/>
+			</category>
+			<category id="-1">
+				<drop itemid="3956" min="1" max="1" chance="10942"/>
+				<drop itemid="5478" min="1" max="1" chance="69011"/>
+				<drop itemid="5486" min="1" max="1" chance="48561"/>
+			</category>
+		</drops>
+	</npc>
+	
+	<npc id="21253" name="Crypt Preacher" title="">
+		<set name="level" val="72"/>
+		<set name="radius" val="15"/>
+		<set name="height" val="52"/>
+		<set name="rHand" val="326"/>
+		<set name="lHand" val="0"/>
+		<set name="type" val="L2Monster"/>
+		<set name="exp" val="22492"/>
+		<set name="sp" val="2284"/>
+		<set name="hp" val="2540.15331"/>
+		<set name="mp" val="1410"/>
+		<set name="hpRegen" val="8.5"/>
+		<set name="mpRegen" val="3"/>
+		<set name="pAtk" val="731.52506"/>
+		<set name="pDef" val="305.35947"/>
+		<set name="mAtk" val="499.53679"/>
+		<set name="mDef" val="203.311781207645"/>
+		<set name="crit" val="4"/>
+		<set name="atkSpd" val="253"/>
+		<set name="str" val="40"/>
+		<set name="int" val="21"/>
+		<set name="dex" val="30"/>
+		<set name="wit" val="20"/>
+		<set name="con" val="43"/>
+		<set name="men" val="20"/>
+		<set name="corpseTime" val="7"/>
+		<set name="walkSpd" val="70"/>
+		<set name="runSpd" val="165"/>
+		<set name="dropHerbGroup" val="0"/>
+		<set name="attackRange" val="40"/>
+		<ai type="default" ssCount="100" ssRate="10" spsCount="100" spsRate="5" aggro="500" clan="c_dungeon_clan" clanRange="300" canMove="true" seedable="true"/>
+		<skills>
+			<skill id="4099" level="2"/>
+			<skill id="4278" level="1"/>
+			<skill id="4333" level="5"/>
+			<skill id="4408" level="12"/>
+			<skill id="4414" level="3"/>
+			<skill id="4416" level="9"/>
+		</skills>
+		<drops>
+			<category id="1">
+				<drop itemid="5304" min="1" max="1" chance="22"/>
+				<drop itemid="5305" min="1" max="1" chance="36"/>
+				<drop itemid="5308" min="1" max="1" chance="15"/>
+			</category>
+			<category id="2">
+				<drop itemid="5485" min="1" max="1" chance="3200"/>
+				<drop itemid="5486" min="1" max="1" chance="2252"/>
+				<drop itemid="5489" min="1" max="1" chance="5022"/>
+			</category>
+			<category id="0">
+				<drop itemid="57" min="3110" max="6350" chance="700000"/>
+			</category>
+			<category id="-1">
+				<drop itemid="1807" min="1" max="1" chance="10305"/>
+				<drop itemid="3035" min="1" max="1" chance="10305"/>
+				<drop itemid="5479" min="1" max="2" chance="45733"/>
+			</category>
+		</drops>
+	</npc>
+	
+	<npc id="21184" name="Lilim Slayer" title="">
+		<set name="level" val="75"/>
+		<set name="radius" val="13"/>
+		<set name="height" val="44"/>
+		<set name="rHand" val="236"/>
+		<set name="lHand" val="236"/>
+		<set name="type" val="L2Monster"/>
+		<set name="exp" val="35476"/>
+		<set name="sp" val="3740"/>
+		<set name="hp" val="2676.65854"/>
+		<set name="mp" val="1507.8"/>
+		<set name="hpRegen" val="8.5"/>
+		<set name="mpRegen" val="3"/>
+		<set name="pAtk" val="794.70901"/>
+		<set name="pDef" val="319.24623"/>
+		<set name="mAtk" val="542.68324"/>
+		<set name="mDef" val="212.557735094503"/>
+		<set name="crit" val="8"/>
+		<set name="atkSpd" val="253"/>
+		<set name="str" val="40"/>
+		<set name="int" val="21"/>
+		<set name="dex" val="30"/>
+		<set name="wit" val="20"/>
+		<set name="con" val="43"/>
+		<set name="men" val="20"/>
+		<set name="corpseTime" val="7"/>
+		<set name="walkSpd" val="36"/>
+		<set name="runSpd" val="200"/>
+		<set name="dropHerbGroup" val="0"/>
+		<set name="attackRange" val="40"/>
+		<ai type="default" ssCount="100" ssRate="10" spsCount="100" spsRate="5" aggro="0" clan="c_dungeon_clan" clanRange="400" ignoredIds="21198;21199;21200;21201;21202;21203;21204;21205;21206;21207" canMove="true" seedable="true"/>
+		<skills>
+			<skill id="4067" level="8"/>
+			<skill id="4278" level="1"/>
+			<skill id="4287" level="5"/>
+			<skill id="4333" level="5"/>
+			<skill id="4408" level="12"/>
+			<skill id="4410" level="13"/>
+			<skill id="4411" level="13"/>
+			<skill id="4412" level="16"/>
+			<skill id="4413" level="9"/>
+			<skill id="4414" level="3"/>
+			<skill id="4416" level="9"/>
+		</skills>
+		<drops>
+			<category id="1">
+				<drop itemid="6361" min="700" max="1400" chance="700000"/>
+			</category>
+			<category id="2">
+				<drop itemid="6362" min="14" max="27" chance="700000"/>
+			</category>
+			<category id="3">
+				<drop itemid="5304" min="1" max="1" chance="30"/>
+				<drop itemid="5305" min="1" max="1" chance="48"/>
+				<drop itemid="5308" min="1" max="1" chance="21"/>
+			</category>
+			<category id="4">
+				<drop itemid="5485" min="1" max="1" chance="4370"/>
+				<drop itemid="5486" min="1" max="1" chance="3075"/>
+				<drop itemid="5489" min="1" max="1" chance="6858"/>
+				<drop itemid="7645" min="1" max="1" chance="17241"/>
+				<drop itemid="7672" min="1" max="1" chance="19608"/>
+				<drop itemid="7673" min="1" max="1" chance="18519"/>
+			</category>
+			<category id="5">
+				<drop itemid="7645" min="1" max="1" chance="53760"/>
+			</category>
+			<category id="6">
+				<drop itemid="7672" min="1" max="1" chance="53760"/>
+			</category>
+			<category id="7">
+				<drop itemid="7673" min="1" max="1" chance="53760"/>
+			</category>
+			<category id="-1">
+				<drop itemid="729" min="1" max="1" chance="1173"/>
+				<drop itemid="1895" min="1" max="5" chance="753968"/>
+				<drop itemid="5480" min="1" max="1" chance="47365"/>
+			</category>
+		</drops>
+	</npc>
+	
+	<npc id="21205" name="Nephilim Royal Guard" title="">
+		<set name="level" val="75"/>
+		<set name="radius" val="13"/>
+		<set name="height" val="39.6"/>
+		<set name="rHand" val="0"/>
+		<set name="lHand" val="0"/>
+		<set name="type" val="L2Monster"/>
+		<set name="exp" val="35476"/>
+		<set name="sp" val="3740"/>
+		<set name="hp" val="2676.65854"/>
+		<set name="mp" val="1507.8"/>
+		<set name="hpRegen" val="8.5"/>
+		<set name="mpRegen" val="3"/>
+		<set name="pAtk" val="794.70901"/>
+		<set name="pDef" val="319.24623"/>
+		<set name="mAtk" val="542.68324"/>
+		<set name="mDef" val="212.557735094503"/>
+		<set name="crit" val="4"/>
+		<set name="atkSpd" val="253"/>
+		<set name="str" val="40"/>
+		<set name="int" val="21"/>
+		<set name="dex" val="30"/>
+		<set name="wit" val="20"/>
+		<set name="con" val="43"/>
+		<set name="men" val="20"/>
+		<set name="corpseTime" val="7"/>
+		<set name="walkSpd" val="65"/>
+		<set name="runSpd" val="200"/>
+		<set name="dropHerbGroup" val="0"/>
+		<set name="attackRange" val="40"/>
+		<ai type="default" ssCount="100" ssRate="10" spsCount="100" spsRate="5" aggro="0" clan="c_dungeon_clan" clanRange="400" ignoredIds="21177;21178;21179;21180;21181;21182;21183;21184;21185;21186" canMove="true" seedable="true"/>
+		<skills>
+			<skill id="4032" level="8"/>
+			<skill id="4287" level="5"/>
+			<skill id="4336" level="2"/>
+			<skill id="4408" level="12"/>
+			<skill id="4410" level="13"/>
+			<skill id="4411" level="13"/>
+			<skill id="4412" level="16"/>
+			<skill id="4413" level="9"/>
+			<skill id="4414" level="3"/>
+			<skill id="4416" level="8"/>
+		</skills>
+		<drops>
+			<category id="1">
+				<drop itemid="6361" min="700" max="1400" chance="700000"/>
+			</category>
+			<category id="2">
+				<drop itemid="6362" min="14" max="27" chance="700000"/>
+			</category>
+			<category id="3">
+				<drop itemid="5297" min="1" max="1" chance="30"/>
+				<drop itemid="5298" min="1" max="1" chance="48"/>
+				<drop itemid="5301" min="1" max="1" chance="21"/>
+			</category>
+			<category id="4">
+				<drop itemid="730" min="1" max="1" chance="464"/>
+				<drop itemid="1895" min="1" max="1" chance="200000"/>
+				<drop itemid="4040" min="1" max="1" chance="14085"/>
+				<drop itemid="4042" min="1" max="1" chance="11628"/>
+				<drop itemid="4043" min="1" max="1" chance="21277"/>
+				<drop itemid="5478" min="1" max="1" chance="4370"/>
+				<drop itemid="5479" min="1" max="1" chance="3075"/>
+				<drop itemid="5482" min="1" max="1" chance="6858"/>
+			</category>
+			<category id="-1">
+				<drop itemid="729" min="1" max="1" chance="1173"/>
+				<drop itemid="1895" min="1" max="5" chance="753968"/>
+				<drop itemid="5480" min="1" max="1" chance="47365"/>
+			</category>
+		</drops>
+	</npc>
+	
+	<npc id="21163" name="Lesser Ancient Shaman" title="">
+		<set name="level" val="76"/>
+		<set name="radius" val="8"/>
+		<set name="height" val="23"/>
+		<set name="rHand" val="0"/>
+		<set name="lHand" val="0"/>
+		<set name="type" val="L2Monster"/>
+		<set name="exp" val="25061"/>
+		<set name="sp" val="2676"/>
+		<set name="hp" val="2719.97952"/>
+		<set name="mp" val="1540.8"/>
+		<set name="hpRegen" val="8.5"/>
+		<set name="mpRegen" val="3"/>
+		<set name="pAtk" val="815.37145"/>
+		<set name="pDef" val="323.78455"/>
+		<set name="mAtk" val="556.793"/>
+		<set name="mDef" val="215.579412824268"/>
+		<set name="crit" val="4"/>
+		<set name="atkSpd" val="253"/>
+		<set name="str" val="40"/>
+		<set name="int" val="21"/>
+		<set name="dex" val="30"/>
+		<set name="wit" val="20"/>
+		<set name="con" val="43"/>
+		<set name="men" val="20"/>
+		<set name="corpseTime" val="7"/>
+		<set name="walkSpd" val="80"/>
+		<set name="runSpd" val="200"/>
+		<set name="dropHerbGroup" val="0"/>
+		<set name="attackRange" val="40"/>
+		<ai type="default" ssCount="0" ssRate="0" spsCount="0" spsRate="0" aggro="500" clan="c_dungeon_clan" clanRange="300" canMove="true" seedable="true"/>
+		<skills>
+			<skill id="4076" level="3"/>
+			<skill id="4276" level="1"/>
+			<skill id="4281" level="1"/>
+			<skill id="4408" level="12"/>
+			<skill id="4414" level="3"/>
+			<skill id="4416" level="9"/>
+		</skills>
+		<drops>
+			<category id="1">
+				<drop itemid="5290" min="1" max="1" chance="56"/>
+				<drop itemid="5291" min="1" max="1" chance="56"/>
+				<drop itemid="5295" min="1" max="1" chance="56"/>
+				<drop itemid="5296" min="1" max="1" chance="56"/>
+			</category>
+			<category id="2">
+				<drop itemid="5496" min="1" max="1" chance="7532"/>
+				<drop itemid="5497" min="1" max="1" chance="7532"/>
+				<drop itemid="5508" min="1" max="1" chance="7532"/>
+				<drop itemid="5509" min="1" max="1" chance="7532"/>
+				<drop itemid="7654" min="1" max="1" chance="10417"/>
+				<drop itemid="7655" min="1" max="1" chance="10417"/>
+				<drop itemid="7660" min="1" max="1" chance="10753"/>
+				<drop itemid="7661" min="1" max="1" chance="11111"/>
+			</category>
+			<category id="3">
+				<drop itemid="7654" min="1" max="1" chance="33234"/>
+			</category>
+			<category id="4">
+				<drop itemid="7655" min="1" max="1" chance="33234"/>
+			</category>
+			<category id="5">
+				<drop itemid="7660" min="1" max="1" chance="33234"/>
+			</category>
+			<category id="6">
+				<drop itemid="7661" min="1" max="1" chance="33234"/>
+			</category>
+			<category id="0">
+				<drop itemid="57" min="3493" max="7152" chance="700000"/>
+			</category>
+			<category id="-1">
+				<drop itemid="729" min="1" max="1" chance="967"/>
+				<drop itemid="5480" min="1" max="1" chance="39041"/>
+				<drop itemid="5481" min="1" max="1" chance="39041"/>
+			</category>
+		</drops>
+	</npc>
+	
+	<npc id="21254" name="Tomb Guard" title="">
+		<set name="level" val="75"/>
+		<set name="radius" val="12"/>
+		<set name="height" val="31"/>
+		<set name="rHand" val="78"/>
+		<set name="lHand" val="0"/>
+		<set name="type" val="L2Monster"/>
+		<set name="exp" val="25729"/>
+		<set name="sp" val="2712"/>
+		<set name="hp" val="2676.65854"/>
+		<set name="mp" val="1507.8"/>
+		<set name="hpRegen" val="8.5"/>
+		<set name="mpRegen" val="3"/>
+		<set name="pAtk" val="794.70901"/>
+		<set name="pDef" val="319.24623"/>
+		<set name="mAtk" val="542.68324"/>
+		<set name="mDef" val="212.557735094503"/>
+		<set name="crit" val="4"/>
+		<set name="atkSpd" val="253"/>
+		<set name="str" val="40"/>
+		<set name="int" val="21"/>
+		<set name="dex" val="30"/>
+		<set name="wit" val="20"/>
+		<set name="con" val="43"/>
+		<set name="men" val="20"/>
+		<set name="corpseTime" val="7"/>
+		<set name="walkSpd" val="27"/>
+		<set name="runSpd" val="200"/>
+		<set name="dropHerbGroup" val="0"/>
+		<set name="attackRange" val="40"/>
+		<ai type="default" ssCount="100" ssRate="10" spsCount="100" spsRate="5" aggro="500" clan="c_dungeon_clan" clanRange="300" canMove="true" seedable="true"/>
+		<skills>
+			<skill id="4032" level="8"/>
+			<skill id="4275" level="2"/>
+			<skill id="4278" level="1"/>
+			<skill id="4408" level="12"/>
+			<skill id="4410" level="12"/>
+			<skill id="4411" level="12"/>
+			<skill id="4412" level="10"/>
+			<skill id="4413" level="10"/>
+			<skill id="4416" level="1"/>
+		</skills>
+		<drops>
+			<category id="1">
+				<drop itemid="6323" min="1" max="1" chance="51"/>
+				<drop itemid="6324" min="1" max="1" chance="67"/>
+				<drop itemid="6325" min="1" max="1" chance="101"/>
+			</category>
+			<category id="2">
+				<drop itemid="6341" min="1" max="1" chance="12134"/>
+				<drop itemid="6343" min="1" max="1" chance="9381"/>
+				<drop itemid="6345" min="1" max="1" chance="16783"/>
+				<drop itemid="7646" min="1" max="1" chance="14925"/>
+				<drop itemid="7647" min="1" max="1" chance="16393"/>
+				<drop itemid="7648" min="1" max="1" chance="15384"/>
+			</category>
+			<category id="3">
+				<drop itemid="7646" min="1" max="1" chance="45384"/>
+			</category>
+			<category id="4">
+				<drop itemid="7647" min="1" max="1" chance="45384"/>
+			</category>
+			<category id="5">
+				<drop itemid="7648" min="1" max="1" chance="45384"/>
+			</category>
+			<category id="0">
+				<drop itemid="57" min="3587" max="7319" chance="700000"/>
+			</category>
+			<category id="-1">
+				<drop itemid="729" min="1" max="1" chance="990"/>
+				<drop itemid="1877" min="1" max="1" chance="356449"/>
+				<drop itemid="5480" min="1" max="1" chance="39987"/>
+			</category>
+		</drops>
+	</npc>
+	
+	<npc id="21206" name="Nephilim Cardinal" title="">
+		<set name="level" val="78"/>
+		<set name="radius" val="21"/>
+		<set name="height" val="44"/>
+		<set name="rHand" val="0"/>
+		<set name="lHand" val="0"/>
+		<set name="type" val="L2Monster"/>
+		<set name="exp" val="31732"/>
+		<set name="sp" val="3472"/>
+		<set name="hp" val="2802.89989"/>
+		<set name="mp" val="1607.4"/>
+		<set name="hpRegen" val="8.5"/>
+		<set name="mpRegen" val="3"/>
+		<set name="pAtk" val="855.81387"/>
+		<set name="pDef" val="332.70061"/>
+		<set name="mAtk" val="584.40994"/>
+		<set name="mDef" val="221.515820894982"/>
+		<set name="crit" val="1"/>
+		<set name="atkSpd" val="253"/>
+		<set name="str" val="40"/>
+		<set name="int" val="21"/>
+		<set name="dex" val="30"/>
+		<set name="wit" val="20"/>
+		<set name="con" val="43"/>
+		<set name="men" val="20"/>
+		<set name="corpseTime" val="7"/>
+		<set name="walkSpd" val="50"/>
+		<set name="runSpd" val="180"/>
+		<set name="dropHerbGroup" val="0"/>
+		<set name="attackRange" val="40"/>
+		<ai type="default" ssCount="0" ssRate="0" spsCount="0" spsRate="0" aggro="0" clan="c_dungeon_clan" clanRange="400" ignoredIds="21177;21178;21179;21180;21181;21182;21183;21184;21185;21186" canMove="true" seedable="true"/>
+		<skills>
+			<skill id="4030" level="3"/>
+			<skill id="4046" level="8"/>
+			<skill id="4065" level="8"/>
+			<skill id="4094" level="8"/>
+			<skill id="4098" level="8"/>
+			<skill id="4285" level="5"/>
+			<skill id="4336" level="2"/>
+			<skill id="4408" level="12"/>
+			<skill id="4410" level="13"/>
+			<skill id="4411" level="13"/>
+			<skill id="4412" level="9"/>
+			<skill id="4413" level="9"/>
+			<skill id="4416" level="8"/>
+		</skills>
+		<drops>
+			<category id="1">
+				<drop itemid="6361" min="666" max="1336" chance="700000"/>
+			</category>
+			<category id="2">
+				<drop itemid="6362" min="12" max="24" chance="700000"/>
+			</category>
+			<category id="3">
+				<drop itemid="5287" min="1" max="1" chance="22"/>
+				<drop itemid="5288" min="1" max="1" chance="36"/>
+				<drop itemid="5293" min="1" max="1" chance="15"/>
+			</category>
+			<category id="4">
+				<drop itemid="5520" min="1" max="1" chance="3264"/>
+				<drop itemid="5521" min="1" max="1" chance="2304"/>
+				<drop itemid="5524" min="1" max="1" chance="4989"/>
+				<drop itemid="7674" min="1" max="1" chance="13158"/>
+				<drop itemid="7675" min="1" max="1" chance="13158"/>
+				<drop itemid="7676" min="1" max="1" chance="13158"/>
+				<drop itemid="7835" min="1" max="1" chance="12821"/>
+			</category>
+			<category id="5">
+				<drop itemid="7674" min="1" max="1" chance="39264"/>
+			</category>
+			<category id="6">
+				<drop itemid="7675" min="1" max="1" chance="39264"/>
+			</category>
+			<category id="7">
+				<drop itemid="7676" min="1" max="1" chance="39264"/>
+			</category>
+			<category id="8">
+				<drop itemid="7835" min="1" max="1" chance="39264"/>
+			</category>
+			<category id="-1">
+				<drop itemid="1875" min="1" max="1" chance="685308"/>
+				<drop itemid="5481" min="1" max="1" chance="46127"/>
+				<drop itemid="5487" min="1" max="1" chance="46290"/>
+			</category>
+		</drops>
+	</npc>
+	
+	<npc id="21185" name="Lilim Great Mystic" title="">
+		<set name="level" val="78"/>
+		<set name="radius" val="10"/>
+		<set name="height" val="37.5"/>
+		<set name="rHand" val="0"/>
+		<set name="lHand" val="0"/>
+		<set name="type" val="L2Monster"/>
+		<set name="exp" val="29220"/>
+		<set name="sp" val="3196"/>
+		<set name="hp" val="2802.89989"/>
+		<set name="mp" val="1607.4"/>
+		<set name="hpRegen" val="8.5"/>
+		<set name="mpRegen" val="3"/>
+		<set name="pAtk" val="855.81387"/>
+		<set name="pDef" val="332.70061"/>
+		<set name="mAtk" val="584.40994"/>
+		<set name="mDef" val="221.515820894982"/>
+		<set name="crit" val="1"/>
+		<set name="atkSpd" val="253"/>
+		<set name="str" val="40"/>
+		<set name="int" val="21"/>
+		<set name="dex" val="30"/>
+		<set name="wit" val="20"/>
+		<set name="con" val="43"/>
+		<set name="men" val="20"/>
+		<set name="corpseTime" val="7"/>
+		<set name="walkSpd" val="50"/>
+		<set name="runSpd" val="180"/>
+		<set name="dropHerbGroup" val="0"/>
+		<set name="attackRange" val="40"/>
+		<ai type="mage" ssCount="0" ssRate="0" spsCount="0" spsRate="0" aggro="0" clan="c_dungeon_clan" clanRange="400" ignoredIds="21198;21199;21200;21201;21202;21203;21204;21205;21206;21207" canMove="true" seedable="true"/>
+		<skills>
+			<skill id="4002" level="8"/>
+			<skill id="4046" level="8"/>
+			<skill id="4094" level="8"/>
+			<skill id="4098" level="8"/>
+			<skill id="4278" level="1"/>
+			<skill id="4285" level="5"/>
+			<skill id="4333" level="5"/>
+			<skill id="4408" level="12"/>
+			<skill id="4410" level="13"/>
+			<skill id="4411" level="13"/>
+			<skill id="4412" level="9"/>
+			<skill id="4416" level="9"/>
+		</skills>
+		<drops>
+			<category id="1">
+				<drop itemid="6361" min="612" max="1227" chance="700000"/>
+			</category>
+			<category id="2">
+				<drop itemid="6362" min="11" max="22" chance="700000"/>
+			</category>
+			<category id="3">
+				<drop itemid="5304" min="1" max="1" chance="27"/>
+				<drop itemid="5305" min="1" max="1" chance="43"/>
+				<drop itemid="5308" min="1" max="1" chance="19"/>
+			</category>
+			<category id="4">
+				<drop itemid="5485" min="1" max="1" chance="3909"/>
+				<drop itemid="5486" min="1" max="1" chance="2750"/>
+				<drop itemid="5489" min="1" max="1" chance="6135"/>
+				<drop itemid="7665" min="1" max="1" chance="16393"/>
+				<drop itemid="7666" min="1" max="1" chance="16129"/>
+				<drop itemid="7667" min="1" max="1" chance="15385"/>
+			</category>
+			<category id="5">
+				<drop itemid="7665" min="1" max="1" chance="48084"/>
+			</category>
+			<category id="6">
+				<drop itemid="7666" min="1" max="1" chance="48084"/>
+			</category>
+			<category id="7">
+				<drop itemid="7667" min="1" max="1" chance="48084"/>
+			</category>
+			<category id="-1">
+				<drop itemid="1875" min="1" max="2" chance="629418"/>
+				<drop itemid="5481" min="1" max="1" chance="42365"/>
+				<drop itemid="5487" min="1" max="1" chance="42515"/>
+			</category>
+		</drops>
+	</npc>
+	
+	<npc id="21255" name="Tomb Preacher" title="">
+		<set name="level" val="77"/>
+		<set name="radius" val="24"/>
+		<set name="height" val="50.4"/>
+		<set name="rHand" val="0"/>
+		<set name="lHand" val="0"/>
+		<set name="type" val="L2Monster"/>
+		<set name="exp" val="28760"/>
+		<set name="sp" val="3112"/>
+		<set name="hp" val="2762.08447"/>
+		<set name="mp" val="1574"/>
+		<set name="hpRegen" val="8.5"/>
+		<set name="mpRegen" val="3"/>
+		<set name="pAtk" val="835.75573"/>
+		<set name="pDef" val="328.27073"/>
+		<set name="mAtk" val="570.71283"/>
+		<set name="mDef" val="218.566351305224"/>
+		<set name="crit" val="4"/>
+		<set name="atkSpd" val="253"/>
+		<set name="str" val="40"/>
+		<set name="int" val="21"/>
+		<set name="dex" val="30"/>
+		<set name="wit" val="20"/>
+		<set name="con" val="43"/>
+		<set name="men" val="20"/>
+		<set name="corpseTime" val="7"/>
+		<set name="walkSpd" val="80"/>
+		<set name="runSpd" val="165"/>
+		<set name="dropHerbGroup" val="0"/>
+		<set name="attackRange" val="40"/>
+		<ai type="default" ssCount="0" ssRate="0" spsCount="0" spsRate="0" aggro="500" clan="c_dungeon_clan" clanRange="300" canMove="true" seedable="true"/>
+		<skills>
+			<skill id="4002" level="8"/>
+			<skill id="4274" level="1"/>
+			<skill id="4275" level="2"/>
+			<skill id="4278" level="1"/>
+			<skill id="4408" level="12"/>
+			<skill id="4412" level="13"/>
+			<skill id="4414" level="3"/>
+			<skill id="4416" level="1"/>
+		</skills>
+		<drops>
+			<category id="1">
+				<drop itemid="5297" min="1" max="1" chance="27"/>
+				<drop itemid="5298" min="1" max="1" chance="44"/>
+				<drop itemid="5301" min="1" max="1" chance="19"/>
+			</category>
+			<category id="2">
+				<drop itemid="5478" min="1" max="1" chance="3926"/>
+				<drop itemid="5479" min="1" max="1" chance="2763"/>
+				<drop itemid="5482" min="1" max="1" chance="6162"/>
+				<drop itemid="7662" min="1" max="1" chance="15873"/>
+				<drop itemid="7663" min="1" max="1" chance="15625"/>
+				<drop itemid="7664" min="1" max="1" chance="16667"/>
+			</category>
+			<category id="3">
+				<drop itemid="7662" min="1" max="1" chance="48297"/>
+			</category>
+			<category id="4">
+				<drop itemid="7663" min="1" max="1" chance="48297"/>
+			</category>
+			<category id="5">
+				<drop itemid="7664" min="1" max="1" chance="48300"/>
+			</category>
+			<category id="0">
+				<drop itemid="57" min="3814" max="7793" chance="700000"/>
+			</category>
+			<category id="-1">
+				<drop itemid="4041" min="1" max="1" chance="82464"/>
+				<drop itemid="5481" min="1" max="1" chance="42554"/>
+				<drop itemid="5487" min="1" max="1" chance="42704"/>
+			</category>
+		</drops>
+	</npc>
+	
+	<npc id="21207" name="Nephilim Commander" title="">
+		<set name="level" val="78"/>
+		<set name="radius" val="13"/>
+		<set name="height" val="48"/>
+		<set name="rHand" val="0"/>
+		<set name="lHand" val="0"/>
+		<set name="type" val="L2Monster"/>
+		<set name="exp" val="39789"/>
+		<set name="sp" val="4696"/>
+		<set name="hp" val="2937.9838056"/>
+		<set name="mp" val="1708.296"/>
+		<set name="hpRegen" val="8.67"/>
+		<set name="mpRegen" val="3.06"/>
+		<set name="pAtk" val="912.6537108"/>
+		<set name="pDef" val="348.2025"/>
+		<set name="mAtk" val="635.688655236"/>
+		<set name="mDef" val="231.837152158566"/>
+		<set name="crit" val="4"/>
+		<set name="atkSpd" val="253"/>
+		<set name="str" val="40"/>
+		<set name="int" val="21"/>
+		<set name="dex" val="30"/>
+		<set name="wit" val="20"/>
+		<set name="con" val="43"/>
+		<set name="men" val="20"/>
+		<set name="corpseTime" val="7"/>
+		<set name="walkSpd" val="65"/>
+		<set name="runSpd" val="200"/>
+		<set name="dropHerbGroup" val="0"/>
+		<set name="attackRange" val="40"/>
+		<ai type="default" ssCount="0" ssRate="0" spsCount="0" spsRate="0" aggro="0" clan="c_dungeon_clan" clanRange="400" ignoredIds="21177;21178;21179;21180;21181;21182;21183;21184;21185;21186" canMove="true" seedable="true"/>
+		<skills>
+			<skill id="4032" level="9"/>
+			<skill id="4072" level="9"/>
+			<skill id="4091" level="1"/>
+			<skill id="4285" level="3"/>
+			<skill id="4287" level="3"/>
+			<skill id="4336" level="2"/>
+			<skill id="4408" level="12"/>
+			<skill id="4410" level="13"/>
+			<skill id="4411" level="13"/>
+			<skill id="4412" level="16"/>
+			<skill id="4413" level="9"/>
+			<skill id="4416" level="8"/>
+		</skills>
+		<drops>
+			<category id="1">
+				<drop itemid="6361" min="805" max="1610" chance="700000"/>
+			</category>
+			<category id="2">
+				<drop itemid="6362" min="14" max="28" chance="700000"/>
+			</category>
+			<category id="3">
+				<drop itemid="5312" min="1" max="1" chance="48"/>
+				<drop itemid="5315" min="1" max="1" chance="68"/>
+				<drop itemid="5317" min="1" max="1" chance="48"/>
+			</category>
+			<category id="4">
+				<drop itemid="729" min="1" max="1" chance="973"/>
+				<drop itemid="1866" min="1" max="3" chance="125000"/>
+				<drop itemid="1871" min="4" max="12" chance="71429"/>
+				<drop itemid="1877" min="1" max="1" chance="31250"/>
+				<drop itemid="4040" min="1" max="1" chance="12658"/>
+				<drop itemid="4041" min="1" max="1" chance="4065"/>
+				<drop itemid="5495" min="1" max="1" chance="9477"/>
+				<drop itemid="5527" min="1" max="1" chance="7462"/>
+				<drop itemid="5528" min="1" max="1" chance="7462"/>
+			</category>
+			<category id="-1">
+				<drop itemid="730" min="1" max="1" chance="10564"/>
+				<drop itemid="5480" min="1" max="1" chance="56883"/>
+				<drop itemid="5488" min="1" max="1" chance="57085"/>
+			</category>
+		</drops>
+	</npc>
+	
+	<npc id="21165" name="Lesser Ancient Warrior" title="">
+		<set name="level" val="78"/>
+		<set name="radius" val="7"/>
+		<set name="height" val="28"/>
+		<set name="rHand" val="0"/>
+		<set name="lHand" val="0"/>
+		<set name="type" val="L2Monster"/>
+		<set name="exp" val="29512"/>
+		<set name="sp" val="3484"/>
+		<set name="hp" val="2937.9838056"/>
+		<set name="mp" val="1708.296"/>
+		<set name="hpRegen" val="8.67"/>
+		<set name="mpRegen" val="3.06"/>
+		<set name="pAtk" val="912.6537108"/>
+		<set name="pDef" val="348.2025"/>
+		<set name="mAtk" val="635.688655236"/>
+		<set name="mDef" val="231.837152158566"/>
+		<set name="crit" val="1"/>
+		<set name="atkSpd" val="253"/>
+		<set name="str" val="40"/>
+		<set name="int" val="21"/>
+		<set name="dex" val="30"/>
+		<set name="wit" val="20"/>
+		<set name="con" val="43"/>
+		<set name="men" val="20"/>
+		<set name="corpseTime" val="7"/>
+		<set name="walkSpd" val="48"/>
+		<set name="runSpd" val="200"/>
+		<set name="dropHerbGroup" val="0"/>
+		<set name="attackRange" val="40"/>
+		<ai type="default" ssCount="0" ssRate="0" spsCount="0" spsRate="0" aggro="500" clan="c_dungeon_clan" clanRange="300" canMove="true" seedable="true"/>
+		<skills>
+			<skill id="4046" level="9"/>
+			<skill id="4094" level="9"/>
+			<skill id="4098" level="9"/>
+			<skill id="4105" level="9"/>
+			<skill id="4408" level="12"/>
+			<skill id="4410" level="13"/>
+			<skill id="4411" level="13"/>
+			<skill id="4413" level="9"/>
+			<skill id="4416" level="9"/>
+		</skills>
+		<drops>
+			<category id="1">
+				<drop itemid="5320" min="1" max="1" chance="20"/>
+				<drop itemid="5323" min="1" max="1" chance="20"/>
+			</category>
+			<category id="2">
+				<drop itemid="729" min="1" max="1" chance="49"/>
+				<drop itemid="730" min="1" max="1" chance="236"/>
+				<drop itemid="1895" min="1" max="1" chance="90909"/>
+				<drop itemid="4040" min="1" max="1" chance="4739"/>
+				<drop itemid="4042" min="1" max="1" chance="4831"/>
+				<drop itemid="4043" min="1" max="1" chance="10204"/>
+				<drop itemid="5480" min="1" max="1" chance="3417"/>
+				<drop itemid="5481" min="1" max="1" chance="3417"/>
+				<drop itemid="6037" min="1" max="3" chance="333333"/>
+				<drop itemid="8732" min="1" max="1" chance="2114"/>
+				<drop itemid="8742" min="1" max="1" chance="272"/>
+				<drop itemid="8752" min="1" max="1" chance="165"/>
+			</category>
+			<category id="0">
+				<drop itemid="57" min="4147" max="8467" chance="700000"/>
+			</category>
+			<category id="-1">
+				<drop itemid="730" min="1" max="1" chance="8591"/>
+				<drop itemid="5488" min="1" max="1" chance="46422"/>
+				<drop itemid="5495" min="1" max="1" chance="156540"/>
+			</category>
+		</drops>
+	</npc>
+	
+	<npc id="21186" name="Lilim Court Knight" title="">
+		<set name="level" val="78"/>
+		<set name="radius" val="13"/>
+		<set name="height" val="55"/>
+		<set name="rHand" val="5800"/>
+		<set name="lHand" val="5799"/>
+		<set name="type" val="L2Monster"/>
+		<set name="exp" val="39789"/>
+		<set name="sp" val="4696"/>
+		<set name="hp" val="2937.9838056"/>
+		<set name="mp" val="1708.296"/>
+		<set name="hpRegen" val="8.67"/>
+		<set name="mpRegen" val="3.06"/>
+		<set name="pAtk" val="912.6537108"/>
+		<set name="pDef" val="348.2025"/>
+		<set name="mAtk" val="635.688655236"/>
+		<set name="mDef" val="231.837152158566"/>
+		<set name="crit" val="4"/>
+		<set name="atkSpd" val="253"/>
+		<set name="str" val="40"/>
+		<set name="int" val="21"/>
+		<set name="dex" val="30"/>
+		<set name="wit" val="20"/>
+		<set name="con" val="43"/>
+		<set name="men" val="20"/>
+		<set name="corpseTime" val="7"/>
+		<set name="walkSpd" val="56"/>
+		<set name="runSpd" val="200"/>
+		<set name="dropHerbGroup" val="0"/>
+		<set name="attackRange" val="40"/>
+		<ai type="default" ssCount="0" ssRate="0" spsCount="0" spsRate="0" aggro="0" clan="c_dungeon_clan" clanRange="400" ignoredIds="21198;21199;21200;21201;21202;21203;21204;21205;21206;21207" canMove="true" seedable="true"/>
+		<skills>
+			<skill id="4032" level="9"/>
+			<skill id="4072" level="9"/>
+			<skill id="4092" level="1"/>
+			<skill id="4278" level="1"/>
+			<skill id="4285" level="3"/>
+			<skill id="4287" level="3"/>
+			<skill id="4333" level="5"/>
+			<skill id="4408" level="12"/>
+			<skill id="4410" level="13"/>
+			<skill id="4411" level="13"/>
+			<skill id="4412" level="16"/>
+			<skill id="4413" level="9"/>
+			<skill id="4416" level="9"/>
+		</skills>
+		<drops>
+			<category id="1">
+				<drop itemid="6361" min="805" max="1610" chance="700000"/>
+			</category>
+			<category id="2">
+				<drop itemid="6362" min="14" max="28" chance="700000"/>
+			</category>
+			<category id="3">
+				<drop itemid="5312" min="1" max="1" chance="48"/>
+				<drop itemid="5315" min="1" max="1" chance="68"/>
+				<drop itemid="5317" min="1" max="1" chance="48"/>
+			</category>
+			<category id="4">
+				<drop itemid="729" min="1" max="1" chance="173"/>
+				<drop itemid="1866" min="1" max="3" chance="142857"/>
+				<drop itemid="1871" min="4" max="12" chance="76923"/>
+				<drop itemid="1877" min="1" max="1" chance="23810"/>
+				<drop itemid="4040" min="1" max="1" chance="15152"/>
+				<drop itemid="4041" min="1" max="1" chance="4975"/>
+				<drop itemid="5495" min="1" max="1" chance="9477"/>
+				<drop itemid="5527" min="1" max="1" chance="7462"/>
+				<drop itemid="5528" min="1" max="1" chance="7462"/>
+			</category>
+			<category id="-1">
+				<drop itemid="730" min="1" max="1" chance="10564"/>
+				<drop itemid="5480" min="1" max="1" chance="56883"/>
+				<drop itemid="5488" min="1" max="1" chance="57085"/>
+			</category>
+		</drops>
+	</npc>
+	
+</list>

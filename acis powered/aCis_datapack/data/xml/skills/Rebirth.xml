@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='utf-8'?>
+<list>
+	<skill id="549" levels="3" name="Rebirth Guidance">
+		<!-- Lv 1: Increases accuracy by 5%. -->
+		<!-- Lv 2: Increases accuracy by 10%. -->
+		<!-- Lv 3: Increases accuracy by 15%. -->
+		<table name="#reb"> 1.05 1.1 1.15 </table>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<mul order="0x30" stat="accCombat" val="#reb"/>
+		</for>
+	</skill>
+	<skill id="550" levels="3" name="Rebirth Haste">
+		<!-- Lv 1: Increases Atk. Spd. by 5%. -->
+		<!-- Lv 2: Increases Atk. Spd. by 10%. -->
+		<!-- Lv 3: Increases Atk. Spd. by 15%. -->
+		<table name="#reb"> 1.05 1.1 1.15 </table>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<mul order="0x30" stat="pAtkSpd" val="#reb"/>
+		</for>
+	</skill>
+	<skill id="551" levels="3" name="Rebirth Health">
+		<!-- Lv 1: Increases HP by 10%. -->
+		<!-- Lv 2: Increases HP by 20%. -->
+		<!-- Lv 3: Increases HP by 30%. -->
+		<table name="#reb"> 1.1 1.2 1.3 </table>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<mul order="0x30" stat="maxHp" val="#reb"/>
+		</for>
+	</skill>
+	<skill id="552" levels="3" name="Rebirth Mana">
+		<!-- Lv 1: Increases MP by 10%. -->
+		<!-- Lv 2: Increases MP by 20%. -->
+		<!-- Lv 3: Increases MP by 30%. -->
+		<table name="#reb"> 1.1 1.2 1.3 </table>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<mul order="0x30" stat="maxMp" val="#reb"/>
+		</for>
+	</skill>
+	<skill id="553" levels="3" name="Rebirth Wind Walk">
+		<!-- Lv 1: Increases speed by 5%. -->
+		<!-- Lv 2: Increases speed by 10%. -->
+		<!-- Lv 3: Increases speed by 15%. -->
+		<table name="#reb"> 1.05 1.1 1.15 </table>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<mul order="0x30" stat="runSpd" val="#reb"/>
+		</for>
+	</skill>
+	<skill id="554" levels="3" name="Rebirth Focus">
+		<!-- Lv 1: Increases critical attack rate by 15. -->
+		<!-- Lv 2: Increases critical attack rate by 30. -->
+		<!-- Lv 3: Increases critical attack rate by 45. -->
+		<table name="#reb"> 15 30 45 </table>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<add order="0x40" stat="rCrit" val="#reb"/>
+		</for>
+	</skill>
+	<skill id="555" levels="3" name="Rebirth Might">
+		<!-- Lv 1: Increases P. Atk. by 5%. -->
+		<!-- Lv 2: Increases P. Atk. by 10%. -->
+		<!-- Lv 3: Increases P. Atk. by 15%. -->
+		<table name="#reb"> 1.05 1.1 1.15 </table>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<mul order="0x30" stat="pAtk" val="#reb"/>
+		</for>
+	</skill>
+	<skill id="556" levels="3" name="Rebirth Empower">
+		<!-- Lv 1: Increases M. Atk. by 5%. -->
+		<!-- Lv 2: Increases M. Atk. by 10%. -->
+		<!-- Lv 3: Increases M. Atk. by 15%. -->
+		<table name="#reb"> 1.05 1.1 1.15 </table>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<mul order="0x30" stat="mAtk" val="#reb"/>
+		</for>
+	</skill>
+	<skill id="557" levels="3" name="Rebirth Shield">
+		<!-- Lv 1: Increases P. Def. by 5%. -->
+		<!-- Lv 2: Increases P. Def. by 10%. -->
+		<!-- Lv 3: Increases P. Def. by 15%. -->
+		<table name="#reb"> 1.05 1.1 1.15 </table>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<mul order="0x30" stat="pDef" val="#reb"/>
+		</for>
+	</skill>
+	<skill id="558" levels="3" name="Rebirth Magic Barrier">
+		<!-- Lv 1: Increases M. Def. by 5%. -->
+		<!-- Lv 2: Increases M. Def. by 10%. -->
+		<!-- Lv 3: Increases M. Def. by 15%. -->
+		<table name="#reb"> 1.05 1.1 1.15 </table>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<mul order="0x30" stat="mDef" val="#reb"/>
+		</for>
+	</skill>
+	<skill id="559" levels="3" name="Rebirth Agility">
+		<!-- Lv 1: Increases Evasion by 6. -->
+		<!-- Lv 2: Increases Evasion by 11. -->
+		<!-- Lv 3: Increases Evasion by 17. -->
+		<table name="#reb"> 6 11 17 </table>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<add order="0x10" stat="rEvas" val="#reb"/>
+		</for>
+	</skill>
+	<skill id="560" levels="3" name="Rebirth Acumen">
+		<!-- Lv 1: Increases Casting Speed by 5%. -->
+		<!-- Lv 2: Increases Casting Speed by 10%. -->
+		<!-- Lv 3: Increases Casting Speed by 15%. -->
+		<table name="#reb"> 1.05 1.1 1.15 </table>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<mul order="0x30" stat="mAtkSpd" val="#reb"/>
+		</for>
+	</skill>
+</list>

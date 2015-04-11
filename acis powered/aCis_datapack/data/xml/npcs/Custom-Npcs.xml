@@ -1,0 +1,1082 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+
+	<npc id="1" idTemplate="31309" name="Achievements" title="L2JxTreme">
+	    <set name="level" val="85"/>
+		<set name="radius" val="7"/>
+		<set name="height" val="21"/>
+		<set name="rHand" val="0"/>
+		<set name="lHand" val="0"/>
+		<set name="type" val="L2Achievements"/>
+		<set name="exp" val="0"/>
+		<set name="sp" val="0"/>
+		<set name="hp" val="4234.06312688557"/>
+		<set name="mp" val="1846.8"/>
+		<set name="hpRegen" val="8.5"/>
+		<set name="mpRegen" val="3"/>
+		<set name="pAtk" val="1188.87259499001"/>
+		<set name="pDef" val="361.78814"/>
+		<set name="mAtk" val="811.84586495282"/>
+		<set name="mDef" val="264.74086"/>
+		<set name="crit" val="4"/>
+		<set name="atkSpd" val="253"/>
+		<set name="str" val="40"/>
+		<set name="int" val="21"/>
+		<set name="dex" val="30"/>
+		<set name="wit" val="20"/>
+		<set name="con" val="43"/>
+		<set name="men" val="20"/>
+		<set name="corpseTime" val="7"/>
+		<set name="walkSpd" val="50"/>
+		<set name="runSpd" val="1"/>
+		<set name="dropHerbGroup" val="0"/>
+		<set name="attackRange" val="40"/>
+		<ai type="default" ssCount="0" ssRate="0" spsCount="0" spsRate="0" aggro="0" canMove="true" seedable="false"/>
+		<skills>
+			<skill id="4045" level="1"/>
+			<skill id="4416" level="19"/>
+		</skills>
+	</npc>
+	
+	<npc id="2" idTemplate="30519" name="Buffer" title="L2JxTreme">
+		<set name="level" val="70"/>
+		<set name="radius" val="8"/>
+		<set name="height" val="25"/>
+		<set name="rHand" val="0"/>
+		<set name="lHand" val="0"/>
+		<set name="type" val="L2EffectBuffer"/>
+		<set name="exp" val="0"/>
+		<set name="sp" val="0"/>
+		<set name="hp" val="2444.46819"/>
+		<set name="mp" val="1345.8"/>
+		<set name="hpRegen" val="7.5"/>
+		<set name="mpRegen" val="2.7"/>
+		<set name="pAtk" val="688.86373"/>
+		<set name="pDef" val="295.91597"/>
+		<set name="mAtk" val="470.40463"/>
+		<set name="mDef" val="216.53847"/>
+		<set name="crit" val="4"/>
+		<set name="atkSpd" val="253"/>
+		<set name="str" val="40"/>
+		<set name="int" val="21"/>
+		<set name="dex" val="30"/>
+		<set name="wit" val="20"/>
+		<set name="con" val="43"/>
+		<set name="men" val="20"/>
+		<set name="corpseTime" val="7"/>
+		<set name="walkSpd" val="50"/>
+		<set name="runSpd" val="120"/>
+		<set name="dropHerbGroup" val="0"/>
+		<set name="attackRange" val="40"/>
+		<ai type="default" ssCount="0" ssRate="0" spsCount="0" spsRate="0" aggro="0" canMove="true" seedable="false"/>
+		<skills>
+			<skill id="4045" level="1"/>
+			<skill id="4416" level="18"/>
+		</skills>
+	</npc>
+	
+	<npc id="3" idTemplate="30523" name="Vote Manager" title="L2JxTreme">
+		<set name="level" val="70"/>
+		<set name="radius" val="8.0"/>
+		<set name="height" val="18.0"/>
+		<set name="rHand" val="0"/>
+		<set name="lHand" val="0"/>
+		<set name="type" val="L2VoteManager"/>
+		<set name="exp" val="0"/>
+		<set name="sp" val="0"/>
+		<set name="hp" val="2444.46819"/>
+		<set name="mp" val="1345.8"/>
+		<set name="hpRegen" val="7.5"/>
+		<set name="mpRegen" val="2.7"/>
+		<set name="pAtk" val="688.86373"/>
+		<set name="pDef" val="700.91597"/>
+		<set name="mAtk" val="470.40463"/>
+		<set name="mDef" val="700.53847"/>
+		<set name="crit" val="4"/>
+		<set name="atkSpd" val="253"/>
+		<set name="str" val="22"/>
+		<set name="int" val="41"/>
+		<set name="dex" val="21"/>
+		<set name="wit" val="20"/>
+		<set name="con" val="27"/>
+		<set name="men" val="20"/>
+		<set name="corpseTime" val="7"/>
+		<set name="walkSpd" val="33"/>
+		<set name="runSpd" val="120"/>
+		<set name="dropHerbGroup" val="0"/>
+		<set name="attackRange" val="40"/>
+		<ai type="mage" ssCount="0" ssRate="0" spsCount="0" spsRate="0" aggro="0" clan="" clanRange="0" clanIgnore="" canMove="false" seedable="false"/>
+	</npc>
+	
+	<npc id="4" idTemplate="22124" name="Services Npc" title="L2JxTreme">
+		<set name="level" val="70"/>
+		<set name="radius" val="9"/>
+		<set name="height" val="24.4"/>
+		<set name="rHand" val="316"/>
+		<set name="lHand" val="0"/>
+		<set name="type" val="L2Npc"/>
+		<set name="exp" val="0"/>
+		<set name="sp" val="0"/>
+		<set name="hp" val="2444.46819"/>
+		<set name="mp" val="1345.8"/>
+		<set name="hpRegen" val="7.5"/>
+		<set name="mpRegen" val="2.7"/>
+		<set name="pAtk" val="688.86373"/>
+		<set name="pDef" val="295.91597"/>
+		<set name="mAtk" val="470.40463"/>
+		<set name="mDef" val="216.53847"/>
+		<set name="crit" val="4"/>
+		<set name="atkSpd" val="253"/>
+		<set name="str" val="40"/>
+		<set name="int" val="21"/>
+		<set name="dex" val="30"/>
+		<set name="wit" val="20"/>
+		<set name="con" val="43"/>
+		<set name="men" val="20"/>
+		<set name="corpseTime" val="7"/>
+		<set name="walkSpd" val="50"/>
+		<set name="runSpd" val="120"/>
+		<set name="dropHerbGroup" val="0"/>
+		<set name="attackRange" val="40"/>
+		<ai type="default" ssCount="0" ssRate="0" spsCount="0" spsRate="0" aggro="0" canMove="true" seedable="false"/>
+		<skills>
+			<skill id="4045" level="1"/>
+			<skill id="4416" level="16"/>
+		</skills>
+	</npc>	
+
+	<npc id="5" idTemplate="30951" name="Boss Info" title="L2JxTreme">
+		<set name="level" val="70"/>
+		<set name="radius" val="7"/>
+		<set name="height" val="18"/>
+		<set name="rHand" val="0"/>
+		<set name="lHand" val="0"/>
+		<set name="type" val="L2Npc"/>
+		<set name="exp" val="0"/>
+		<set name="sp" val="0"/>
+		<set name="hp" val="2444.46819"/>
+		<set name="mp" val="1345.8"/>
+		<set name="hpRegen" val="7.5"/>
+		<set name="mpRegen" val="2.7"/>
+		<set name="pAtk" val="688.86373"/>
+		<set name="pDef" val="295.91597"/>
+		<set name="mAtk" val="470.40463"/>
+		<set name="mDef" val="216.53847"/>
+		<set name="crit" val="4"/>
+		<set name="atkSpd" val="253"/>
+		<set name="str" val="40"/>
+		<set name="int" val="21"/>
+		<set name="dex" val="30"/>
+		<set name="wit" val="20"/>
+		<set name="con" val="43"/>
+		<set name="men" val="20"/>
+		<set name="corpseTime" val="7"/>
+		<set name="walkSpd" val="50"/>
+		<set name="runSpd" val="120"/>
+		<set name="dropHerbGroup" val="0"/>
+		<set name="attackRange" val="40"/>
+		<ai type="default" ssCount="0" ssRate="0" spsCount="0" spsRate="0" aggro="0" canMove="true" seedable="false"/>
+		<skills>
+			<skill id="4045" level="1"/>
+			<skill id="4416" level="18"/>
+		</skills>
+	</npc>
+	
+	<npc id="6" idTemplate="32083" name="Npc Enchanter" title="L2JxTreme">
+		<set name="level" val="70"/>
+		<set name="radius" val="8.0"/>
+		<set name="height" val="23.0"/>
+		<set name="rHand" val="0"/>
+		<set name="lHand" val="0"/>
+		<set name="type" val="L2EnchantNpc"/>
+		<set name="exp" val="0"/>
+		<set name="sp" val="0"/>
+		<set name="hp" val="2444.46819"/>
+		<set name="mp" val="1345.8"/>
+		<set name="hpRegen" val="7.5"/>
+		<set name="mpRegen" val="2.7"/>
+		<set name="pAtk" val="688.86373"/>
+		<set name="pDef" val="700.91597"/>
+		<set name="mAtk" val="470.40463"/>
+		<set name="mDef" val="700.53847"/>
+		<set name="crit" val="4"/>
+		<set name="atkSpd" val="253"/>
+		<set name="str" val="22"/>
+		<set name="int" val="41"/>
+		<set name="dex" val="21"/>
+		<set name="wit" val="20"/>
+		<set name="con" val="27"/>
+		<set name="men" val="20"/>
+		<set name="corpseTime" val="7"/>
+		<set name="walkSpd" val="33"/>
+		<set name="runSpd" val="120"/>
+		<set name="dropHerbGroup" val="0"/>
+		<set name="attackRange" val="40"/>
+		<ai type="mage" ssCount="0" ssRate="0" spsCount="0" spsRate="0" aggro="0" clan="" clanRange="0" clanIgnore="" canMove="false" seedable="false"/>
+	</npc>
+	
+	<npc id="7" idTemplate="27167" name="Bug Report" title="L2JxTreme">
+		<set name="level" val="70"/>
+		<set name="radius" val="26.0"/>
+		<set name="height" val="52.0"/>
+		<set name="rHand" val="0"/>
+		<set name="lHand" val="0"/>
+		<set name="type" val="L2BugReport"/>
+		<set name="exp" val="0"/>
+		<set name="sp" val="0"/>
+		<set name="hp" val="2444.46819"/>
+		<set name="mp" val="1345.8"/>
+		<set name="hpRegen" val="7.5"/>
+		<set name="mpRegen" val="2.7"/>
+		<set name="pAtk" val="688.86373"/>
+		<set name="pDef" val="700.91597"/>
+		<set name="mAtk" val="470.40463"/>
+		<set name="mDef" val="700.53847"/>
+		<set name="crit" val="4"/>
+		<set name="atkSpd" val="253"/>
+		<set name="str" val="22"/>
+		<set name="int" val="41"/>
+		<set name="dex" val="21"/>
+		<set name="wit" val="20"/>
+		<set name="con" val="27"/>
+		<set name="men" val="20"/>
+		<set name="corpseTime" val="7"/>
+		<set name="walkSpd" val="33"/>
+		<set name="runSpd" val="120"/>
+		<set name="dropHerbGroup" val="0"/>
+		<set name="attackRange" val="40"/>
+		<ai type="mage" ssCount="0" ssRate="0" spsCount="0" spsRate="0" aggro="0" clan="" clanRange="0" clanIgnore="" canMove="false" seedable="false"/>
+	</npc>
+	
+	<npc id="8" idTemplate="35188" name="Siege Manager" title="L2JxTreme">
+		<set name="level" val="70"/>
+		<set name="radius" val="8.0"/>
+		<set name="height" val="24.0"/>
+		<set name="rHand" val="0"/>
+		<set name="lHand" val="0"/>
+		<set name="type" val="L2SiegeRegister"/>
+		<set name="exp" val="0"/>
+		<set name="sp" val="0"/>
+		<set name="hp" val="2444.46819"/>
+		<set name="mp" val="1345.8"/>
+		<set name="hpRegen" val="7.5"/>
+		<set name="mpRegen" val="2.7"/>
+		<set name="pAtk" val="688.86373"/>
+		<set name="pDef" val="700.91597"/>
+		<set name="mAtk" val="470.40463"/>
+		<set name="mDef" val="700.53847"/>
+		<set name="crit" val="4"/>
+		<set name="atkSpd" val="253"/>
+		<set name="str" val="22"/>
+		<set name="int" val="41"/>
+		<set name="dex" val="21"/>
+		<set name="wit" val="20"/>
+		<set name="con" val="27"/>
+		<set name="men" val="20"/>
+		<set name="corpseTime" val="7"/>
+		<set name="walkSpd" val="33"/>
+		<set name="runSpd" val="120"/>
+		<set name="dropHerbGroup" val="0"/>
+		<set name="attackRange" val="40"/>
+		<ai type="mage" ssCount="0" ssRate="0" spsCount="0" spsRate="0" aggro="0" clan="" clanRange="0" clanIgnore="" canMove="false" seedable="false"/>
+	</npc>
+	
+	<npc id="9" idTemplate="31846" name="Casino" title="L2JxTreme">
+		<set name="level" val="70"/>
+		<set name="radius" val="8.0"/>
+		<set name="height" val="33.0"/>
+		<set name="rHand" val="291"/>
+		<set name="lHand" val="0"/>
+		<set name="type" val="L2Casino"/>
+		<set name="exp" val="0"/>
+		<set name="sp" val="0"/>
+		<set name="hp" val="2444.46819"/>
+		<set name="mp" val="1345.8"/>
+		<set name="hpRegen" val="7.5"/>
+		<set name="mpRegen" val="2.7"/>
+		<set name="pAtk" val="688.86373"/>
+		<set name="pDef" val="700.91597"/>
+		<set name="mAtk" val="470.40463"/>
+		<set name="mDef" val="700.53847"/>
+		<set name="crit" val="4"/>
+		<set name="atkSpd" val="253"/>
+		<set name="str" val="22"/>
+		<set name="int" val="41"/>
+		<set name="dex" val="21"/>
+		<set name="wit" val="20"/>
+		<set name="con" val="27"/>
+		<set name="men" val="20"/>
+		<set name="corpseTime" val="7"/>
+		<set name="walkSpd" val="33"/>
+		<set name="runSpd" val="120"/>
+		<set name="dropHerbGroup" val="0"/>
+		<set name="attackRange" val="40"/>
+		<ai type="mage" ssCount="0" ssRate="0" spsCount="0" spsRate="0" aggro="0" clan="" clanRange="0" clanIgnore="" canMove="false" seedable="false"/>
+	</npc>
+	
+	<npc id="10" idTemplate="31228" name="Class Changer" title="L2JxTreme">
+		<set name="level" val="70"/>
+		<set name="radius" val="8.0"/>
+		<set name="height" val="18.0"/>
+		<set name="rHand" val="0"/>
+		<set name="lHand" val="0"/>
+		<set name="type" val="L2ClassMaster"/>
+		<set name="exp" val="0"/>
+		<set name="sp" val="0"/>
+		<set name="hp" val="2444.46819"/>
+		<set name="mp" val="1345.8"/>
+		<set name="hpRegen" val="7.5"/>
+		<set name="mpRegen" val="2.7"/>
+		<set name="pAtk" val="688.86373"/>
+		<set name="pDef" val="700.91597"/>
+		<set name="mAtk" val="470.40463"/>
+		<set name="mDef" val="700.53847"/>
+		<set name="crit" val="4"/>
+		<set name="atkSpd" val="253"/>
+		<set name="str" val="22"/>
+		<set name="int" val="41"/>
+		<set name="dex" val="21"/>
+		<set name="wit" val="20"/>
+		<set name="con" val="27"/>
+		<set name="men" val="20"/>
+		<set name="corpseTime" val="7"/>
+		<set name="walkSpd" val="33"/>
+		<set name="runSpd" val="120"/>
+		<set name="dropHerbGroup" val="0"/>
+		<set name="attackRange" val="40"/>
+		<ai type="mage" ssCount="0" ssRate="0" spsCount="0" spsRate="0" aggro="0" clan="" clanRange="0" clanIgnore="" canMove="false" seedable="false"/>
+	</npc>
+	
+	<npc id="11" idTemplate="31324" name="Vip Manager" title="L2JxTreme">
+		<set name="level" val="70"/>
+		<set name="radius" val="8"/>
+		<set name="height" val="23"/>
+		<set name="rHand" val="316"/>
+		<set name="lHand" val="0"/>
+		<set name="type" val="L2VipManager"/>
+		<set name="exp" val="0"/>
+		<set name="sp" val="0"/>
+		<set name="hp" val="2444.46819"/>
+		<set name="mp" val="1345.8"/>
+		<set name="hpRegen" val="7.5"/>
+		<set name="mpRegen" val="2.7"/>
+		<set name="pAtk" val="688.86373"/>
+		<set name="pDef" val="295.91597"/>
+		<set name="mAtk" val="470.40463"/>
+		<set name="mDef" val="216.53847"/>
+		<set name="crit" val="4"/>
+		<set name="atkSpd" val="253"/>
+		<set name="str" val="40"/>
+		<set name="int" val="21"/>
+		<set name="dex" val="30"/>
+		<set name="wit" val="20"/>
+		<set name="con" val="43"/>
+		<set name="men" val="20"/>
+		<set name="corpseTime" val="7"/>
+		<set name="walkSpd" val="50"/>
+		<set name="runSpd" val="120"/>
+		<set name="dropHerbGroup" val="0"/>
+		<set name="attackRange" val="40"/>
+		<ai type="default" ssCount="0" ssRate="0" spsCount="0" spsRate="0" aggro="0" canMove="true" seedable="false"/>
+		<skills>
+			<skill id="4045" level="1"/>
+			<skill id="4416" level="16"/>
+		</skills>
+	</npc>
+	
+	<npc id="12" idTemplate="31913" name="Normal GateKeeper" title="L2JxTreme">
+	    <set name="level" val="85"/>
+		<set name="radius" val="7"/>
+		<set name="height" val="18"/>
+		<set name="rHand" val="0"/>
+		<set name="lHand" val="0"/>
+		<set name="type" val="L2Teleporter"/>
+		<set name="exp" val="0"/>
+		<set name="sp" val="0"/>
+		<set name="hp" val="4234.06312688557"/>
+		<set name="mp" val="1846.8"/>
+		<set name="hpRegen" val="8.5"/>
+		<set name="mpRegen" val="3"/>
+		<set name="pAtk" val="1188.87259499001"/>
+		<set name="pDef" val="361.78814"/>
+		<set name="mAtk" val="811.84586495282"/>
+		<set name="mDef" val="264.74086"/>
+		<set name="crit" val="4"/>
+		<set name="atkSpd" val="253"/>
+		<set name="str" val="40"/>
+		<set name="int" val="21"/>
+		<set name="dex" val="30"/>
+		<set name="wit" val="20"/>
+		<set name="con" val="43"/>
+		<set name="men" val="20"/>
+		<set name="corpseTime" val="7"/>
+		<set name="walkSpd" val="50"/>
+		<set name="runSpd" val="1"/>
+		<set name="dropHerbGroup" val="0"/>
+		<set name="attackRange" val="40"/>
+		<ai type="default" ssCount="0" ssRate="0" spsCount="0" spsRate="0" aggro="0" canMove="true" seedable="false"/>
+		<skills>
+			<skill id="4045" level="1"/>
+			<skill id="4416" level="19"/>
+		</skills>
+	</npc>
+	
+	<npc id="13" idTemplate="30519" name="Change Sex" title="L2JxTreme">
+		<set name="level" val="70"/>
+		<set name="radius" val="7"/>
+		<set name="height" val="18"/>
+		<set name="rHand" val="0"/>
+		<set name="lHand" val="0"/>
+		<set name="type" val="L2Npc"/>
+		<set name="exp" val="0"/>
+		<set name="sp" val="0"/>
+		<set name="hp" val="2444.46819"/>
+		<set name="mp" val="1345.8"/>
+		<set name="hpRegen" val="7.5"/>
+		<set name="mpRegen" val="2.7"/>
+		<set name="pAtk" val="688.86373"/>
+		<set name="pDef" val="295.91597"/>
+		<set name="mAtk" val="470.40463"/>
+		<set name="mDef" val="216.53847"/>
+		<set name="crit" val="4"/>
+		<set name="atkSpd" val="253"/>
+		<set name="str" val="40"/>
+		<set name="int" val="21"/>
+		<set name="dex" val="30"/>
+		<set name="wit" val="20"/>
+		<set name="con" val="43"/>
+		<set name="men" val="20"/>
+		<set name="corpseTime" val="7"/>
+		<set name="walkSpd" val="50"/>
+		<set name="runSpd" val="120"/>
+		<set name="dropHerbGroup" val="0"/>
+		<set name="attackRange" val="40"/>
+		<ai type="default" ssCount="0" ssRate="0" spsCount="0" spsRate="0" aggro="0" canMove="true" seedable="false"/>
+		<skills>
+			<skill id="4045" level="1"/>
+			<skill id="4416" level="18"/>
+		</skills>
+	</npc>
+	
+	<npc id="14" idTemplate="30519" name="Deleveler" title="L2JxTreme">
+		<set name="level" val="70"/>
+		<set name="radius" val="7"/>
+		<set name="height" val="18"/>
+		<set name="rHand" val="0"/>
+		<set name="lHand" val="0"/>
+		<set name="type" val="L2Deleveler"/>
+		<set name="exp" val="0"/>
+		<set name="sp" val="0"/>
+		<set name="hp" val="2444.46819"/>
+		<set name="mp" val="1345.8"/>
+		<set name="hpRegen" val="7.5"/>
+		<set name="mpRegen" val="2.7"/>
+		<set name="pAtk" val="688.86373"/>
+		<set name="pDef" val="295.91597"/>
+		<set name="mAtk" val="470.40463"/>
+		<set name="mDef" val="216.53847"/>
+		<set name="crit" val="4"/>
+		<set name="atkSpd" val="253"/>
+		<set name="str" val="40"/>
+		<set name="int" val="21"/>
+		<set name="dex" val="30"/>
+		<set name="wit" val="20"/>
+		<set name="con" val="43"/>
+		<set name="men" val="20"/>
+		<set name="corpseTime" val="7"/>
+		<set name="walkSpd" val="50"/>
+		<set name="runSpd" val="120"/>
+		<set name="dropHerbGroup" val="0"/>
+		<set name="attackRange" val="40"/>
+		<ai type="default" ssCount="0" ssRate="0" spsCount="0" spsRate="0" aggro="0" canMove="true" seedable="false"/>
+		<skills>
+			<skill id="4045" level="1"/>
+			<skill id="4416" level="18"/>
+		</skills>
+	</npc>
+	
+	<npc id="15" idTemplate="31361" name="Rebirth Manager" title="L2JxTreme">
+		<set name="level" val="70"/>
+		<set name="radius" val="7.0"/>
+		<set name="height" val="23.4"/>
+		<set name="rHand" val="0"/>
+		<set name="lHand" val="0"/>
+		<set name="type" val="L2Rebirth"/>
+		<set name="exp" val="0"/>
+		<set name="sp" val="0"/>
+		<set name="hp" val="2444.46819"/>
+		<set name="mp" val="1345.8"/>
+		<set name="hpRegen" val="7.5"/>
+		<set name="mpRegen" val="2.7"/>
+		<set name="pAtk" val="688.86373"/>
+		<set name="pDef" val="700.91597"/>
+		<set name="mAtk" val="470.40463"/>
+		<set name="mDef" val="700.53847"/>
+		<set name="crit" val="4"/>
+		<set name="atkSpd" val="253"/>
+		<set name="str" val="22"/>
+		<set name="int" val="41"/>
+		<set name="dex" val="21"/>
+		<set name="wit" val="20"/>
+		<set name="con" val="27"/>
+		<set name="men" val="20"/>
+		<set name="corpseTime" val="7"/>
+		<set name="walkSpd" val="33"/>
+		<set name="runSpd" val="120"/>
+		<set name="dropHerbGroup" val="0"/>
+		<set name="attackRange" val="40"/>
+		<ai type="mage" ssCount="0" ssRate="0" spsCount="0" spsRate="0" aggro="0" clan="" clanRange="0" clanIgnore="" canMove="false" seedable="false"/>
+	</npc>
+	
+	<npc id="16" idTemplate="30523" name="Noblesse Manager" title="L2JxTreme">
+		<set name="level" val="70"/>
+		<set name="radius" val="8.0"/>
+		<set name="height" val="18.0"/>
+		<set name="rHand" val="0"/>
+		<set name="lHand" val="0"/>
+		<set name="type" val="L2Noblesse"/>
+		<set name="exp" val="0"/>
+		<set name="sp" val="0"/>
+		<set name="hp" val="2444.46819"/>
+		<set name="mp" val="1345.8"/>
+		<set name="hpRegen" val="7.5"/>
+		<set name="mpRegen" val="2.7"/>
+		<set name="pAtk" val="688.86373"/>
+		<set name="pDef" val="700.91597"/>
+		<set name="mAtk" val="470.40463"/>
+		<set name="mDef" val="700.53847"/>
+		<set name="crit" val="4"/>
+		<set name="atkSpd" val="253"/>
+		<set name="str" val="22"/>
+		<set name="int" val="41"/>
+		<set name="dex" val="21"/>
+		<set name="wit" val="20"/>
+		<set name="con" val="27"/>
+		<set name="men" val="20"/>
+		<set name="corpseTime" val="7"/>
+		<set name="walkSpd" val="33"/>
+		<set name="runSpd" val="120"/>
+		<set name="dropHerbGroup" val="0"/>
+		<set name="attackRange" val="40"/>
+		<ai type="mage" ssCount="0" ssRate="0" spsCount="0" spsRate="0" aggro="0" clan="" clanRange="0" clanIgnore="" canMove="false" seedable="false"/>
+	</npc>
+	
+	<npc id="17" idTemplate="31324" name="Wedding Manager" title="L2JxTreme">
+		<set name="level" val="70"/>
+		<set name="radius" val="8"/>
+		<set name="height" val="23"/>
+		<set name="rHand" val="316"/>
+		<set name="lHand" val="0"/>
+		<set name="type" val="L2WeddingManager"/>
+		<set name="exp" val="0"/>
+		<set name="sp" val="0"/>
+		<set name="hp" val="2444.46819"/>
+		<set name="mp" val="1345.8"/>
+		<set name="hpRegen" val="7.5"/>
+		<set name="mpRegen" val="2.7"/>
+		<set name="pAtk" val="688.86373"/>
+		<set name="pDef" val="295.91597"/>
+		<set name="mAtk" val="470.40463"/>
+		<set name="mDef" val="216.53847"/>
+		<set name="crit" val="4"/>
+		<set name="atkSpd" val="253"/>
+		<set name="str" val="40"/>
+		<set name="int" val="21"/>
+		<set name="dex" val="30"/>
+		<set name="wit" val="20"/>
+		<set name="con" val="43"/>
+		<set name="men" val="20"/>
+		<set name="corpseTime" val="7"/>
+		<set name="walkSpd" val="50"/>
+		<set name="runSpd" val="120"/>
+		<set name="dropHerbGroup" val="0"/>
+		<set name="attackRange" val="40"/>
+		<ai type="default" ssCount="0" ssRate="0" spsCount="0" spsRate="0" aggro="0" canMove="true" seedable="false"/>
+		<skills>
+			<skill id="4045" level="1"/>
+			<skill id="4416" level="16"/>
+		</skills>
+	</npc>
+	
+	<npc id="18" idTemplate="30519" name="Scheme Buffer" title="L2JxTreme">
+		<set name="level" val="70"/>
+		<set name="radius" val="7"/>
+		<set name="height" val="18"/>
+		<set name="rHand" val="0"/>
+		<set name="lHand" val="0"/>
+		<set name="type" val="L2Buffer"/>
+		<set name="exp" val="0"/>
+		<set name="sp" val="0"/>
+		<set name="hp" val="2444.46819"/>
+		<set name="mp" val="1345.8"/>
+		<set name="hpRegen" val="7.5"/>
+		<set name="mpRegen" val="2.7"/>
+		<set name="pAtk" val="688.86373"/>
+		<set name="pDef" val="295.91597"/>
+		<set name="mAtk" val="470.40463"/>
+		<set name="mDef" val="216.53847"/>
+		<set name="crit" val="4"/>
+		<set name="atkSpd" val="253"/>
+		<set name="str" val="40"/>
+		<set name="int" val="21"/>
+		<set name="dex" val="30"/>
+		<set name="wit" val="20"/>
+		<set name="con" val="43"/>
+		<set name="men" val="20"/>
+		<set name="corpseTime" val="7"/>
+		<set name="walkSpd" val="50"/>
+		<set name="runSpd" val="120"/>
+		<set name="dropHerbGroup" val="0"/>
+		<set name="attackRange" val="40"/>
+		<ai type="default" ssCount="0" ssRate="0" spsCount="0" spsRate="0" aggro="0" canMove="true" seedable="false"/>
+		<skills>
+			<skill id="4045" level="1"/>
+			<skill id="4416" level="18"/>
+		</skills>
+	</npc>
+	
+	<npc id="19" idTemplate="30519" name="Protector" title="L2JxTreme">
+		<set name="level" val="70"/>
+		<set name="radius" val="7"/>
+		<set name="height" val="18"/>
+		<set name="rHand" val="0"/>
+		<set name="lHand" val="0"/>
+		<set name="type" val="L2Protector"/>
+		<set name="exp" val="0"/>
+		<set name="sp" val="0"/>
+		<set name="hp" val="2444.46819"/>
+		<set name="mp" val="1345.8"/>
+		<set name="hpRegen" val="7.5"/>
+		<set name="mpRegen" val="2.7"/>
+		<set name="pAtk" val="688.86373"/>
+		<set name="pDef" val="295.91597"/>
+		<set name="mAtk" val="470.40463"/>
+		<set name="mDef" val="216.53847"/>
+		<set name="crit" val="4"/>
+		<set name="atkSpd" val="253"/>
+		<set name="str" val="40"/>
+		<set name="int" val="21"/>
+		<set name="dex" val="30"/>
+		<set name="wit" val="20"/>
+		<set name="con" val="43"/>
+		<set name="men" val="20"/>
+		<set name="corpseTime" val="7"/>
+		<set name="walkSpd" val="50"/>
+		<set name="runSpd" val="120"/>
+		<set name="dropHerbGroup" val="0"/>
+		<set name="attackRange" val="40"/>
+		<ai type="default" ssCount="0" ssRate="0" spsCount="0" spsRate="0" aggro="0" canMove="true" seedable="false"/>
+		<skills>
+			<skill id="4045" level="1"/>
+			<skill id="4416" level="18"/>
+		</skills>
+	</npc>
+	
+	<npc id="20" idTemplate="30519" name="Smart Shop" title="L2JxTreme">
+		<set name="level" val="70"/>
+		<set name="radius" val="7"/>
+		<set name="height" val="18"/>
+		<set name="rHand" val="0"/>
+		<set name="lHand" val="0"/>
+		<set name="type" val="L2SmartMultisell"/>
+		<set name="exp" val="0"/>
+		<set name="sp" val="0"/>
+		<set name="hp" val="2444.46819"/>
+		<set name="mp" val="1345.8"/>
+		<set name="hpRegen" val="7.5"/>
+		<set name="mpRegen" val="2.7"/>
+		<set name="pAtk" val="688.86373"/>
+		<set name="pDef" val="295.91597"/>
+		<set name="mAtk" val="470.40463"/>
+		<set name="mDef" val="216.53847"/>
+		<set name="crit" val="4"/>
+		<set name="atkSpd" val="253"/>
+		<set name="str" val="40"/>
+		<set name="int" val="21"/>
+		<set name="dex" val="30"/>
+		<set name="wit" val="20"/>
+		<set name="con" val="43"/>
+		<set name="men" val="20"/>
+		<set name="corpseTime" val="7"/>
+		<set name="walkSpd" val="50"/>
+		<set name="runSpd" val="120"/>
+		<set name="dropHerbGroup" val="0"/>
+		<set name="attackRange" val="40"/>
+		<ai type="default" ssCount="0" ssRate="0" spsCount="0" spsRate="0" aggro="0" canMove="true" seedable="false"/>
+		<skills>
+			<skill id="4045" level="1"/>
+			<skill id="4416" level="18"/>
+		</skills>
+	</npc>
+	
+	<npc id="21" idTemplate="30519" name="Requester" title="L2JxTreme">
+		<set name="level" val="70"/>
+		<set name="radius" val="7"/>
+		<set name="height" val="18"/>
+		<set name="rHand" val="0"/>
+		<set name="lHand" val="0"/>
+		<set name="type" val="L2Requests"/>
+		<set name="exp" val="0"/>
+		<set name="sp" val="0"/>
+		<set name="hp" val="2444.46819"/>
+		<set name="mp" val="1345.8"/>
+		<set name="hpRegen" val="7.5"/>
+		<set name="mpRegen" val="2.7"/>
+		<set name="pAtk" val="688.86373"/>
+		<set name="pDef" val="295.91597"/>
+		<set name="mAtk" val="470.40463"/>
+		<set name="mDef" val="216.53847"/>
+		<set name="crit" val="4"/>
+		<set name="atkSpd" val="253"/>
+		<set name="str" val="40"/>
+		<set name="int" val="21"/>
+		<set name="dex" val="30"/>
+		<set name="wit" val="20"/>
+		<set name="con" val="43"/>
+		<set name="men" val="20"/>
+		<set name="corpseTime" val="7"/>
+		<set name="walkSpd" val="50"/>
+		<set name="runSpd" val="120"/>
+		<set name="dropHerbGroup" val="0"/>
+		<set name="attackRange" val="40"/>
+		<ai type="default" ssCount="0" ssRate="0" spsCount="0" spsRate="0" aggro="0" canMove="true" seedable="false"/>
+		<skills>
+			<skill id="4045" level="1"/>
+			<skill id="4416" level="18"/>
+		</skills>
+	</npc>
+	
+	<npc id="22" idTemplate="30519" name="Donate" title="L2JxTreme">
+		<set name="level" val="70"/>
+		<set name="radius" val="7"/>
+		<set name="height" val="18"/>
+		<set name="rHand" val="0"/>
+		<set name="lHand" val="0"/>
+		<set name="type" val="L2Donate"/>
+		<set name="exp" val="0"/>
+		<set name="sp" val="0"/>
+		<set name="hp" val="2444.46819"/>
+		<set name="mp" val="1345.8"/>
+		<set name="hpRegen" val="7.5"/>
+		<set name="mpRegen" val="2.7"/>
+		<set name="pAtk" val="688.86373"/>
+		<set name="pDef" val="295.91597"/>
+		<set name="mAtk" val="470.40463"/>
+		<set name="mDef" val="216.53847"/>
+		<set name="crit" val="4"/>
+		<set name="atkSpd" val="253"/>
+		<set name="str" val="40"/>
+		<set name="int" val="21"/>
+		<set name="dex" val="30"/>
+		<set name="wit" val="20"/>
+		<set name="con" val="43"/>
+		<set name="men" val="20"/>
+		<set name="corpseTime" val="7"/>
+		<set name="walkSpd" val="50"/>
+		<set name="runSpd" val="120"/>
+		<set name="dropHerbGroup" val="0"/>
+		<set name="attackRange" val="40"/>
+		<ai type="default" ssCount="0" ssRate="0" spsCount="0" spsRate="0" aggro="0" canMove="true" seedable="false"/>
+		<skills>
+			<skill id="4045" level="1"/>
+			<skill id="4416" level="18"/>
+		</skills>
+	</npc>
+	
+	<npc id="23" idTemplate="22124" name="AIO Seller" title="L2JxTreme">
+		<set name="level" val="70"/>
+		<set name="radius" val="9"/>
+		<set name="height" val="24.4"/>
+		<set name="rHand" val="316"/>
+		<set name="lHand" val="0"/>
+		<set name="type" val="L2Npc"/>
+		<set name="exp" val="0"/>
+		<set name="sp" val="0"/>
+		<set name="hp" val="2444.46819"/>
+		<set name="mp" val="1345.8"/>
+		<set name="hpRegen" val="7.5"/>
+		<set name="mpRegen" val="2.7"/>
+		<set name="pAtk" val="688.86373"/>
+		<set name="pDef" val="295.91597"/>
+		<set name="mAtk" val="470.40463"/>
+		<set name="mDef" val="216.53847"/>
+		<set name="crit" val="4"/>
+		<set name="atkSpd" val="253"/>
+		<set name="str" val="40"/>
+		<set name="int" val="21"/>
+		<set name="dex" val="30"/>
+		<set name="wit" val="20"/>
+		<set name="con" val="43"/>
+		<set name="men" val="20"/>
+		<set name="corpseTime" val="7"/>
+		<set name="walkSpd" val="50"/>
+		<set name="runSpd" val="120"/>
+		<set name="dropHerbGroup" val="0"/>
+		<set name="attackRange" val="40"/>
+		<ai type="default" ssCount="0" ssRate="0" spsCount="0" spsRate="0" aggro="0" canMove="true" seedable="false"/>
+		<skills>
+			<skill id="4045" level="1"/>
+			<skill id="4416" level="16"/>
+		</skills>
+	</npc>
+	
+	<npc id="24" idTemplate="30519" name="Top Manager" title="L2JxTreme">
+		<set name="level" val="70"/>
+		<set name="radius" val="7"/>
+		<set name="height" val="18"/>
+		<set name="rHand" val="0"/>
+		<set name="lHand" val="0"/>
+		<set name="type" val="L2Top"/>
+		<set name="exp" val="0"/>
+		<set name="sp" val="0"/>
+		<set name="hp" val="2444.46819"/>
+		<set name="mp" val="1345.8"/>
+		<set name="hpRegen" val="7.5"/>
+		<set name="mpRegen" val="2.7"/>
+		<set name="pAtk" val="688.86373"/>
+		<set name="pDef" val="295.91597"/>
+		<set name="mAtk" val="470.40463"/>
+		<set name="mDef" val="216.53847"/>
+		<set name="crit" val="4"/>
+		<set name="atkSpd" val="253"/>
+		<set name="str" val="40"/>
+		<set name="int" val="21"/>
+		<set name="dex" val="30"/>
+		<set name="wit" val="20"/>
+		<set name="con" val="43"/>
+		<set name="men" val="20"/>
+		<set name="corpseTime" val="7"/>
+		<set name="walkSpd" val="50"/>
+		<set name="runSpd" val="120"/>
+		<set name="dropHerbGroup" val="0"/>
+		<set name="attackRange" val="40"/>
+		<ai type="default" ssCount="0" ssRate="0" spsCount="0" spsRate="0" aggro="0" canMove="true" seedable="false"/>
+		<skills>
+			<skill id="4045" level="1"/>
+			<skill id="4416" level="18"/>
+		</skills>
+	</npc>
+	
+	<npc id="25" idTemplate="30519" name="Rank Manager" title="L2JxTreme">
+		<set name="level" val="70"/>
+		<set name="radius" val="7"/>
+		<set name="height" val="18"/>
+		<set name="rHand" val="0"/>
+		<set name="lHand" val="0"/>
+		<set name="type" val="L2RankManager"/>
+		<set name="exp" val="0"/>
+		<set name="sp" val="0"/>
+		<set name="hp" val="2444.46819"/>
+		<set name="mp" val="1345.8"/>
+		<set name="hpRegen" val="7.5"/>
+		<set name="mpRegen" val="2.7"/>
+		<set name="pAtk" val="688.86373"/>
+		<set name="pDef" val="295.91597"/>
+		<set name="mAtk" val="470.40463"/>
+		<set name="mDef" val="216.53847"/>
+		<set name="crit" val="4"/>
+		<set name="atkSpd" val="253"/>
+		<set name="str" val="40"/>
+		<set name="int" val="21"/>
+		<set name="dex" val="30"/>
+		<set name="wit" val="20"/>
+		<set name="con" val="43"/>
+		<set name="men" val="20"/>
+		<set name="corpseTime" val="7"/>
+		<set name="walkSpd" val="50"/>
+		<set name="runSpd" val="120"/>
+		<set name="dropHerbGroup" val="0"/>
+		<set name="attackRange" val="40"/>
+		<ai type="default" ssCount="0" ssRate="0" spsCount="0" spsRate="0" aggro="0" canMove="true" seedable="false"/>
+		<skills>
+			<skill id="4045" level="1"/>
+			<skill id="4416" level="18"/>
+		</skills>
+	</npc>
+	
+	<npc id="26" idTemplate="30767" name="Pet Buffer" title="L2JxTreme">
+		<set name="level" val="70"/>
+		<set name="radius" val="8"/>
+		<set name="height" val="22"/>
+		<set name="rHand" val="0"/>
+		<set name="lHand" val="0"/>
+		<set name="type" val="L2PetBuffer"/>
+		<set name="exp" val="0"/>
+		<set name="sp" val="0"/>
+		<set name="hp" val="2444.46819"/>
+		<set name="mp" val="1345.8"/>
+		<set name="hpRegen" val="7.5"/>
+		<set name="mpRegen" val="2.7"/>
+		<set name="pAtk" val="688.86373"/>
+		<set name="pDef" val="295.91597"/>
+		<set name="mAtk" val="470.40463"/>
+		<set name="mDef" val="216.53847"/>
+		<set name="crit" val="4"/>
+		<set name="atkSpd" val="253"/>
+		<set name="str" val="40"/>
+		<set name="int" val="21"/>
+		<set name="dex" val="30"/>
+		<set name="wit" val="20"/>
+		<set name="con" val="43"/>
+		<set name="men" val="20"/>
+		<set name="corpseTime" val="7"/>
+		<set name="walkSpd" val="50"/>
+		<set name="runSpd" val="120"/>
+		<set name="dropHerbGroup" val="0"/>
+		<set name="attackRange" val="40"/>
+		<ai type="default" ssCount="0" ssRate="0" spsCount="0" spsRate="0" aggro="0" canMove="true" seedable="false"/>
+		<skills>
+			<skill id="4045" level="1"/>
+			<skill id="4416" level="14"/>
+		</skills>
+	</npc>
+	
+	<npc id="27" idTemplate="31618" name="God Manager" title="L2JxTreme">
+		<set name="level" val="70"/>
+		<set name="radius" val="8"/>
+		<set name="height" val="23"/>
+		<set name="rHand" val="316"/>
+		<set name="lHand" val="0"/>
+		<set name="type" val="L2GodManager"/>
+		<set name="exp" val="0"/>
+		<set name="sp" val="0"/>
+		<set name="hp" val="2444.46819"/>
+		<set name="mp" val="1345.8"/>
+		<set name="hpRegen" val="7.5"/>
+		<set name="mpRegen" val="2.7"/>
+		<set name="pAtk" val="688.86373"/>
+		<set name="pDef" val="295.91597"/>
+		<set name="mAtk" val="470.40463"/>
+		<set name="mDef" val="216.53847"/>
+		<set name="crit" val="4"/>
+		<set name="atkSpd" val="253"/>
+		<set name="str" val="40"/>
+		<set name="int" val="21"/>
+		<set name="dex" val="30"/>
+		<set name="wit" val="20"/>
+		<set name="con" val="43"/>
+		<set name="men" val="20"/>
+		<set name="corpseTime" val="7"/>
+		<set name="walkSpd" val="50"/>
+		<set name="runSpd" val="120"/>
+		<set name="dropHerbGroup" val="0"/>
+		<set name="attackRange" val="40"/>
+		<ai type="default" ssCount="0" ssRate="0" spsCount="0" spsRate="0" aggro="0" canMove="true" seedable="false"/>
+		<skills>
+			<skill id="4045" level="1"/>
+			<skill id="4416" level="16"/>
+		</skills>
+	</npc>
+	
+	<npc id="28" idTemplate="31618" name="PvP Trader" title="L2JxTreme">
+		<set name="level" val="70"/>
+		<set name="radius" val="8"/>
+		<set name="height" val="23"/>
+		<set name="rHand" val="316"/>
+		<set name="lHand" val="0"/>
+		<set name="type" val="L2PvpTrader"/>
+		<set name="exp" val="0"/>
+		<set name="sp" val="0"/>
+		<set name="hp" val="2444.46819"/>
+		<set name="mp" val="1345.8"/>
+		<set name="hpRegen" val="7.5"/>
+		<set name="mpRegen" val="2.7"/>
+		<set name="pAtk" val="688.86373"/>
+		<set name="pDef" val="295.91597"/>
+		<set name="mAtk" val="470.40463"/>
+		<set name="mDef" val="216.53847"/>
+		<set name="crit" val="4"/>
+		<set name="atkSpd" val="253"/>
+		<set name="str" val="40"/>
+		<set name="int" val="21"/>
+		<set name="dex" val="30"/>
+		<set name="wit" val="20"/>
+		<set name="con" val="43"/>
+		<set name="men" val="20"/>
+		<set name="corpseTime" val="7"/>
+		<set name="walkSpd" val="50"/>
+		<set name="runSpd" val="120"/>
+		<set name="dropHerbGroup" val="0"/>
+		<set name="attackRange" val="40"/>
+		<ai type="default" ssCount="0" ssRate="0" spsCount="0" spsRate="0" aggro="0" canMove="true" seedable="false"/>
+		<skills>
+			<skill id="4045" level="1"/>
+			<skill id="4416" level="16"/>
+		</skills>
+	</npc>
+	
+	<npc id="29" idTemplate="31618" name="Status" title="L2JxTreme">
+		<set name="level" val="70"/>
+		<set name="radius" val="8"/>
+		<set name="height" val="23"/>
+		<set name="rHand" val="316"/>
+		<set name="lHand" val="0"/>
+		<set name="type" val="L2Status"/>
+		<set name="exp" val="0"/>
+		<set name="sp" val="0"/>
+		<set name="hp" val="2444.46819"/>
+		<set name="mp" val="1345.8"/>
+		<set name="hpRegen" val="7.5"/>
+		<set name="mpRegen" val="2.7"/>
+		<set name="pAtk" val="688.86373"/>
+		<set name="pDef" val="295.91597"/>
+		<set name="mAtk" val="470.40463"/>
+		<set name="mDef" val="216.53847"/>
+		<set name="crit" val="4"/>
+		<set name="atkSpd" val="253"/>
+		<set name="str" val="40"/>
+		<set name="int" val="21"/>
+		<set name="dex" val="30"/>
+		<set name="wit" val="20"/>
+		<set name="con" val="43"/>
+		<set name="men" val="20"/>
+		<set name="corpseTime" val="7"/>
+		<set name="walkSpd" val="50"/>
+		<set name="runSpd" val="120"/>
+		<set name="dropHerbGroup" val="0"/>
+		<set name="attackRange" val="40"/>
+		<ai type="default" ssCount="0" ssRate="0" spsCount="0" spsRate="0" aggro="0" canMove="true" seedable="false"/>
+		<skills>
+			<skill id="4045" level="1"/>
+			<skill id="4416" level="16"/>
+		</skills>
+	</npc>
+	
+	<npc id="50006" idTemplate="31228" name="Roy the Cat" title="Class Manager">
+		<set name="level" val="70"/>
+		<set name="radius" val="9"/>
+		<set name="height" val="16"/>
+		<set name="rHand" val="0"/>
+		<set name="lHand" val="0"/>
+		<set name="type" val="L2ClassMaster"/>
+		<set name="exp" val="0"/>
+		<set name="sp" val="10"/>
+		<set name="hp" val="2444.46819"/>
+		<set name="mp" val="1345.8"/>
+		<set name="hpRegen" val="7.5"/>
+		<set name="mpRegen" val="2.7"/>
+		<set name="pAtk" val="688.86373"/>
+		<set name="pDef" val="295.91597"/>
+		<set name="mAtk" val="470.40463"/>
+		<set name="mDef" val="216.53847"/>
+		<set name="crit" val="4"/>
+		<set name="atkSpd" val="253"/>
+		<set name="str" val="40"/>
+		<set name="int" val="21"/>
+		<set name="dex" val="30"/>
+		<set name="wit" val="20"/>
+		<set name="con" val="43"/>
+		<set name="men" val="20"/>
+		<set name="corpseTime" val="7"/>
+		<set name="walkSpd" val="80"/>
+		<set name="runSpd" val="120"/>
+		<set name="dropHerbGroup" val="0"/>
+		<set name="attackRange" val="40"/>
+		<ai type="default" ssCount="0" ssRate="0" spsCount="0" spsRate="0" aggro="0" canMove="true" seedable="false"/>
+		<skills>
+			<skill id="4045" level="1"/>
+			<skill id="4416" level="7"/>
+		</skills>
+	</npc>
+	
+</list>
